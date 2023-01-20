@@ -337,7 +337,7 @@
 .productContainerRight-ResQz {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 .productRightText1 {
   font-family: "Minerva-Modern";

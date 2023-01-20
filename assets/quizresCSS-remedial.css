@@ -24,7 +24,7 @@
   font-weight: 400;
   color: #35446f;
 
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 #retake-ResQz {
@@ -36,6 +36,7 @@
 #slider-ResQz {
   text-align: center;
   padding: 30px 0;
+  padding-top: 60px;
   border-top: 1px solid #aebad5;
   border-bottom: 1px solid #aebad5;
 }

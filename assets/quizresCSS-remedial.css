@@ -342,9 +342,16 @@
   padding-left: 30px;
   width: 100%
 }
+@font-face {
+font-family: "Minerva-Modern";
+src: url("MINERVAM.woff2") format("woff2"),
+  url("MINERVAM.woff") format("woff"); 
+}
 .productRightText1 {
-  font-family: "Minerva-Modern";
-  font-style: normal;
+  font-family: "Minerva-Modern"!important;
+}
+.productRightText1 {
+/*   font-family: "Minerva-Modern"; */
 
   font-size: 35px;
   color: #162835;

@@ -339,22 +339,65 @@
   flex-direction: column;
 }
 .productRightText1 {
-  
+  font-family: "Minerva-Modern";
+  font-style: normal;
+
+  font-size: 34px;
+  color: #162835;
 }
 .productRightText2 {
-  
+  font-family: "SF Pro Display";
+  font-style: normal;
+
+  font-size: 18px;
+  color: #8691A9;
 }
 .productRightBlockAMPM {
+  display: flex;
+  flex-direction: row;
   
+  font-family: "SF Pro Display";
+  font-style: normal;
+
+  font-size: 18px;
+  color: #8691A9;
+}
+.productRightBlockAMPM div {
+  display: flex;
+  flex-direction: row;
+}
+.productRightBlockAMPM div img {
+  width: 27px;
+  height: 27px;
 }
 .productRightLine {
-  
+  width: 100%;
+  border: 1px solid #AEBAD5;
 }
 .productRightText3 {
-  
+  font-family: "SF Pro Display";
+  font-style: normal;
+
+  font-size: 18px;
+  color: #35446F;
 }
 .productRightBlockKeyIngr {
+  display: flex;
+  flex-direction: row;
   
+  font-family: "SF Pro Display";
+  font-style: normal;
+
+  font-size: 18px;
+  color: #8691A9;
+}
+.productRightBlockKeyIngr div {
+  display: flex;
+  flex-direction: row;
+}
+.productRightBlockKeyIngr div img {
+  width: 35px;
+  height: 35px;
 }
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/
 

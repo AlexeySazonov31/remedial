@@ -330,7 +330,9 @@
   color: #35446f;
 }
 .productContainer-ResQz {
-  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .productContainerRight-ResQz {
   

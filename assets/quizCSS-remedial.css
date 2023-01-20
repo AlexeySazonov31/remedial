@@ -700,8 +700,21 @@ p.pska {
   justify-content: center;
   align-items: center;
   z-index: 5;
+  animation: showImg6Quiz 1s;
 
   /*   padding-bottom: 20px; */
+}
+
+
+@keyframes showBlockColorQuiz {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .blockcolorParent {

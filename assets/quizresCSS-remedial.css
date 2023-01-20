@@ -338,8 +338,8 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
 }
 .productRightText1 {
   font-family: "Minerva-Modern";
@@ -359,7 +359,7 @@
   font-size: 18px;
   color: #8691A9;
 
-    margin: 10px 0;
+    margin: 8px 0;
 
   
 }
@@ -370,7 +370,7 @@
   font-family: "SF Pro Display";
   font-style: normal;
 
-  font-size: 18px;
+  font-size: 15px;
   color: #8691A9;
       margin: 10px 0;
 
@@ -380,16 +380,16 @@
   flex-direction: row;
   justifu-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 9px;
 }
 .productRightBlockAMPM div img {
   width: 27px;
   height: 27px;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 .productRightLine {
   width: 100%;
-  border: 1px solid #AEBAD5;
+  border: 0.5px solid #AEBAD5;
         margin: 10px 0;
 
 }
@@ -397,7 +397,7 @@
   font-family: "SF Pro Display";
   font-style: normal;
 
-  font-size: 18px;
+  font-size: 19px;
   color: #35446F;
   font-weight: 600;
           margin: 10px 0;
@@ -412,7 +412,7 @@
 
   font-size: 18px;
   color: #8691A9;
-        margin: 10px 0;
+        margin: 7px 0;
 
 }
 .productRightBlockKeyIngr div {
@@ -420,12 +420,12 @@
   flex-direction: row;
     justifu-content: center;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 .productRightBlockKeyIngr div img {
   width: 35px;
   height: 35px;
-    margin-right: 5px;
+    margin-right: 10px;
 
 }
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/

@@ -339,6 +339,7 @@
   flex-direction: column;
   justify-content: start;
   padding-top: 20px;
+  padding-left: 20px;
 }
 .productRightText1 {
   font-family: "Minerva-Modern";

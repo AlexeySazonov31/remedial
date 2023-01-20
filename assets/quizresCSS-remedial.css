@@ -335,6 +335,25 @@
   flex-direction: row;
 }
 .productContainerRight-ResQz {
+  display: flex;
+  flex-direction: column;
+}
+.productRightText1 {
+  
+}
+.productRightText2 {
+  
+}
+.productRightBlockAMPM {
+  
+}
+.productRightLine {
+  
+}
+.productRightText3 {
+  
+}
+.productRightBlockKeyIngr {
   
 }
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/

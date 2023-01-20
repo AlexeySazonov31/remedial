@@ -142,7 +142,7 @@ let Quistion7ImgsData = [
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-tightness.png?v=1674223424",
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-primary.png?v=1672152348",
     ],
-    ids: ["primQz6", "Qz6-1", "Qz6-2", "Qz6-3"],
+    ids: ["Qz6-1", "Qz6-2", "Qz6-3", "primQz6"],
   },
   {
     id: 3,

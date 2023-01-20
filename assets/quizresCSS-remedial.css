@@ -6,9 +6,9 @@
   text-align: center;
   padding-bottom: 50px;
 }
-#firstText-ResQz h4 {
+#firstText-ResQz h4 { 
   font-size: 45px;
-  font-family: "Minerva-Modern";
+/*  font-family: "Minerva-Modern";*/
   font-style: normal;
   font-weight: 400;
   color: #162835;
@@ -42,7 +42,7 @@
 
 #slider-ResQz h4 {
   font-size: 32px;
-  font-family: "SF Pro Display";
+ font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
   color: #35446f;
@@ -462,7 +462,7 @@
   color: #35446f;
   font-size: 20px;
 
-  font-family: "Minerva-Modern";
+ /* font-family: "Minerva-Modern"; */
   font-style: normal;
 }
 #resultContainer-ResQz #Analys-2-ResQz {

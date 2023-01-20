@@ -381,7 +381,7 @@ if (arrEndCreams.length >= 1) {
     let contentForRecomendation = "";
     for (let el of arrRecomedation) {
       if (el.name == elem.recommendation) {
-        contentForRecomendation += "<div class='productContainer-ResQz'>" + el.content + "<div class='productContainerRight-ResQz'><p>Right!!!</p></div>" "</div>";
+        contentForRecomendation += "<div class='productContainer-ResQz'>" + el.content + "<div class='productContainerRight-ResQz'><p>Right!!!</p></div>" + "</div>";
       }
     }
     recomContainer.innerHTML += contentForRecomendation;

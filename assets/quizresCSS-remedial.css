@@ -349,7 +349,7 @@ src: url("MINERVAM.woff2") format("woff2"),
 }
 
 .productRightText1 {
-  font-family: "Minerva-Modern"!important;
+  font-family: "Minerva-Modern";
 
   font-size: 35px;
   color: #162835;

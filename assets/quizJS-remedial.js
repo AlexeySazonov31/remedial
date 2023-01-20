@@ -257,7 +257,7 @@ const questions = [
 
   {
     question:
-      "What kind of problem do you have?<span class='placeClarifyingQuestion'>Eyes</span>",
+      "What kind of problem do you have?<span class='placeClarifyingQuestion'> Eyes</span>",
     answers: ["Dark circles", "Bags", "Wrinkles", "Other"],
     id: 7,
     finalAns: "",
@@ -271,7 +271,7 @@ const questions = [
   },
   {
     question:
-      "What kind of problem do you have?<span class='placeClarifyingQuestion'>Face</span>",
+      "What kind of problem do you have?<span class='placeClarifyingQuestion'> Face</span>",
     answers: ["Pigment", "Acne", "Wrinkles", "Redness", "Scars", "Other"],
     id: 7,
     finalAns: "",
@@ -287,7 +287,7 @@ const questions = [
   },
   {
     question:
-      "What kind of problem do you have?<span class='placeClarifyingQuestion'>T-zone</span>",
+      "What kind of problem do you have?<span class='placeClarifyingQuestion'> T-zone</span>",
     answers: ["Wrinkles", "Shine", "Tightness", "Other"],
     id: 7,
     finalAns: "",
@@ -301,7 +301,7 @@ const questions = [
   },
   {
     question:
-      "What kind of problem do you have?<span class='placeClarifyingQuestion'>All together</span>",
+      "What kind of problem do you have?<span class='placeClarifyingQuestion'> All together</span>",
     answers: [
       "Dark circles/Bags",
       "Wrinkles",

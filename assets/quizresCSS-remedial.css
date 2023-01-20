@@ -381,7 +381,7 @@
   flex-direction: row;
   justifu-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 17px;
 }
 .productRightBlockAMPM div img {
   width: 27px;
@@ -413,7 +413,7 @@
   font-family: "SF Pro Display";
   font-style: normal;
 
-  font-size: 15px;
+  font-size: 16px;
   color: #8691A9;
   margin: 7px 0;
 
@@ -423,7 +423,7 @@
   flex-direction: row;
     justifu-content: center;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 22px;
 }
 .productRightBlockKeyIngr div img {
   width: 35px;

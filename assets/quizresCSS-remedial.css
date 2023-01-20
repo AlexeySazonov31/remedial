@@ -347,6 +347,8 @@
   color: #162835;
   width: 50%;
   line-height: 39px;
+
+  margin: 10px 0;
 }
 .productRightText2 {
   font-family: "SF Pro Display";
@@ -354,6 +356,9 @@
 
   font-size: 18px;
   color: #8691A9;
+
+    margin: 10px 0;
+
   
 }
 .productRightBlockAMPM {
@@ -365,18 +370,26 @@
 
   font-size: 18px;
   color: #8691A9;
+      margin: 10px 0;
+
 }
 .productRightBlockAMPM div {
   display: flex;
   flex-direction: row;
+  justifu-content: center;
+  align-items: center;
+  margin-right: 5px;
 }
 .productRightBlockAMPM div img {
   width: 27px;
   height: 27px;
+  margin-right: 4px;
 }
 .productRightLine {
   width: 100%;
   border: 1px solid #AEBAD5;
+        margin: 10px 0;
+
 }
 .productRightText3 {
   font-family: "SF Pro Display";
@@ -384,6 +397,9 @@
 
   font-size: 18px;
   color: #35446F;
+  font-weight: 600;
+          margin: 10px 0;
+
 }
 .productRightBlockKeyIngr {
   display: flex;
@@ -394,14 +410,21 @@
 
   font-size: 18px;
   color: #8691A9;
+        margin: 10px 0;
+
 }
 .productRightBlockKeyIngr div {
   display: flex;
   flex-direction: row;
+    justifu-content: center;
+  align-items: center;
+  margin-right: 8px;
 }
 .productRightBlockKeyIngr div img {
   width: 35px;
   height: 35px;
+    margin-right: 5px;
+
 }
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/
 

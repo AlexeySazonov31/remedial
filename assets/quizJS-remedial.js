@@ -149,7 +149,7 @@ let Quistion7ImgsData = [
     imgs: [
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-darkC_bags.png?v=1672214950",
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-wrinklesFace.png?v=1672153655",
-      "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-face.png?v=1671791283",
+      "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-pigment.png?v=1672153655",
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-acne.png?v=1672153654",
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-scars.png?v=1672153655",
       "https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-7-primary.png?v=1672152348",

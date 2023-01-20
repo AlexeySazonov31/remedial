@@ -391,7 +391,7 @@
 .productRightLine {
   width: 100%;
   height: 1px;
-  border: 1px solid #aebad5;;
+  border-bottom: 1px solid #aebad5;;
   margin: 10px 0;
 
 }

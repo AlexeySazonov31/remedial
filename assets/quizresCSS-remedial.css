@@ -337,13 +337,16 @@
 .productContainerRight-ResQz {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .productRightText1 {
   font-family: "Minerva-Modern";
   font-style: normal;
 
-  font-size: 34px;
+  font-size: 32px;
   color: #162835;
+  width: 50%;
+  line-height: 39px;
 }
 .productRightText2 {
   font-family: "SF Pro Display";
@@ -351,6 +354,7 @@
 
   font-size: 18px;
   color: #8691A9;
+  
 }
 .productRightBlockAMPM {
   display: flex;

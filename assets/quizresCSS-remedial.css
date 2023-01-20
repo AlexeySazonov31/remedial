@@ -80,28 +80,28 @@
   left: 50%;
   z-index: 20;
   width: 180px;
-  top: 12.3%;
+  top: 565px;
   opacity: 1;
 }
 .slider-ResQz-left-img {
   left: 39.1vw;
   z-index: 15;
   width: 110px;
-  top: 13.14%;
+  top: 600px;
   opacity: 0.6;
 }
 .slider-ResQz-right-img {
   left: 60vw;
   z-index: 15;
   width: 110px;
-  top: 13.14%;
+  top: 600px;
   opacity: 0.6;
 }
 .slider-ResQz-hidden-img {
   left: 50%;
   z-index: 15;
   width: 40px;
-  top: 13.4%;
+  top: 640px;
   opacity: 0;
 }
 

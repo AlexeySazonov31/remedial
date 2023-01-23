@@ -129,13 +129,17 @@
   }
 }
 
-/*  first page adaptive for mobile  */
+/* --------------- first page adaptive for mobile --------------------------- */
 
 .firstPageMb {
   display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.firstPageMb img {
+  width: 90%;
+  
 }
 
 /*-----------------------------------------------------------------------------------------*/

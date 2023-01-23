@@ -617,19 +617,19 @@ function showQuestion() {
     } else if (questionIndex == 5) {
       // выбор проблемной зоны
       // adaptiv for question-6-------------------------------
-      let pageWidth = document.documentElement.scrollWidth;
-      if (pageWidth < 1200 && pageWidth > 991) {
-        ContainerForAnswers.style.width = "70%";
-      } else if (pageWidth < 991) {
-        ContainerForAnswers.style.width = "90%";
-      } else {
-        ContainerForAnswers.style.width = "55%";
-      }
+      // let pageWidth = document.documentElement.scrollWidth;
+      // if (pageWidth < 1200 && pageWidth > 991) {
+      //   ContainerForAnswers.style.width = "70%";
+      // } else if (pageWidth < 991) {
+      //   ContainerForAnswers.style.width = "90%";
+      // } else {
+      //   ContainerForAnswers.style.width = "55%";
+      // }
       //------------------------------------------------------
-      ContainerForAnswers.style.display = "grid";
-      ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
-      ContainerForBottomButtons.classList.remove("buttonsColumn");
-      ContainerForBottomButtons.classList.add("buttonsRow");
+      // ContainerForAnswers.style.display = "grid";
+      // ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
+      // ContainerForBottomButtons.classList.remove("buttonsColumn");
+      // ContainerForBottomButtons.classList.add("buttonsRow");
       ContainerForAnswers.innerHTML =
         "<div class='quistion6ImgBlock'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-Primary.png?v=1671791283' id='primQz6'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-yeas.png?v=1674225151' id='Qz6-1'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-face.png?v=1674225152' id='Qz6-2'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-tzona.png?v=1671791283' id='Qz6-3'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-neck.png?v=1674224716' id='Qz6-4'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-all.png?v=1671791283' id='Qz6-5'></div><div class='answers6withImg'><button class='itemAnswer' id='0'>Eyes</button><button class='itemAnswer' id='1'>Face</button><button class='itemAnswer' id='2'>T-zone</button><button class='itemAnswer' id='4'>Neck</button><button class='itemAnswer' id='3'>All together</button><button class='itemAnswer' id='5'>No problems</button></div>";
       const imgs6Quiz = document.querySelectorAll(".quistion6ImgBlock img");

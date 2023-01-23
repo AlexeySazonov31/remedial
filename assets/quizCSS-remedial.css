@@ -678,6 +678,7 @@ p.pska {
 .quiz[id="12"] > .quiz-list {
   display: flex;
   width: 1080px;
+  justify-content: space-beetwen;
 }
 .quiz[id="12"] > .itemAnswer {
   width: 300px;

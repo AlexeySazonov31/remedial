@@ -539,11 +539,11 @@ prevBtn.addEventListener("click", () => {
   if (questionIndex >= questions.length) {
     ContainerForEndForm.style.display = "none";
     ContainerForQuistion.style.display = "block";
-    ContainerForAnswers.style.display = "flex";
+    // ContainerForAnswers.style.display = "flex";
     questionIndex = 12;
     showQuestion();
 
-    qviz.style.justifyContent = "space-between";
+    // qviz.style.justifyContent = "space-between";
     nextBtn.style.display = "none";
     formBtn.style.display = "none";
   } else if (questionIndex > 0 && questionIndex < 13) {

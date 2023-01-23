@@ -768,14 +768,15 @@ function showQuestion() {
 
       ContainerForAnswers.style.display = "grid";
       ContainerForAnswers.style.width = "100%";
-    } else {
-      ContainerForAnswers.style.display = "grid";
-      ContainerForAnswers.style.width = "100%";
-      ContainerForAnswers.style.gridTemplateColumns = "300px 300px";
-
-      ContainerForBottomButtons.classList.remove("buttonsRow");
-      ContainerForBottomButtons.classList.add("buttonsColumn");
     }
+    // } else {
+    //   ContainerForAnswers.style.display = "grid";
+    //   ContainerForAnswers.style.width = "100%";
+    //   ContainerForAnswers.style.gridTemplateColumns = "300px 300px";
+
+    //   ContainerForBottomButtons.classList.remove("buttonsRow");
+    //   ContainerForBottomButtons.classList.add("buttonsColumn");
+    // }
 
     // ---------------------- progress ----------------------------------------------------
     progress.innerHTML = `<div class="textProgressQuiz">${questions[questionIndex].id}</div>/10`;

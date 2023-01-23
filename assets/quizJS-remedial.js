@@ -550,7 +550,6 @@ prevBtn.addEventListener("click", () => {
     questionIndex--;
     clearPage();
     showQuestion();
-  } else {
     ContainerForAnswers.style = "";
   }
 });

@@ -1082,5 +1082,7 @@ function quizStart() {
   qviz.style.flexDirection = "column";
 }
 
-let startQuiz = document.querySelector(".start");
+const startQuiz = document.querySelector(".start");
 startQuiz.addEventListener("click", quizStart);
+const startQuizMb = document.querySelector(".startMb");
+startQuizMb.addEventListener("click", quizStart);

@@ -605,7 +605,7 @@ p.pska {
 .quiz[id="1"] > .quiz-list {
   width: 940px;
 }
-.quiz[id="1"] > .itemAnswer {
+.quiz[id="1"] > .quiz-list .itemAnswer {
     width: 280px;
     height: 110px;
 }

@@ -592,7 +592,7 @@ p.pska {
   display: grid;
   width: 100%;
 }
-/* adaptiv for question-2  */
+/* adaptiv for question-2 --------------------------- */
 .quiz[id="1"] > .quiz-list {
   display: flex;
   width: 1080px;
@@ -602,7 +602,7 @@ p.pska {
   height: 120px;
 }
 @media (max-width: 1200px) {
-  .quiz[id="1"] > .quiz-list {
+.quiz[id="1"] > .quiz-list {
   width: 940px;
 }
 .quiz[id="1"] > .itemAnswer {
@@ -614,7 +614,7 @@ p.pska {
   .quiz[id="1"] > .quiz-list {
   width: 680px;
 }
-.quiz[id="1"] > .itemAnswer {
+.quiz[id="1"] > .quiz-list .itemAnswer {
     width: 200px;
     height: 120px;
 }

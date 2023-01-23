@@ -140,6 +140,36 @@
 .firstPageMb img {
   wigth: 100%;  
 }
+.firstPageMb h2 {
+  text-align: center;
+    font-size: 18px;
+
+}
+.firstPageMb h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.startMb {
+  display: block;
+  max-width: 450px;
+  color: #ffffff;
+  font-size: 23px;
+  text-align: center;
+
+  border: 1px solid #35446f;
+  background:  rgba(53,68,111,1);
+  cursor: pointer;
+  height: 50px;
+
+  margin-top: 30px;
+
+  transition: all 0.15s;
+
+}
+.startMb:hover {
+  box-shadow: 0px 10px 15px -3px rgba(53,68,111,0.3);
+  transition: all 0.15s;
+}
 
 /*-----------------------------------------------------------------------------------------*/
 

@@ -139,6 +139,7 @@
 }
 .firstPageMb img {
   wigth: 100%;  
+  margin-bottom: 10px;
 }
 .firstPageMb h2 {
   text-align: center;

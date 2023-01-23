@@ -585,29 +585,29 @@ function showQuestion() {
       // ContainerForAnswers.style.display = "grid";
       // ContainerForAnswers.style.width = "100%";
     } else if (questionIndex == 1) {
-      ContainerForAnswers.style.display = "flex";
+      //ContainerForAnswers.style.display = "flex";
       // adaptiv for question-2
-      let pageWidth = document.documentElement.scrollWidth;
-      const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
-      if (pageWidth < 1200 && pageWidth > 991) {
-        ContainerForAnswers.style.width = "940px";
-        buttonsStyle2.forEach((elem) => {
-          elem.style.width = "280px";
-          elem.style.height = "110px";
-        });
-      } else if (pageWidth < 991) {
-        ContainerForAnswers.style.width = "680px";
-        buttonsStyle2.forEach((elem) => {
-          elem.style.width = "200px";
-          elem.style.height = "120px";
-        });
-      } else {
-        ContainerForAnswers.style.width = "1080px";
-        buttonsStyle2.forEach((elem) => {
-          elem.style.width = "300px";
-          elem.style.height = "120px";
-        });
-      }
+      // let pageWidth = document.documentElement.scrollWidth;
+      // const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
+      // if (pageWidth < 1200 && pageWidth > 991) {
+      //   ContainerForAnswers.style.width = "940px";
+      //   buttonsStyle2.forEach((elem) => {
+      //     elem.style.width = "280px";
+      //     elem.style.height = "110px";
+      //   });
+      // } else if (pageWidth < 991) {
+      //   ContainerForAnswers.style.width = "680px";
+      //   buttonsStyle2.forEach((elem) => {
+      //     elem.style.width = "200px";
+      //     elem.style.height = "120px";
+      //   });
+      // } else {
+      //   ContainerForAnswers.style.width = "1080px";
+      //   buttonsStyle2.forEach((elem) => {
+      //     elem.style.width = "300px";
+      //     elem.style.height = "120px";
+      //   });
+      // }
     } else if (questionIndex == 2) {
       // range (scin color)
       ContainerForAnswers.style.display = "flex";

@@ -643,19 +643,19 @@ function showQuestion() {
       // 6 - eyes / 7 - face / 8 - T-zone / 9 - all together
       // выбор точечной проблемы ( уточняющий вопрос )
       // adaptiv for questions-id-7-------------------------------
-      let pageWidth = document.documentElement.scrollWidth;
-      if (pageWidth < 1200 && pageWidth > 991) {
-        ContainerForAnswers.style.width = "70%";
-      } else if (pageWidth < 991) {
-        ContainerForAnswers.style.width = "90%";
-      } else {
-        ContainerForAnswers.style.width = "55%";
-      }
-      //------------------------------------------------------
-      ContainerForAnswers.style.display = "grid";
-      ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
-      ContainerForBottomButtons.classList.remove("buttonsColumn");
-      ContainerForBottomButtons.classList.add("buttonsRow");
+      // let pageWidth = document.documentElement.scrollWidth;
+      // if (pageWidth < 1200 && pageWidth > 991) {
+      //   ContainerForAnswers.style.width = "70%";
+      // } else if (pageWidth < 991) {
+      //   ContainerForAnswers.style.width = "90%";
+      // } else {
+      //   ContainerForAnswers.style.width = "55%";
+      // }
+      // //------------------------------------------------------
+      // ContainerForAnswers.style.display = "grid";
+      // ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
+      // ContainerForBottomButtons.classList.remove("buttonsColumn");
+      // ContainerForBottomButtons.classList.add("buttonsRow");
 
       numberAnswer = 0;
 

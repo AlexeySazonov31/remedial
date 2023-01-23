@@ -627,25 +627,26 @@ p.pska {
 .quiz[id="2"] > .buttons {
   flex-direction: row-reverse;
 }
-/* adaptiv for question-6 --------------------------- */
-.quiz[id="5"] > .quiz-list {
+/* adaptiv for question-(6-11) --------------------------- */
+.quiz[id="5"] > .quiz-list, .quiz[id="6"] > .quiz-list, .quiz[id="7"] > .quiz-list, .quiz[id="8"] > .quiz-list, .quiz[id="9"] > .quiz-list {
   display: grid;
   width: 55%;
   grid-template-columns: 1fr 1fr;
 }
-.quiz[id="5"] > .buttons {
+.quiz[id="5"] > .buttons, .quiz[id="6"] > .buttons, .quiz[id="7"] > .buttons, .quiz[id="8"] > .buttons, .quiz[id="9"] > .buttons {
   flex-direction: row-reverse;
 }
 @media (max-width: 1200px) {
-.quiz[id="1"] > .quiz-list {
+.quiz[id="5"] > .quiz-list, .quiz[id="6"] > .quiz-list, .quiz[id="7"] > .quiz-list, .quiz[id="8"] > .quiz-list, .quiz[id="9"] > .quiz-list {
   width: 70%;
 }
 }
 @media (max-width: 991px) {
-  .quiz[id="1"] > .quiz-list {
+.quiz[id="5"] > .quiz-list, .quiz[id="6"] > .quiz-list, .quiz[id="7"] > .quiz-list, .quiz[id="8"] > .quiz-list, .quiz[id="9"] > .quiz-list {
   width: 90%;
 }
 }
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 

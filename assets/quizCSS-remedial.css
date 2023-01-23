@@ -279,6 +279,7 @@ h3.title span.placeClarifyingQuestion {
   display: flex;
   width: 400px;
   margin: 0 auto;
+  flex-direction: row-reverse;
   /* justify-content: space-between; */
   padding-bottom: 1%;
 

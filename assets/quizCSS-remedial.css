@@ -142,17 +142,16 @@
 }
 .firstPageMb h2 {
   text-align: center;
-    font-size: 18px;
+    font-size: 22px;
 
 }
 .firstPageMb h3 {
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
 }
 .startMb {
   display: block;
   width: 100%;
-  max-width: 450px;
   color: #ffffff;
   font-size: 23px;
   text-align: center;

@@ -582,8 +582,8 @@ function showQuestion() {
     }
 
     if (questionIndex == 0) {
-      ContainerForAnswers.style.display = "grid";
-      ContainerForAnswers.style.width = "100%";
+      // ContainerForAnswers.style.display = "grid";
+      // ContainerForAnswers.style.width = "100%";
     } else if (questionIndex == 1) {
       ContainerForAnswers.style.display = "flex";
       // adaptiv for question-2

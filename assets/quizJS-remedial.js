@@ -714,34 +714,35 @@ function showQuestion() {
           img.style.opacity = "0";
         }
       }
-    } else if (questionIndex == 12) {
-      // // How often do take care of your skin? ( последний вопрос )
-      // ContainerForBottomButtons.classList.remove("buttonsColumn");
-      // ContainerForBottomButtons.classList.add("buttonsRow");
+    }
+    // else if (questionIndex == 12) {
+    // // How often do take care of your skin? ( последний вопрос )
+    // ContainerForBottomButtons.classList.remove("buttonsColumn");
+    // ContainerForBottomButtons.classList.add("buttonsRow");
 
-      // ContainerForAnswers.style.display = "flex";
-      // // adaptiv for question-last
-      // let pageWidth = document.documentElement.scrollWidth;
-      // const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
-      // if (pageWidth < 1200 && pageWidth > 991) {
-      //   ContainerForAnswers.style.width = "940px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "280px";
-      //     elem.style.height = "110px";
-      //   });
-      // } else if (pageWidth < 991) {
-      //   ContainerForAnswers.style.width = "680px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "200px";
-      //     elem.style.height = "120px";
-      //   });
-      // } else {
-      //   ContainerForAnswers.style.width = "1080px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "300px";
-      //     elem.style.height = "120px";
-      //   });
-      // }
+    // ContainerForAnswers.style.display = "flex";
+    // // adaptiv for question-last
+    // let pageWidth = document.documentElement.scrollWidth;
+    // const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
+    // if (pageWidth < 1200 && pageWidth > 991) {
+    //   ContainerForAnswers.style.width = "940px";
+    //   buttonsStyle2.forEach((elem) => {
+    //     elem.style.width = "280px";
+    //     elem.style.height = "110px";
+    //   });
+    // } else if (pageWidth < 991) {
+    //   ContainerForAnswers.style.width = "680px";
+    //   buttonsStyle2.forEach((elem) => {
+    //     elem.style.width = "200px";
+    //     elem.style.height = "120px";
+    //   });
+    // } else {
+    //   ContainerForAnswers.style.width = "1080px";
+    //   buttonsStyle2.forEach((elem) => {
+    //     elem.style.width = "300px";
+    //     elem.style.height = "120px";
+    //   });
+    // }
     // } else if (questionIndex >= 7) {
     //   // How much time do you spend in the sun?
     //   ContainerForBottomButtons.classList.remove("buttonsColumn");

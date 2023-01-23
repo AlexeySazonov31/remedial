@@ -286,12 +286,12 @@ h3.title span.placeClarifyingQuestion {
   z-index: 1;
   transition: all 0.15s;
 }
-.buttons.buttonsColumn {
+/* .buttons.buttonsColumn {
   flex-direction: column;
 }
 .buttons.buttonsRow {
   flex-direction: row-reverse;
-}
+} */
 @keyframes showTextQuiz {
   from {
     opacity: 0;
@@ -618,6 +618,14 @@ p.pska {
     width: 200px;
     height: 120px;
 }
+}
+/* adaptiv for question-3 --------------------------- */
+.quiz[id="2"] > .quiz-list {
+  display: flex;
+  width: 100%;
+}
+.quiz[id="2"] > .buttons {
+  flex-direction: row-reverse;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/

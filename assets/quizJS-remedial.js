@@ -610,11 +610,10 @@ function showQuestion() {
       // }
     } else if (questionIndex == 2) {
       // range (scin color)
-      ContainerForAnswers.style.display = "flex";
-      ContainerForAnswers.style.width = "100%";
-
-      ContainerForBottomButtons.classList.remove("buttonsColumn");
-      ContainerForBottomButtons.classList.add("buttonsRow");
+      // ContainerForAnswers.style.display = "flex";
+      // ContainerForAnswers.style.width = "100%";
+      // ContainerForBottomButtons.classList.remove("buttonsColumn");
+      // ContainerForBottomButtons.classList.add("buttonsRow");
     } else if (questionIndex == 5) {
       // выбор проблемной зоны
       // adaptiv for question-6-------------------------------

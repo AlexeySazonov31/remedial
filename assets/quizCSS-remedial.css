@@ -646,8 +646,33 @@ p.pska {
   width: 90%;
 }
 }
-
-
+/*  adaptiv for question-12-------------------------------------------------*/
+.quiz[id="12"] > .quiz-list {
+  display: flex;
+  width: 1080px;
+}
+.quiz[id="12"] > .itemAnswer {
+  width: 300px;
+  height: 120px;
+}
+@media (max-width: 1200px) {
+.quiz[id="12"] > .quiz-list {
+  width: 940px;
+}
+.quiz[id="12"] > .quiz-list .itemAnswer {
+    width: 280px;
+    height: 110px;
+}
+}
+@media (max-width: 991px) {
+  .quiz[id="12"] > .quiz-list {
+  width: 680px;
+}
+.quiz[id="12"] > .quiz-list .itemAnswer {
+    width: 200px;
+    height: 120px;
+}
+}
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .quiz-list button {

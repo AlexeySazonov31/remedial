@@ -1077,7 +1077,9 @@ function quizStart() {
   }
 
   let open = document.querySelector(".firstPage");
+  let openMb = document.querySelector(".firstPageMb");
   open.style.display = "none";
+  openMb.style.display = "none";
   qviz.style.display = "flex";
   qviz.style.flexDirection = "column";
 }

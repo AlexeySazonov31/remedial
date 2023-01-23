@@ -540,6 +540,7 @@ prevBtn.addEventListener("click", () => {
     ContainerForEndForm.style.display = "none";
     ContainerForQuistion.style.display = "block";
     ContainerForAnswers.style.display = "flex";
+    ContainerForBottomButtons.style.flexDirection = "row-reverse";
     questionIndex = 12;
     showQuestion();
 
@@ -551,6 +552,7 @@ prevBtn.addEventListener("click", () => {
     clearPage();
     showQuestion();
     ContainerForAnswers.style = "";
+    ContainerForBottomButtons.style = "";
   }
 });
 

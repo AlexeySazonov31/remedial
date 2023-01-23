@@ -129,6 +129,15 @@
   }
 }
 
+/*  first page adaptive for mobile  */
+
+.firstPageMb {
+  display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 
 .quiz {
@@ -970,21 +979,11 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 /***********************  Adaptive tablet 768-991px  **************************************************************************************************************************************************************/
-/* @media ( max-width: 768px ) {
-  .doctorSpech{
-    line-height: 35px;
-    letter-spacing: 1px;
-    font-size: 28px;
+ @media ( max-width: 768px ) {
+  .firstPage {
+    display: none;
   }
-  .start{
-    width: 80%;
-    font-size: 24px;
+  .firstPageMb {
+    display: flex;
   }
-  .buttons{
-    padding-bottom: 1;
-  }
-  .quiz{
-    max-height: 730px;
-    min-height: 730px;
-  }
-} */
+}

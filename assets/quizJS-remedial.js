@@ -539,7 +539,7 @@ prevBtn.addEventListener("click", () => {
   if (questionIndex >= questions.length) {
     ContainerForEndForm.style.display = "none";
     ContainerForQuistion.style.display = "block";
-    // ContainerForAnswers.style.display = "flex";
+    ContainerForAnswers.style.display = "flex";
     questionIndex = 12;
     showQuestion();
 

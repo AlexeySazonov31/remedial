@@ -797,7 +797,7 @@ p.pska {
   .quiz[id="8"] > .quiz-list button,
   .quiz[id="9"] > .quiz-list button {
     width: 220px;
-    height: 43px;
+    height: 41px;
   }
 }
 @media (max-width: 479px) {

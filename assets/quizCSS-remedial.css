@@ -1433,11 +1433,15 @@ input[type="range"]::-webkit-slider-thumb:active {
 /***********************  Adaptive tablet 768-991px  **************************************************************************************************************************************************************/
 @media (max-width: 768px) {
   .firstPage {
-    min-height: 490px;
-    max-height: 490px;
+    min-height: 470px;
+    max-height: 470px;
 
     padding: 150px 0 150px 40px;
     background-position: 65% 50%;
+  }
+  .quiz {
+    min-height: 470px;
+    max-height: 470px;
   }
 
   .firstPage h2 {

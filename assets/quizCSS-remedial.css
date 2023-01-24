@@ -721,11 +721,11 @@ p.pska {
   }
   .quiz[id="3"] > .quiz-list .itemAnswer,
   .quiz[id="4"] > .quiz-list .itemAnswer {
-    height: 100px;
+    height: 80px;
   }
   .quiz[id="3"] > .quiz-list .activeBtn,
   .quiz[id="4"] > .quiz-list .activeBtn {
-    height: 100px;
+    height: 80px;
   }
 }
 /* adaptiv for question-(6-11) --------------------------- */

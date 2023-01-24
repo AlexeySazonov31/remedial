@@ -1484,6 +1484,9 @@ input[type="range"]::-webkit-slider-thumb:active {
   #progressQuiz {
     top: 37px;
   }
+  h3.title span.placeClarifyingQuestion {
+    top: 341px;
+  }
 }
 /***********************  Adaptive mobile 479px  **************************************************************************************************************************************************************/
 

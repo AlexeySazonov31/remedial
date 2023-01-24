@@ -612,11 +612,11 @@ p.pska {
     height: 100px;
   } */
   .quiz[id="0"] > .quiz-list .itemAnswer {
-    height: 80px;
+    height: 90px;
   }
-/*   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
-      font-size: 19px;
-  } */
+   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
+      font-size: 20px;
+  } 
 }
 
 /* adaptiv for question-2 --------------------------- */

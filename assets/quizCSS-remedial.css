@@ -596,6 +596,10 @@ p.pska {
     width: 100%;
     height: 100px;
   }
+  .quiz[id="0"] > .quiz-list .activeBtn {
+    width: 100%;
+    height: 100px;
+  }
   .quiz[id="0"] > .quiz-list .itemAnswer img {
     height: 80px;
   }
@@ -618,6 +622,9 @@ p.pska {
     height: 100px;
   } */
   .quiz[id="0"] > .quiz-list .itemAnswer {
+    height: 90px;
+  }
+  .quiz[id="0"] > .quiz-list .activeBtn {
     height: 90px;
   }
    .quiz[id="0"] > .quiz-list .itemAnswer h5 {

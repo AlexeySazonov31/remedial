@@ -650,11 +650,11 @@ p.pska {
 }
 @media (max-width: 479px) {
   .quiz[id="1"] > .quiz-list {
-    width: 350px;
+    width: 310px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
-    width: 170px;
-    height: 100px;
+    width: 150px;
+    height: 90px;
   }
 }
 /* adaptiv for question-3 --------------------------- */

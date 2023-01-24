@@ -659,11 +659,11 @@ p.pska {
 }
 @media (max-width: 768px) {
   .quiz[id="1"] > .quiz-list {
-    width: 680px;
+    width: 520;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
-    width: 200px;
-    height: 120px;
+    width: 230px;
+    height: 110px;
   }
 }
 /* @media (max-width: 479px) {

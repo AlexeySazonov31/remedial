@@ -1542,10 +1542,12 @@ input[type="range"]::-webkit-slider-thumb:active {
   .formbtn {
     font-size: 22px;
     height: 45px;
+    padding-top: 5px;
   }
   #submit {
     font-size: 22px;
     height: 45px;
+    padding-top: 5px;
   }
   .quiz-list button {
     line-height: 22px;

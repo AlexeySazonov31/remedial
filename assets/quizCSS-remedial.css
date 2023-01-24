@@ -938,6 +938,36 @@ p.pska {
     height: 120px;
   }
 }
+/*********************************/
+@media (max-width: 768px) {
+  .quiz[id="12"] > .quiz-list {
+    width: 440px;
+  }
+  .quiz[id="12"] > .quiz-list .itemAnswer {
+    width: 210px;
+    height: 100px;
+  }
+  .quiz[id="12"] > .quiz-list .activeBtn {
+    width: 210px;
+    height: 100px;
+  }
+}
+@media (max-width: 479px) {
+  .quiz[id="12"] > .quiz-list {
+    width: 320px;
+  }
+  .quiz[id="12"] > .quiz-list .itemAnswer {
+    width: 150px;
+    height: 90px;
+  }
+  .quiz[id="12"] > .quiz-list .activeBtn {
+    width: 150px;
+    height: 90px;
+  }
+  .buttons {
+    width: 310px;
+  }
+}
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .quiz-list button {

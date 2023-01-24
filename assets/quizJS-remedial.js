@@ -402,7 +402,7 @@ const progress = document.querySelector("#progressQuiz");
 
 let checkRadio;
 
-let questionIndex = 0; //   !!0!!
+let questionIndex = 12; //   !!0!!
 const qviz = document.querySelector("#quiz");
 
 // const ResultButton = document.querySelector("#resultbtn");
@@ -905,7 +905,3 @@ const startQuiz = document.querySelector(".start");
 startQuiz.addEventListener("click", quizStart);
 const startQuizMb = document.querySelector(".startMb");
 startQuizMb.addEventListener("click", quizStart);
-
-let chatWidget = document.querySelector(".bottom-right");
-console.log(chatWidget);
-chatWidget.style.background = "#000";

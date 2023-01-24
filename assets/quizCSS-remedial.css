@@ -792,7 +792,7 @@ p.pska {
   .quiz[id="7"] > .quiz-list button,
   .quiz[id="8"] > .quiz-list button,
   .quiz[id="9"] > .quiz-list button {
-    width: 240px;
+    width: 220px;
     height: 43px;
   }
 }

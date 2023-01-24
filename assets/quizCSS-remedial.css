@@ -793,6 +793,7 @@ p.pska {
   .quiz[id="8"] > .quiz-list button,
   .quiz[id="9"] > .quiz-list button {
     width: 240px;
+    height: 43px;
   }
 }
 /*  adaptiv for question-(10-11)-------------------------------------------------*/

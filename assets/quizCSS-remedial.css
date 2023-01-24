@@ -681,6 +681,12 @@ p.pska {
   display: flex;
   width: 100%;
 }
+/* adaptiv for question-5 --------------------------- */
+.quiz[id="3"] > .quiz-list {
+  /**/
+}
+.quiz[id="1"] > .quiz-list .itemAnswer {
+}
 /* adaptiv for question-(6-11) --------------------------- */
 .quiz[id="5"] > .quiz-list,
 .quiz[id="6"] > .quiz-list,

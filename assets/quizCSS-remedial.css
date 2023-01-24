@@ -843,7 +843,7 @@ p.pska {
   .quiz[id="7"] > .quiz-list button,
   .quiz[id="8"] > .quiz-list button,
   .quiz[id="9"] > .quiz-list button {
-    height: 80px;
+    height: 70px;
     width: 100%;
   }
 }
@@ -1530,5 +1530,9 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   .blockcolorParent {
     height: 220px;
+  }
+  h3.title span.placeClarifyingQuestion {
+    top: 395px;
+    left: 10%;
   }
 }

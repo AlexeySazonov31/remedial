@@ -683,39 +683,48 @@ p.pska {
 }
 /* adaptiv for question-5 --------------------------- */
 @media (max-width: 991px) {
-  .quiz[id="3"] > .quiz-list {
+  .quiz[id="3"] > .quiz-list,
+  .quiz[id="4"] > .quiz-list {
     grid-template-columns: 250px 250px;
   }
 
-  .quiz[id="3"] > .quiz-list .itemAnswer {
+  .quiz[id="3"] > .quiz-list .itemAnswer,
+  .quiz[id="4"] > .quiz-list .itemAnswer {
     width: auto;
     height: 110px;
   }
-  .quiz[id="3"] > .quiz-list .activeBtn {
+  .quiz[id="3"] > .quiz-list .activeBtn,
+  .quiz[id="4"] > .quiz-list .activeBtn {
     width: auto;
     height: 120px;
   }
 }
 @media (max-width: 768px) {
-  .quiz[id="3"] > .quiz-list {
+  .quiz[id="3"] > .quiz-list,
+  .quiz[id="4"] > .quiz-list {
     grid-template-columns: 210px 210px;
   }
-  .quiz[id="3"] > .quiz-list .itemAnswer {
+  .quiz[id="3"] > .quiz-list .itemAnswer,
+  .quiz[id="4"] > .quiz-list .itemAnswer {
     height: 100px;
   }
-  .quiz[id="3"] > .quiz-list .activeBtn {
+  .quiz[id="3"] > .quiz-list .activeBtn,
+  .quiz[id="4"] > .quiz-list .activeBtn {
     height: 100px;
   }
 }
 @media (max-width: 479px) {
-  .quiz[id="3"] > .quiz-list {
+  .quiz[id="3"] > .quiz-list,
+  .quiz[id="4"] > .quiz-list {
     grid-template-columns: 80%;
     gap: 12px 15px;
   }
-  .quiz[id="3"] > .quiz-list .itemAnswer {
+  .quiz[id="3"] > .quiz-list .itemAnswer,
+  .quiz[id="4"] > .quiz-list .itemAnswer {
     height: 100px;
   }
-  .quiz[id="3"] > .quiz-list .activeBtn {
+  .quiz[id="3"] > .quiz-list .activeBtn,
+  .quiz[id="4"] > .quiz-list .activeBtn {
     height: 100px;
   }
 }

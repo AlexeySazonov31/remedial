@@ -132,7 +132,7 @@
 /* --------------- first page adaptive for mobile --------------------------- */
 
 .firstPageMb {
-  height: 440px;
+  height: 450px;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -1505,5 +1505,9 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   h3.title {
     font-size: 30px;
+  }
+  .quiz {
+    min-height: 450px;
+    max-height: 450px;
   }
 }

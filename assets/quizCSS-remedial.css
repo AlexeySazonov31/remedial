@@ -1468,6 +1468,15 @@ input[type="range"]::-webkit-slider-thumb:active {
   h3.title {
     font-size: 29px;
   }
+  .prevQuiz {
+    font-size: 26px;
+  }
+  .formbtn {
+    font-size: 26px;
+  }
+  #submit {
+    font-size: 26px;
+  }
 }
 /***********************  Adaptive mobile 479px  **************************************************************************************************************************************************************/
 

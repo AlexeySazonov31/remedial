@@ -661,7 +661,7 @@ p.pska {
   }
   .quiz[id="1"] > .quiz-list .activeBtn {
     width: 210px;
-    height: 88x;
+    height: 88px;
   }
 }
 @media (max-width: 479px) {

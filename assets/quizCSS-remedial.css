@@ -657,11 +657,11 @@ p.pska {
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
     width: 210px;
-    height: 90px;
+    height: 88px;
   }
   .quiz[id="1"] > .quiz-list .activeBtn {
     width: 210px;
-    height: 90px;
+    height: 88x;
   }
 }
 @media (max-width: 479px) {

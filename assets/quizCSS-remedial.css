@@ -624,6 +624,10 @@ p.pska {
   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
     font-size: 20px;
   }
+  /* question title */
+  h3.title {
+    padding: 0 10px;
+  }
 }
 
 /* adaptiv for question-2 --------------------------- */

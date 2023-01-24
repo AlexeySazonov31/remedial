@@ -606,6 +606,7 @@ p.pska {
 @media (max-width: 479px) {
   .quiz[id="0"] > .quiz-list {
     grid-template-columns: 80%;
+    gap: 12px 15px;
   }
 /*   .quiz[id="0"] > .quiz-list .itemAnswer {
     width: 100%;

@@ -710,12 +710,13 @@ p.pska {
 @media (max-width: 479px) {
   .quiz[id="3"] > .quiz-list {
     grid-template-columns: 80%;
+    gap: 12px 15px;
   }
   .quiz[id="3"] > .quiz-list .itemAnswer {
-    height: 90px;
+    height: 100px;
   }
   .quiz[id="3"] > .quiz-list .activeBtn {
-    height: 90px;
+    height: 100px;
   }
 }
 /* adaptiv for question-(6-11) --------------------------- */

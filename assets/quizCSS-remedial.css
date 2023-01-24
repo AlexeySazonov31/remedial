@@ -905,7 +905,7 @@ p.pska {
   }
   .quiz[id="11"] > .quiz-list .itemAnswer,
   .quiz[id="11"] > .quiz-list .activeBtn {
-    width: 160px;
+    width: 156px;
     height: 90px;
   }
 }

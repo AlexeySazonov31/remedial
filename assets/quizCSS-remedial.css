@@ -1337,9 +1337,9 @@ input[type="range"]::-webkit-slider-thumb:active {
 
   .start {
     width: 260px;
-    font-size: 17px;
+    font-size: 22px;
 
-    height: 43px;
+    height: 50px;
 
     margin-top: 20px;
   }

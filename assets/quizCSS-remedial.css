@@ -391,6 +391,7 @@ h3.title span.placeClarifyingQuestion {
   color: #fff;
   font-family: "SF Pro Display";
   font-weight: 400;
+  border: none;
 
   padding-left: 19px;
 
@@ -1564,7 +1565,6 @@ input[type="range"]::-webkit-slider-thumb:active {
   .formbtn {
     font-size: 22px;
     height: 45px;
-    padding-top: 5px;
   }
   #submit {
     font-size: 22px;

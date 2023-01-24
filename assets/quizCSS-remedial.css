@@ -1444,7 +1444,7 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
 
   .quiz[id="12"] > #progressQuiz {
-    top: 15px;
+    top: 35px;
   }
 }
 

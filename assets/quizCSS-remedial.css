@@ -648,15 +648,15 @@ p.pska {
     height: 100px;
   }
 }
-/* @media (max-width: 479px) {
+@media (max-width: 479px) {
   .quiz[id="1"] > .quiz-list {
-    width: 680px;
+    width: 350px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
-    width: 200px;
-    height: 120px;
+    width: 170px;
+    height: 100px;
   }
-} */
+}
 /* adaptiv for question-3 --------------------------- */
 .quiz[id="2"] > .quiz-list {
   display: flex;

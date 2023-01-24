@@ -1442,6 +1442,11 @@ input[type="range"]::-webkit-slider-thumb:active {
   .answers6withImg button {
     height: 46px;
   }
+
+  /*       form adaptive        */
+  .form-from-GR {
+    padding: 15px 0 40px;
+  }
 }
 
 /***********************  Adaptive tablet 768-991px  **************************************************************************************************************************************************************/
@@ -1503,6 +1508,23 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   .quiz-list button {
     line-height: 25px;
+    font-size: 21px;
+  }
+  /*       form adaptive        */
+  .form-from-GR {
+    padding: 15px 0 30px;
+  }
+  .passSeccsess {
+    font-size: 36px;
+    padding: 0 0 5px;
+  }
+  .container-user-info-title {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 22px;
+  }
+  p.pska {
+    margin: 5px auto 5px;
     font-size: 21px;
   }
 }

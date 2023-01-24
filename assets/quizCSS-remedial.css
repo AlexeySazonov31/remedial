@@ -679,6 +679,7 @@ p.pska {
 @media (max-width: 479px) {
   .quiz[id="1"] > .quiz-list {
     width: 320px;
+    gap: 10px 10px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
     width: 150px;

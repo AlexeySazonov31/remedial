@@ -590,6 +590,7 @@ p.pska {
 }
 @media (max-width: 768px) {
   .quiz[id="0"] > .quiz-list {
+    grid-template-columns: 1fr 1fr;
   }
   .quiz[id="0"] > .quiz-list .itemAnswer {
     width: 100%;

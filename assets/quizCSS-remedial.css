@@ -611,7 +611,7 @@ p.pska {
     width: 100%;
     height: 100px;
   } */
-  .quiz[id="0"] > .quiz-list .itemAnswer img {
+  .quiz[id="0"] > .quiz-list .itemAnswer {
     height: 70px;
   }
 /*   .quiz[id="0"] > .quiz-list .itemAnswer h5 {

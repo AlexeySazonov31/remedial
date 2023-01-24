@@ -75,10 +75,12 @@
   <div class="loader">!</div>
 </div>
 <script>
-  const chatWidget = document.querySelector( "#shopify-chat-dummy" );
-    console.log(chatWidget);
-
+  setTimeout( () => {
+      const chatWidget = document.querySelector( "#shopify-chat-dummy" );
+  console.log(chatWidget);
   chatWidget.style.display = "none";
+  }, 3000 )
+
 </script>
 {% schema %}
 {

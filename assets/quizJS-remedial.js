@@ -1095,6 +1095,6 @@ startQuiz.addEventListener("click", quizStart);
 const startQuizMb = document.querySelector(".startMb");
 startQuizMb.addEventListener("click", quizStart);
 
-let chatWidget = document.querySelector("#dummy-chat-button");
+let chatWidget = document.querySelector(".bottom-right");
 console.log(chatWidget);
 chatWidget.style.background = "#000";

@@ -884,7 +884,7 @@ p.pska {
   .quiz[id="10"] > .quiz-list .itemAnswer,
   .quiz[id="10"] > .quiz-list .activeBtn {
     width: auto;
-    height: 100px;
+    height: 90px;
   }
   .quiz[id="11"] > .quiz-list {
     display: flex;
@@ -893,7 +893,7 @@ p.pska {
   .quiz[id="11"] > .quiz-list .itemAnswer,
   .quiz[id="11"] > .quiz-list .activeBtn {
     width: 200px;
-    height: 100px;
+    height: 90px;
   }
 }
 @media (max-width: 479px) {
@@ -961,11 +961,11 @@ p.pska {
   }
   .quiz[id="12"] > .quiz-list .itemAnswer {
     width: 210px;
-    height: 100px;
+    height: 90px;
   }
   .quiz[id="12"] > .quiz-list .activeBtn {
     width: 210px;
-    height: 100px;
+    height: 90px;
   }
 }
 @media (max-width: 479px) {

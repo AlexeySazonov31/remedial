@@ -446,6 +446,8 @@ function nextQuestion() {
       nextBtn.style.display = "none";
       formBtn.style.display = "block";
 
+      progress.style.display = "none";
+
       clearPage();
       showQuestion();
       return;
@@ -541,6 +543,8 @@ prevBtn.addEventListener("click", () => {
     ContainerForQuistion.style.display = "block";
     ContainerForAnswers.style.display = "flex";
     ContainerForBottomButtons.style.flexDirection = "row-reverse";
+    progress.style.display = "block";
+
     questionIndex = 12;
     showQuestion();
 
@@ -818,10 +822,6 @@ function answerVariant() {
       });
     }
   }
-}
-
-function disabledColorBtnContinue() {
-  // свойства заблокированной кнопки
 }
 
 ///////////////////////showRez////////////////////////////////

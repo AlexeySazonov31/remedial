@@ -770,7 +770,7 @@ p.pska {
   .quiz[id="7"] > .quiz-list .quistion6ImgBlock,
   .quiz[id="8"] > .quiz-list .quistion6ImgBlock,
   .quiz[id="9"] > .quiz-list .quistion6ImgBlock {
-    padding-left: 0;
+    padding-left: auto;
   }
   .quiz[id="5"] > .quiz-list .quistion6ImgBlock img,
   .quiz[id="6"] > .quiz-list .quistion6ImgBlock img,
@@ -779,6 +779,14 @@ p.pska {
   .quiz[id="9"] > .quiz-list .quistion6ImgBlock img {
     width: 160px;
   }
+  .quiz[id="5"] > .quiz-list .answers6withImg,
+  .quiz[id="6"] > .quiz-list .answers6withImg,
+  .quiz[id="7"] > .quiz-list .answers6withImg,
+  .quiz[id="8"] > .quiz-list .answers6withImg,
+  .quiz[id="9"] > .quiz-list .answers6withImg {
+    align-items: end;
+  }
+
   .quiz[id="5"] > .quiz-list button,
   .quiz[id="6"] > .quiz-list button,
   .quiz[id="7"] > .quiz-list button,

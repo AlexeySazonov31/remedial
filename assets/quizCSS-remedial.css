@@ -629,12 +629,20 @@ p.pska {
     width: 280px;
     height: 110px;
   }
+  .quiz[id="1"] > .quiz-list .activeBtn {
+    width: 280px;
+    height: 110px;
+  }
 }
 @media (max-width: 991px) {
   .quiz[id="1"] > .quiz-list {
     width: 680px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
+    width: 200px;
+    height: 120px;
+  }
+  .quiz[id="1"] > .quiz-list .activeBtn {
     width: 200px;
     height: 120px;
   }

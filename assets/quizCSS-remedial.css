@@ -840,7 +840,7 @@ p.pska {
 .quiz[id="10"] > .itemAnswer,
 .quiz[id="10"] > .quiz-list .activeBtn,
 .quiz[id="11"] > .itemAnswer,
-.quiz[id="10"] > .quiz-list .activeBtn {
+.quiz[id="11"] > .quiz-list .activeBtn {
   width: 300px;
 }
 
@@ -852,7 +852,7 @@ p.pska {
   .quiz[id="10"] > .quiz-list .itemAnswer,
   .quiz[id="10"] > .quiz-list .activeBtn,
   .quiz[id="11"] > .quiz-list .itemAnswer,
-  .quiz[id="10"] > .quiz-list .activeBtn {
+  .quiz[id="11"] > .quiz-list .activeBtn {
     width: 280px;
   }
 }
@@ -865,7 +865,7 @@ p.pska {
   .quiz[id="10"] > .quiz-list .itemAnswer,
   .quiz[id="10"] > .quiz-list .activeBtn,
   .quiz[id="11"] > .quiz-list .itemAnswer,
-  .quiz[id="10"] > .quiz-list .activeBtn {
+  .quiz[id="11"] > .quiz-list .activeBtn {
     width: 280px;
     height: 120px;
   }
@@ -879,11 +879,14 @@ p.pska {
     gap: 12px 15px;
   }
   .quiz[id="10"] > .quiz-list .itemAnswer,
-  .quiz[id="10"] > .quiz-list .activeBtn,
-  .quiz[id="11"] > .quiz-list .itemAnswer,
   .quiz[id="10"] > .quiz-list .activeBtn {
     width: auto;
-    height: 120px;
+    height: 100px;
+  }
+  .quiz[id="11"] > .quiz-list .itemAnswer,
+  .quiz[id="11"] > .quiz-list .activeBtn {
+    width: auto;
+    height: 70px;
   }
 }
 /*  adaptiv for question-12-------------------------------------------------*/

@@ -1073,14 +1073,14 @@ function validation() {
 ////////////////////////Fons change///////////////
 
 function quizStart() {
-  const pageWidth = document.documentElement.scrollWidth;
-  if (pageWidth < 500 && questionIndex == 0) {
-    ContainerForAnswers.classList.remove("quiz-list");
-    ContainerForAnswers.classList.add("quiz-listFor1Mb");
-  } else {
-    ContainerForAnswers.classList.remove("quiz-listFor1Mb");
-    ContainerForAnswers.classList.add("quiz-list");
-  }
+  // const pageWidth = document.documentElement.scrollWidth;
+  // if (pageWidth < 500 && questionIndex == 0) {
+  //   ContainerForAnswers.classList.remove("quiz-list");
+  //   ContainerForAnswers.classList.add("quiz-listFor1Mb");
+  // } else {
+  //   ContainerForAnswers.classList.remove("quiz-listFor1Mb");
+  //   ContainerForAnswers.classList.add("quiz-list");
+  // }
 
   let open = document.querySelector(".firstPage");
   let openMb = document.querySelector(".firstPageMb");

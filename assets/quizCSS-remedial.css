@@ -1252,7 +1252,7 @@ input[type="range"]::-webkit-slider-thumb:active {
   bottom: 115px;
   right: 30px;
   wigth: 355px;
-  height: 60px;
+  height: 55px;
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid #162835;
   border-radius: 10px 10px 10px 10px;

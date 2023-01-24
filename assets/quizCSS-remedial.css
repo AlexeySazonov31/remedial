@@ -1270,6 +1270,11 @@ input[type="range"]::-webkit-slider-thumb:active {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .blockcolorParent {
+    height: 230px;
+  }
+}
 @media (max-width: 479px) {
   .blockcolorParent {
     height: 250px;

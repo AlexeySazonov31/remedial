@@ -720,6 +720,7 @@ p.pska {
   .quiz[id="3"] > .quiz-list,
   .quiz[id="4"] > .quiz-list {
     grid-template-columns: 210px 210px;
+    gap: 10px 15px;
   }
   .quiz[id="3"] > .quiz-list .itemAnswer,
   .quiz[id="4"] > .quiz-list .itemAnswer {
@@ -727,7 +728,7 @@ p.pska {
   }
   .quiz[id="3"] > .quiz-list .activeBtn,
   .quiz[id="4"] > .quiz-list .activeBtn {
-    height: 100px;
+    height: 65px;
   }
 }
 @media (max-width: 479px) {
@@ -1526,5 +1527,8 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   #progressQuiz {
     top: 29px;
+  }
+  .blockcolorParent {
+    height: 220px;
   }
 }

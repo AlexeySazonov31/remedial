@@ -682,10 +682,14 @@ p.pska {
   width: 100%;
 }
 /* adaptiv for question-5 --------------------------- */
-.quiz[id="3"] > .quiz-list {
-  /**/
-}
-.quiz[id="1"] > .quiz-list .itemAnswer {
+@media (max-width: 991px) {
+  .quiz[id="3"] > .quiz-list {
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+    gap: 18px 15px;
+    .quiz[id="1"] > .quiz-list .itemAnswer {
+    }
+  }
 }
 /* adaptiv for question-(6-11) --------------------------- */
 .quiz[id="5"] > .quiz-list,

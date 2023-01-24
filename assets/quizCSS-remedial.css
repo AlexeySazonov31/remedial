@@ -688,6 +688,7 @@ p.pska {
     justify-content: center;
     gap: 18px 15px;
     .quiz[id="1"] > .quiz-list .itemAnswer {
+      width: auto;
     }
   }
 }

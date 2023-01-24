@@ -583,9 +583,18 @@ p.pska {
   gap: 25px 23px;
   /*   flex-wrap: wrap; */
 }
+/* adaptiv for question-1 --------------------------- */
 .quiz[id="0"] > .quiz-list {
   display: grid;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .quiz[id="0"] > .quiz-list {
+      grid-template-columns: 1fr;
+  }
+  .quiz[id="0"] > .quiz-list .itemAnswer {
+    
+  }
 }
 /* adaptiv for question-2 --------------------------- */
 .quiz[id="1"] > .quiz-list {

@@ -1057,7 +1057,17 @@ input[type="range"]::-webkit-slider-thumb:active {
   margin-bottom: 40px;
 }
 
-/*Rezultat*/
+@media (max-width: 479px) {
+  .blockcolorParent {
+    height: 250px;
+    width: 320px;
+  }
+
+  .colorscinrange {
+    width: 320px;
+    height: 41px;
+  }
+}
 
 /***********************  Adaptive desktop  991-1200px  **************************************************************************************************************************************************************/
 

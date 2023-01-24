@@ -602,6 +602,11 @@ p.pska {
   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
       font-size: 19px;
   }
+
+  /* question title */
+  h3.title {
+    padding:  60px;
+  }
 }
 @media (max-width: 479px) {
   .quiz[id="0"] > .quiz-list {

@@ -548,7 +548,6 @@ prevBtn.addEventListener("click", () => {
     questionIndex = 12;
     showQuestion();
 
-    // qviz.style.justifyContent = "space-between";
     nextBtn.style.display = "none";
     formBtn.style.display = "none";
   } else if (questionIndex > 0 && questionIndex < 13) {

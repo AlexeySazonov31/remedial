@@ -641,10 +641,10 @@ p.pska {
 }
 @media (max-width: 768px) {
   .quiz[id="1"] > .quiz-list {
-    width: 470px;
+    width: 440px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
-    width: 220px;
+    width: 210px;
     height: 100px;
   }
 }

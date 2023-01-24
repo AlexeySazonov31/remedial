@@ -687,8 +687,13 @@ p.pska {
     grid-template-columns: 250px 250px;
     justify-content: center;
     gap: 18px 15px;
-    .quiz[id="1"] > .quiz-list .itemAnswer {
+    .quiz[id="3"] > .quiz-list .itemAnswer {
       width: auto;
+      height: 110px;
+    }
+    .quiz[id="3"] > .quiz-list .activeBtn {
+      width: auto;
+      height: 110px;
     }
   }
 }

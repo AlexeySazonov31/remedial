@@ -590,10 +590,9 @@ p.pska {
 }
 @media (max-width: 768px) {
   .quiz[id="0"] > .quiz-list {
-      grid-template-columns: 1fr;
+      grid-template-columns: 80%;
   }
   .quiz[id="0"] > .quiz-list .itemAnswer {
-          justify-content: center;
   }
 }
 /* adaptiv for question-2 --------------------------- */

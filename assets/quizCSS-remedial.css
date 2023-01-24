@@ -1575,4 +1575,8 @@ input[type="range"]::-webkit-slider-thumb:active {
     line-height: 22px;
     font-size: 20px;
   }
+  /*       form adaptive        */
+  .form-from-GR {
+    padding: 15px 0 25px;
+  }
 }

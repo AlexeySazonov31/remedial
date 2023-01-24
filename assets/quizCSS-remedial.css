@@ -647,14 +647,25 @@ p.pska {
     width: 210px;
     height: 100px;
   }
+  .quiz[id="1"] > .quiz-list .activeBtn {
+    width: 210px;
+    height: 100px;
+  }
 }
 @media (max-width: 479px) {
   .quiz[id="1"] > .quiz-list {
-    width: 310px;
+    width: 320px;
   }
   .quiz[id="1"] > .quiz-list .itemAnswer {
     width: 150px;
     height: 90px;
+  }
+  .quiz[id="1"] > .quiz-list .activeBtn {
+    width: 150px;
+    height: 90px;
+  }
+  .buttons {
+    width: 310px;
   }
 }
 /* adaptiv for question-3 --------------------------- */

@@ -685,8 +685,6 @@ p.pska {
 @media (max-width: 991px) {
   .quiz[id="3"] > .quiz-list {
     grid-template-columns: 250px 250px;
-    justify-content: center;
-    gap: 18px 15px;
   }
 
   .quiz[id="3"] > .quiz-list .itemAnswer {
@@ -695,7 +693,29 @@ p.pska {
   }
   .quiz[id="3"] > .quiz-list .activeBtn {
     width: auto;
-    height: 110px;
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .quiz[id="3"] > .quiz-list {
+    grid-template-columns: 210px 210px;
+  }
+  .quiz[id="3"] > .quiz-list .itemAnswer {
+    height: 100px;
+  }
+  .quiz[id="3"] > .quiz-list .activeBtn {
+    height: 100px;
+  }
+}
+@media (max-width: 479px) {
+  .quiz[id="3"] > .quiz-list {
+    grid-template-columns: 150px 150px;
+  }
+  .quiz[id="3"] > .quiz-list .itemAnswer {
+    height: 90px;
+  }
+  .quiz[id="3"] > .quiz-list .activeBtn {
+    height: 90px;
   }
 }
 /* adaptiv for question-(6-11) --------------------------- */

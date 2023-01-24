@@ -807,11 +807,11 @@ p.pska {
     grid-template-columns: 80%;
     gap: 12px 15px;
   }
-  .quiz[id="5"] > .quiz-list .quistion6ImgBlock img,
-  .quiz[id="6"] > .quiz-list .quistion6ImgBlock img,
-  .quiz[id="7"] > .quiz-list .quistion6ImgBlock img,
-  .quiz[id="8"] > .quiz-list .quistion6ImgBlock img,
-  .quiz[id="9"] > .quiz-list .quistion6ImgBlock img {
+  .quiz[id="5"] > .quiz-list .quistion6ImgBlock,
+  .quiz[id="6"] > .quiz-list .quistion6ImgBlock,
+  .quiz[id="7"] > .quiz-list .quistion6ImgBlock,
+  .quiz[id="8"] > .quiz-list .quistion6ImgBlock,
+  .quiz[id="9"] > .quiz-list .quistion6ImgBlock {
     display: none;
   }
   .quiz[id="5"] > .quiz-list .answers6withImg,

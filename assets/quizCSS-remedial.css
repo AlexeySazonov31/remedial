@@ -1535,4 +1535,16 @@ input[type="range"]::-webkit-slider-thumb:active {
     top: 395px;
     left: 10%;
   }
+  .prevQuiz {
+    font-size: 22px;
+    height: 45px;
+  }
+  .formbtn {
+    font-size: 22px;
+    height: 45px;
+  }
+  #submit {
+    font-size: 22px;
+    height: 45px;
+  }
 }

@@ -592,7 +592,7 @@ p.pska {
   .quiz[id="0"] > .quiz-list {
   }
   .quiz[id="0"] > .quiz-list .itemAnswer {
-    width: 230px;
+    width: auto;
     height: 100px;
   }
   .quiz[id="0"] > .quiz-list .itemAnswer img {

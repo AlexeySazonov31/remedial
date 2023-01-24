@@ -1352,13 +1352,13 @@ input[type="range"]::-webkit-slider-thumb:active {
 
   h3.title {
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 37px;
   }
   h3.title span.placeClarifyingQuestion {
     width: 90%;
     font-size: 23px;
-    left: 10%;
-    top: 390px;
+    left: 8%;
+    top: 360px;
   }
 
   .quiz-list {

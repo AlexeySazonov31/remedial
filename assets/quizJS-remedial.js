@@ -584,55 +584,10 @@ function showQuestion() {
       numberAnswer++;
     }
 
-    if (questionIndex == 0) {
-      // ContainerForAnswers.style.display = "grid";
-      // ContainerForAnswers.style.width = "100%";
-    } else if (questionIndex == 1) {
-      //ContainerForAnswers.style.display = "flex";
-      // adaptiv for question-2
-      // let pageWidth = document.documentElement.scrollWidth;
-      // const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
-      // if (pageWidth < 1200 && pageWidth > 991) {
-      //   ContainerForAnswers.style.width = "940px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "280px";
-      //     elem.style.height = "110px";
-      //   });
-      // } else if (pageWidth < 991) {
-      //   ContainerForAnswers.style.width = "680px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "200px";
-      //     elem.style.height = "120px";
-      //   });
-      // } else {
-      //   ContainerForAnswers.style.width = "1080px";
-      //   buttonsStyle2.forEach((elem) => {
-      //     elem.style.width = "300px";
-      //     elem.style.height = "120px";
-      //   });
-      // }
-    } else if (questionIndex == 2) {
-      // range (scin color)
-      // ContainerForAnswers.style.display = "flex";
-      // ContainerForAnswers.style.width = "100%";
-      // ContainerForBottomButtons.classList.remove("buttonsColumn");
-      // ContainerForBottomButtons.classList.add("buttonsRow");
-    } else if (questionIndex == 5) {
+    if (questionIndex == 5) {
       // выбор проблемной зоны
       // adaptiv for question-6-------------------------------
-      // let pageWidth = document.documentElement.scrollWidth;
-      // if (pageWidth < 1200 && pageWidth > 991) {
-      //   ContainerForAnswers.style.width = "70%";
-      // } else if (pageWidth < 991) {
-      //   ContainerForAnswers.style.width = "90%";
-      // } else {
-      //   ContainerForAnswers.style.width = "55%";
-      // }
-      //------------------------------------------------------
-      // ContainerForAnswers.style.display = "grid";
-      // ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
-      // ContainerForBottomButtons.classList.remove("buttonsColumn");
-      // ContainerForBottomButtons.classList.add("buttonsRow");
+
       ContainerForAnswers.innerHTML =
         "<div class='quistion6ImgBlock'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-Primary.png?v=1671791283' id='primQz6'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-yeas.png?v=1674225151' id='Qz6-1'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-face.png?v=1674225152' id='Qz6-2'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-tzona.png?v=1671791283' id='Qz6-3'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-neck.png?v=1674224716' id='Qz6-4'><img src='https://cdn.shopify.com/s/files/1/0566/4322/3596/files/answer-6-all.png?v=1671791283' id='Qz6-5'></div><div class='answers6withImg'><button class='itemAnswer' id='0'>Eyes</button><button class='itemAnswer' id='1'>Face</button><button class='itemAnswer' id='2'>T-zone</button><button class='itemAnswer' id='4'>Neck</button><button class='itemAnswer' id='3'>All together</button><button class='itemAnswer' id='5'>No problems</button></div>";
       const imgs6Quiz = document.querySelectorAll(".quistion6ImgBlock img");
@@ -644,21 +599,6 @@ function showQuestion() {
       }
     } else if (questionIndex >= 6 && questionIndex <= 9) {
       // 6 - eyes / 7 - face / 8 - T-zone / 9 - all together
-      // выбор точечной проблемы ( уточняющий вопрос )
-      // adaptiv for questions-id-7-------------------------------
-      // let pageWidth = document.documentElement.scrollWidth;
-      // if (pageWidth < 1200 && pageWidth > 991) {
-      //   ContainerForAnswers.style.width = "70%";
-      // } else if (pageWidth < 991) {
-      //   ContainerForAnswers.style.width = "90%";
-      // } else {
-      //   ContainerForAnswers.style.width = "55%";
-      // }
-      // //------------------------------------------------------
-      // ContainerForAnswers.style.display = "grid";
-      // ContainerForAnswers.style.gridTemplateColumns = "1fr 1fr";
-      // ContainerForBottomButtons.classList.remove("buttonsColumn");
-      // ContainerForBottomButtons.classList.add("buttonsRow");
 
       numberAnswer = 0;
 
@@ -718,69 +658,6 @@ function showQuestion() {
         }
       }
     }
-    // else if (questionIndex == 12) {
-    // // How often do take care of your skin? ( последний вопрос )
-    // ContainerForBottomButtons.classList.remove("buttonsColumn");
-    // ContainerForBottomButtons.classList.add("buttonsRow");
-
-    // ContainerForAnswers.style.display = "flex";
-    // // adaptiv for question-last
-    // let pageWidth = document.documentElement.scrollWidth;
-    // const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
-    // if (pageWidth < 1200 && pageWidth > 991) {
-    //   ContainerForAnswers.style.width = "940px";
-    //   buttonsStyle2.forEach((elem) => {
-    //     elem.style.width = "280px";
-    //     elem.style.height = "110px";
-    //   });
-    // } else if (pageWidth < 991) {
-    //   ContainerForAnswers.style.width = "680px";
-    //   buttonsStyle2.forEach((elem) => {
-    //     elem.style.width = "200px";
-    //     elem.style.height = "120px";
-    //   });
-    // } else {
-    //   ContainerForAnswers.style.width = "1080px";
-    //   buttonsStyle2.forEach((elem) => {
-    //     elem.style.width = "300px";
-    //     elem.style.height = "120px";
-    //   });
-    // }
-    // } else if (questionIndex >= 7) {
-    //   // How much time do you spend in the sun?
-    //   ContainerForBottomButtons.classList.remove("buttonsColumn");
-    //   ContainerForBottomButtons.classList.add("buttonsRow");
-
-    //   let pageWidth = document.documentElement.scrollWidth;
-    //   const buttonsStyle2 = document.querySelectorAll(".itemAnswer");
-    //   if (pageWidth < 1200 && pageWidth > 991) {
-    //     ContainerForAnswers.style.gridTemplateColumns = "280px 280px 280px";
-    //     buttonsStyle2.forEach((elem) => {
-    //       elem.style.width = "280px";
-    //     });
-    //   } else if (pageWidth < 991) {
-    //     ContainerForAnswers.style.gridTemplateColumns = "200px 200px 200px";
-    //     buttonsStyle2.forEach((elem) => {
-    //       elem.style.width = "200px";
-    //     });
-    //   } else {
-    //     ContainerForAnswers.style.gridTemplateColumns = "300px 300px 300px";
-    //     buttonsStyle2.forEach((elem) => {
-    //       elem.style.width = "300px";
-    //     });
-    //   }
-
-    //   ContainerForAnswers.style.display = "grid";
-    //   ContainerForAnswers.style.width = "100%";
-    // }
-    // } else {
-    //   ContainerForAnswers.style.display = "grid";
-    //   ContainerForAnswers.style.width = "100%";
-    //   ContainerForAnswers.style.gridTemplateColumns = "300px 300px";
-
-    //   ContainerForBottomButtons.classList.remove("buttonsRow");
-    //   ContainerForBottomButtons.classList.add("buttonsColumn");
-    // }
 
     // ---------------------- progress ----------------------------------------------------
     progress.innerHTML = `<div class="textProgressQuiz">${questions[questionIndex].id}</div>/10`;
@@ -953,63 +830,6 @@ function randomMinMax(min, max) {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
 }
-
-/////////////////Validation
-// //Проверка  Email and Number
-// const EMAIL_REGEXP =
-//   /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-// const NUMBER_REGEXP = /^\+1[- .]?\(?(?:\d{3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/;
-
-// function validation() {
-//   error = false;
-//   let nameForm = document.querySelector("input[name='name']");
-//   let emailForm = document.querySelector(".emailFormQuiz");
-//   let phoneForm = document.querySelector("input[name='custom_phone']");
-//   // let nameForm = document.querySelector(".nameQuiz");
-//   // let emailForm = document.querySelector(".emailQuiz");
-//   // let phoneForm = document.querySelector(".telQuiz");
-
-//   if (nameForm.value !== "") {
-//     nameForm.classList.remove("misstake-class");
-//   } else {
-//     nameForm.classList.add("misstake-class");
-//     console.log("nameForm");
-//     error = true;
-//   }
-
-//   // if (EMAIL_REGEXP.test(emailForm.value)) {
-//   if (emailForm.value !== "") {
-//     emailForm.classList.remove("misstake-class");
-//   } else {
-//     emailForm.classList.add("misstake-class");
-//     console.log("emailForm");
-//     console.log(emailForm.value);
-//     error = true;
-//   }
-
-//   if (NUMBER_REGEXP.test(phoneForm.value)) {
-//     phoneForm.classList.remove("misstake-class");
-//   } else {
-//     phoneForm.classList.add("misstake-class");
-//     console.log("phoneForm");
-//     error = true;
-//   }
-
-//   if (!error) {
-//     nameForm.classList.remove("misstake-class");
-//     phoneForm.classList.remove("misstake-class");
-//     emailForm.classList.remove("misstake-class");
-
-//     nameForm.value = "";
-//     phoneForm.value = "";
-//     emailForm.value = "";
-
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-
 //--------------------------------------------------------------------------------------------------------------
 
 //Проверка  Email and Number
@@ -1073,15 +893,6 @@ function validation() {
 ////////////////////////Fons change///////////////
 
 function quizStart() {
-  // const pageWidth = document.documentElement.scrollWidth;
-  // if (pageWidth < 500 && questionIndex == 0) {
-  //   ContainerForAnswers.classList.remove("quiz-list");
-  //   ContainerForAnswers.classList.add("quiz-listFor1Mb");
-  // } else {
-  //   ContainerForAnswers.classList.remove("quiz-listFor1Mb");
-  //   ContainerForAnswers.classList.add("quiz-list");
-  // }
-
   let open = document.querySelector(".firstPage");
   let openMb = document.querySelector(".firstPageMb");
   open.style.display = "none";

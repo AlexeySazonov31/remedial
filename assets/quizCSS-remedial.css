@@ -600,11 +600,19 @@ p.pska {
     width: 100%;
     height: 100px;
   }
+    .quiz[id="0"] > .quiz-list .activeBtn img {
+    height: 80px;
+
+  }
   .quiz[id="0"] > .quiz-list .itemAnswer img {
     height: 80px;
   }
   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
       font-size: 19px;
+  }
+      .quiz[id="0"] > .quiz-list .activeBtn h5 {
+      font-size: 19px;
+
   }
 
   /* question title */

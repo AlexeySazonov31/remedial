@@ -614,6 +614,7 @@ p.pska {
   /* question title */
   h3.title {
     padding: 0 60px;
+    font-size: 28px;
   }
 }
 @media (max-width: 479px) {
@@ -627,6 +628,7 @@ p.pska {
   /* question title */
   h3.title {
     padding: 0 40px;
+    font-size: 26px;
   }
 }
 

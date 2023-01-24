@@ -604,12 +604,12 @@ p.pska {
   .quiz[id="0"] > .quiz-list .itemAnswer img {
     height: 80px;
   }
-  .quiz[id="0"] > .quiz-list .itemAnswer h5 {
+  /*   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
     font-size: 19px;
   }
   .quiz[id="0"] > .quiz-list .activeBtn h5 {
     font-size: 19px;
-  }
+  } */
 
   /* question title */
   h3.title {
@@ -621,9 +621,9 @@ p.pska {
     grid-template-columns: 80%;
     gap: 12px 15px;
   }
-  .quiz[id="0"] > .quiz-list .itemAnswer h5 {
+  /*   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
     font-size: 20px;
-  }
+  } */
   /* question title */
   h3.title {
     padding: 0 40px;

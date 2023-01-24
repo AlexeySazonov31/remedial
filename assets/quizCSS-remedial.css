@@ -621,16 +621,6 @@ p.pska {
     grid-template-columns: 80%;
     gap: 12px 15px;
   }
-  /*   .quiz[id="0"] > .quiz-list .itemAnswer {
-    width: 100%;
-    height: 100px;
-  } */
-  .quiz[id="0"] > .quiz-list .itemAnswer {
-    height: 90px;
-  }
-  .quiz[id="0"] > .quiz-list .activeBtn {
-    height: 90px;
-  }
   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
     font-size: 20px;
   }

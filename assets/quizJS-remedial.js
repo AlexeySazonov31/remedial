@@ -402,7 +402,7 @@ const progress = document.querySelector("#progressQuiz");
 
 let checkRadio;
 
-let questionIndex = 12; //   !!0!!
+let questionIndex = 0; //   !!0!!
 const qviz = document.querySelector("#quiz");
 
 // const ResultButton = document.querySelector("#resultbtn");

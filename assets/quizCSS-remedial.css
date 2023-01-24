@@ -603,6 +603,22 @@ p.pska {
       font-size: 19px;
   }
 }
+@media (max-width: 479px) {
+  .quiz[id="0"] > .quiz-list {
+    grid-template-columns: 80%;
+  }
+/*   .quiz[id="0"] > .quiz-list .itemAnswer {
+    width: 100%;
+    height: 100px;
+  } */
+  .quiz[id="0"] > .quiz-list .itemAnswer img {
+    height: 80px;
+  }
+/*   .quiz[id="0"] > .quiz-list .itemAnswer h5 {
+      font-size: 19px;
+  } */
+}
+
 /* adaptiv for question-2 --------------------------- */
 .quiz[id="1"] > .quiz-list {
   display: flex;

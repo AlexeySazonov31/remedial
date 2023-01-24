@@ -855,11 +855,13 @@ p.pska {
 @media (max-width: 991px) {
   .quiz[id="10"] > .quiz-list,
   .quiz[id="11"] > .quiz-list {
-    grid-template-columns: 200px 200px 200px;
+    display: flex;
+    width: 650px;
   }
   .quiz[id="10"] > .quiz-list .itemAnswer,
   .quiz[id="11"] > .quiz-list .itemAnswer {
-    width: 200px;
+    width: 280px;
+    height: 120px;
   }
 }
 /*  adaptiv for question-12-------------------------------------------------*/

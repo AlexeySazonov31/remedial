@@ -132,7 +132,7 @@
 /* --------------- first page adaptive for mobile --------------------------- */
 
 .firstPageMb {
-  height: 450px;
+  height: 480px;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -610,6 +610,17 @@ p.pska {
   .quiz[id="0"] > .quiz-list {
     grid-template-columns: 80%;
     gap: 12px 15px;
+  }
+  .quiz[id="0"] > .quiz-list .itemAnswer,
+  .quiz[id="0"] > .quiz-list .activeBtn {
+    height: 80px;
+  }
+  .quiz[id="0"] > .quiz-list .itemAnswer img,
+  .quiz[id="0"] > .quiz-list .activeBtn img {
+    height: 65px;
+  }
+  .quiz[id="0"] > .quiz-list button h5 {
+    font-size: 21px;
   }
 }
 
@@ -1509,7 +1520,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     padding: 0 15%;
   }
   .quiz {
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 480px;
+    max-height: 480px;
   }
 }

@@ -594,10 +594,12 @@ p.pska {
   .quiz[id="0"] > .quiz-list .itemAnswer {
     width: 230px;
     height: 100px;
-    font-size: 19px;
   }
   .quiz[id="0"] > .quiz-list .itemAnswer img {
     height: 80px;
+  }
+  .quiz[id="0"] > .quiz-list .itemAnswer h5 {
+      font-size: 19px;
   }
 }
 /* adaptiv for question-2 --------------------------- */

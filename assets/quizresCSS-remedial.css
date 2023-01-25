@@ -703,6 +703,9 @@
   .productContainerRight-ResQz {
     width: 77%;
   }
+  .productRightText1 {
+    line-height: 38px;
+  }
 }
 @media (max-width: 550px) {
   .productContainer-ResQz .col-sm-6 {

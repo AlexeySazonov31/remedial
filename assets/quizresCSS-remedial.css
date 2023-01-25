@@ -1,5 +1,10 @@
 #quiz-remedial-results-ResQz {
 }
+.noData-Res-Qz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .productRightLineMb {
   display: none;
   width: 100%;

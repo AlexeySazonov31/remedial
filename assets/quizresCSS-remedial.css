@@ -213,17 +213,24 @@
   }
 }
 @media (max-width: 991px) {
+  #sliderr-ResQz-prev {
+    right: 48%;
+  }
+  #sliderr-ResQz-next {
+    left: 46%;
+  }
+
   .slider-ResQz-center-img {
-    top: 580px;
+    top: 530px;
   }
   .slider-ResQz-right-img {
-    top: 616px;
+    top: 565px;
   }
   .slider-ResQz-left-img {
-    top: 616px;
+    top: 565px;
   }
   .slider-ResQz-hidden-img {
-    top: 650px;
+    top: 585px;
   }
 }
 /*----  progress   --------------*/

@@ -720,7 +720,13 @@
   .productContainerRight-ResQz {
     padding-top: 0;
   }
-  .productContainer-ResQz .col-sm-6 {
+  .productContainer-ResQz .col-sm-6,
+  .productContainer-ResQz col-6,
+  .productContainer-ResQz col-lg-4 {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    max-width: 100%;
   }
 }
 @media (max-width: 479px) {
@@ -732,7 +738,6 @@
   }
   .productContainer-ResQz .col-sm-6 {
     width: 300px;
-    margin-right: ;
   }
   .productContainer-ResQz .product-card {
     width: 300px;

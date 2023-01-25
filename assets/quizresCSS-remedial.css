@@ -194,6 +194,13 @@
   height: 45px;
   padding: 3px;
   border: none;
+
+  transition: all 0.5s;
+}
+#sliderr-ResQz-prev:active,
+#sliderr-ResQz-next:active {
+  transform: scale(1.01);
+  transition: all 0.5s;
 }
 
 #sliderr-ResQz-prev {

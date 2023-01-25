@@ -840,4 +840,11 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width: 478px) {
+  #resultContainer-ResQz #textFirstResultContainer-ResQz {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/

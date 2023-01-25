@@ -92,28 +92,28 @@
   left: 50%;
   z-index: 20;
   width: 180px;
-  top: 565px;
+  top: 575px;
   opacity: 1;
 }
 .slider-ResQz-left-img {
   left: 39.1vw;
   z-index: 15;
   width: 110px;
-  top: 600px;
+  top: 608px;
   opacity: 0.6;
 }
 .slider-ResQz-right-img {
   left: 60vw;
   z-index: 15;
   width: 110px;
-  top: 600px;
+  top: 608px;
   opacity: 0.6;
 }
 .slider-ResQz-hidden-img {
   left: 50%;
   z-index: 15;
   width: 40px;
-  top: 640px;
+  top: 630px;
   opacity: 0;
 }
 

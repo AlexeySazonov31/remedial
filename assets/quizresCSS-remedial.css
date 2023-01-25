@@ -202,6 +202,39 @@
 #sliderr-ResQz-prev img {
   width: 35px;
 }
+/*----  text   --------------*/
+.firstSliderText-ResQz {
+  height: 25px;
+  margin-bottom: 17px;
+}
+.secondSliderText-ResQz {
+  height: 110px;
+}
+.animationTextSlider-ResQz1 {
+  font-size: 27px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  color: #35446f;
+
+  transition: all 0.5s;
+}
+
+.animationTextSlider-ResQz2 {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  color: #8691a9;
+
+  transition: all 0.5s;
+}
+/* adaptive   */
 @media (max-width: 1800px) {
   #sliderr-ResQz-prev {
     right: 35%;
@@ -425,38 +458,6 @@
   cursor: pointer;
 }
 
-/*----  text   --------------*/
-.firstSliderText-ResQz {
-  height: 25px;
-  margin-bottom: 17px;
-}
-.secondSliderText-ResQz {
-  height: 110px;
-}
-.animationTextSlider-ResQz1 {
-  font-size: 27px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  color: #35446f;
-
-  transition: all 0.5s;
-}
-
-.animationTextSlider-ResQz2 {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-
-  font-size: 20px;
-  line-height: 26px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  color: #8691a9;
-
-  transition: all 0.5s;
-}
 /* Right 1 */
 #animationTextSlider-ResQzRight1 {
   animation: animationTextSlider-ResQzRight1 0.5s;

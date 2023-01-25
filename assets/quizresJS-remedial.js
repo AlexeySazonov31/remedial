@@ -96,7 +96,7 @@ let recomTextContainer = document.querySelector("#recomTextContainer-ResQz");
 // проверка на прохождение квиза ( если нет  )--------------------------------------------------------------------------------------------------------------------
 if (!resultArrQuestions) {
   let RetakeNotQuiz = (parentCotainer.innerHTML =
-    "<h4>There is no data on the passage of the quiz</h4><button id='retake-ResQz' class='retake-ResQz'>GO TO THE QUIZ</button>");
+    "<div class='noData-Res-Qz'><h4>There is no data on the passage of the quiz</h4><button id='retake-ResQz' class='retake-ResQz'>GO TO THE QUIZ</button></div>");
   document
     .querySelector("#retakenotquiz-ResQz")
     .addEventListener("click", () => {

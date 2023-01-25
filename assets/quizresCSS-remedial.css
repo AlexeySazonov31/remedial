@@ -197,8 +197,8 @@
 
   transition: all 0.2s;
 }
-#sliderr-ResQz-prev img:active,
-#sliderr-ResQz-next img:active {
+#sliderr-ResQz-prev:active,
+#sliderr-ResQz-next:active {
   transform: scale(1.05);
   transition: all 0.5s;
 }

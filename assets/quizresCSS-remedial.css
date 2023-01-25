@@ -736,6 +736,11 @@
     align-items: center;
     margin: 40px 0;
   }
+  .productContainer-ResQz .col-sm-6,
+  .productContainer-ResQz col-6,
+  .productContainer-ResQz col-lg-4 {
+    width: 100%;
+  }
   .productContainer-ResQz .col-sm-6 {
     width: 300px;
   }

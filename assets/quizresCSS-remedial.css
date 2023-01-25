@@ -844,7 +844,10 @@
   #resultContainer-ResQz #textFirstResultContainer-ResQz {
     font-size: 26px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  #resultContainer-ResQz #Analys-1-ResQz {
+    font-size: 17px;
   }
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/

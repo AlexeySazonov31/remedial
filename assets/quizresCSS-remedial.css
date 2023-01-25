@@ -156,7 +156,7 @@
   opacity: 1;
 }
 .slider-ResQz-left-img {
-  left: 40.1vw;
+  left: 39.1vw;
   z-index: 15;
   width: 110px;
   top: 608px;
@@ -212,7 +212,7 @@
 }
 @media (max-width: 1500px) {
   .slider-ResQz-left-img {
-    left: 34.8vw;
+    left: 33.5vw;
   }
   .slider-ResQz-right-img {
     left: 65vw;
@@ -234,7 +234,7 @@
     left: 68.5vw;
   }
   .slider-ResQz-left-img {
-    left: 31.8vw;
+    left: 29.8vw;
     top: 565px;
   }
   .slider-ResQz-hidden-img {
@@ -297,7 +297,7 @@
     left: 75.5vw;
   }
   .slider-ResQz-left-img {
-    left: 24.8vw;
+    left: 22.6vw;
     top: 550px;
   }
   .slider-ResQz-hidden-img {
@@ -317,7 +317,7 @@
 }
 @media (max-width: 600px) {
   .slider-ResQz-right-img {
-    left: 81.5vw;
+    left: 78.5vw;
   }
   .slider-ResQz-left-img {
     left: 18.8vw;
@@ -338,7 +338,7 @@
   .slider-ResQz-right-img {
     width: 85px;
     top: 450px;
-    left: 81.5vw;
+    left: 78.5vw;
   }
   .slider-ResQz-left-img {
     width: 85px;
@@ -404,6 +404,11 @@
 @media (max-width: 390px) {
   #slider-ResQz h4 {
     font-size: 16px;
+  }
+  .slider-ResQz-right-img {
+    width: 85px;
+    top: 450px;
+    left: 77vw;
   }
 }
 /*----  progress   --------------*/

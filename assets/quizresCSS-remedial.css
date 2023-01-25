@@ -693,7 +693,9 @@
     width: 100%;
     align-items: center;
   }
-
+  .productContainer-ResQz .col-sm-6 {
+    width: 300px;
+  }
   .productContainer-ResQz .product-card {
     width: 300px;
     margin-right: 13%;

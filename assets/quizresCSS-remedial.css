@@ -700,6 +700,9 @@
   .productContainer-ResQz .product-card {
     width: 300px;
   }
+  .productContainerRight-ResQz {
+    width: 77%;
+  }
 }
 @media (max-width: 550px) {
   .productContainer-ResQz .col-sm-6 {

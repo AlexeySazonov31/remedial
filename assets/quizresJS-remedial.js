@@ -562,6 +562,11 @@ let sliderLeftImg;
 // function for left and right images
 
 function renderingSlider() {
+  for (let elem of imagesSlider) {
+    elem.removeEventListener("click", nextSlide);
+    elem.removeEventListener("click", prevSlide);
+  }
+
   // left:
   let leftID;
   if (primaryIdSlider - 1 <= 0) {
@@ -571,15 +576,12 @@ function renderingSlider() {
   }
   for (let elem of imagesSlider) {
     if (elem.id == leftID) {
-      // elem.style.left = "30vw";
-      // elem.style.zIndex = "15";
-      // elem.style.width = "110px";
-      // elem.style.top = "12.4%";
-      // elem.style.opacity = "0.7";
       elem.classList.remove("slider-ResQz-right-img");
       elem.classList.add("slider-ResQz-left-img");
       elem.classList.remove("slider-ResQz-hidden-img");
       elem.classList.remove("slider-ResQz-center-img");
+
+      elem.addEventListener("click", nextSlide);
     }
   }
 
@@ -587,11 +589,6 @@ function renderingSlider() {
 
   for (let elem of imagesSlider) {
     if (elem.id == primaryIdSlider) {
-      // elem.style.left = "50%";
-      // elem.style.zIndex = "20";
-      // elem.style.width = "180px";
-      // elem.style.top = "11.6%";
-      // elem.style.opacity = "1";
       elem.classList.remove("slider-ResQz-right-img");
       elem.classList.remove("slider-ResQz-left-img");
       elem.classList.remove("slider-ResQz-hidden-img");
@@ -608,26 +605,18 @@ function renderingSlider() {
   }
   for (let elem of imagesSlider) {
     if (elem.id == rightID) {
-      // elem.style.left = "70vw";
-      // elem.style.zIndex = "15";
-      // elem.style.width = "110px";
-      // elem.style.top = "12.4%";
-      // elem.style.opacity = "0.7";
       elem.classList.add("slider-ResQz-right-img");
       elem.classList.remove("slider-ResQz-left-img");
       elem.classList.remove("slider-ResQz-hidden-img");
       elem.classList.remove("slider-ResQz-center-img");
+
+      elem.addEventListener("click", prevSlide);
     }
   }
 
   // all:
   for (let elem of imagesSlider) {
     if (elem.id != leftID && elem.id != rightID && elem.id != primaryIdSlider) {
-      // elem.style.left = "50%";
-      // elem.style.zIndex = "15";
-      // elem.style.width = "40px";
-      // elem.style.top = "13.1%";
-      // elem.style.opacity = "0";
       elem.classList.remove("slider-ResQz-right-img");
       elem.classList.remove("slider-ResQz-left-img");
       elem.classList.add("slider-ResQz-hidden-img");
@@ -687,43 +676,30 @@ function renderingSlider() {
   firstSliderText.innerHTML = textSliderArr[countForArr].text1;
 
   secondSliderText.innerHTML = textSliderArr[countForArr].text2;
-
-  if (sliderRightImg) {
-    sliderRightImg.removeEventListener("click", nextSlide);
-  }
-  if (sliderLeftImg) {
-    sliderLeftImg.removeEventListener("click", prevSlide);
-  }
-
-  sliderRightImg = document.querySelector(".slider-ResQz-right-img");
-  sliderLeftImg = document.querySelector(".slider-ResQz-left-img");
-
-  sliderRightImg.addEventListener("click", nextSlide);
-  sliderLeftImg.addEventListener("click", prevSlider);
-
-  function nextSlide() {
-    if (primaryIdSlider + 1 > biggest) {
-      primaryIdSlider = small;
-    } else {
-      primaryIdSlider++;
-    }
-    countForArr = primaryIdSlider - 1;
-    animationSide = "left";
-    renderingSlider();
-  }
-  function prevSlide() {
-    if (primaryIdSlider + 1 > biggest) {
-      primaryIdSlider = small;
-    } else {
-      primaryIdSlider++;
-    }
-    countForArr = primaryIdSlider - 1;
-    animationSide = "left";
-    renderingSlider();
-  }
 }
 
 renderingSlider();
+
+function nextSlide() {
+  if (primaryIdSlider + 1 > biggest) {
+    primaryIdSlider = small;
+  } else {
+    primaryIdSlider++;
+  }
+  countForArr = primaryIdSlider - 1;
+  animationSide = "left";
+  renderingSlider();
+}
+function prevSlide() {
+  if (primaryIdSlider - 1 <= 0) {
+    primaryIdSlider = biggest;
+  } else {
+    primaryIdSlider--;
+  }
+  countForArr = primaryIdSlider - 1;
+  animationSide = "right";
+  renderingSlider();
+}
 
 //  add Event Next
 nextBtnSlider.addEventListener("click", () => {

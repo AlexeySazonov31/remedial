@@ -677,6 +677,15 @@
     font-size: 30px;
     line-height: 30px;
   }
+  .productRightText3 {
+    font-size: 17px;
+  }
+  .productRightBlockKeyIngr {
+    flex-wrap: wrap;
+  }
+  .productRightBlockKeyIngr div {
+    margin-bottom: 15px;
+  }
 }
 
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/

@@ -759,6 +759,10 @@
   .productContainerRight-ResQz {
     padding-top: 0;
   }
+  #recomTextContainer-ResQz h4 {
+    margin-bottom: 0px;
+    font-size: 26px;
+  }
 }
 
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/

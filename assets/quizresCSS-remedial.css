@@ -665,6 +665,9 @@
   .productContainerRight-ResQz {
     padding-left: 0;
   }
+  #recomContainer-ResQz {
+    justify-content: start;
+  }
 }
 
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/

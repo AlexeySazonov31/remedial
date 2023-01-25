@@ -6,9 +6,9 @@
   text-align: center;
   padding-bottom: 50px;
 }
-#firstText-ResQz h4 { 
+#firstText-ResQz h4 {
   font-size: 45px;
-/*  font-family: "Minerva-Modern";*/
+  /*  font-family: "Minerva-Modern";*/
   font-style: normal;
   font-weight: 400;
   color: #162835;
@@ -17,7 +17,7 @@
 }
 #firstText-ResQz h5 {
   font-size: 22px;
-/*  font-family: "SF Pro Display"; */
+  /*  font-family: "SF Pro Display"; */
   font-style: normal;
 
   height: 68.8;
@@ -27,7 +27,17 @@
   padding-bottom: 30px;
 }
 
-#retake-ResQz {
+.retake-ResQz {
+  font-family: "Minerva-Modern";
+  background: rgba(0, 0, 0, 0);
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #162835;
+
   margin: 0 auto;
   width: 200px;
 }
@@ -43,7 +53,7 @@
 
 #slider-ResQz h4 {
   font-size: 32px;
-/* font-family: "SF Pro Display"; */
+  /* font-family: "SF Pro Display"; */
   font-style: normal;
   font-weight: 400;
   color: #35446f;
@@ -321,7 +331,7 @@
 }
 #recomTextContainer-ResQz h4 {
   font-size: 34px;
-/*  font-family: "SF Pro Display";*/
+  /*  font-family: "SF Pro Display";*/
   font-style: normal;
 
   margin: 60px 0;
@@ -341,11 +351,11 @@
   justify-content: start;
   padding-top: 20px;
   padding-left: 30px;
-  width: 100%
+  width: 100%;
 }
 
 .productRightText1 {
-/*   font-family: "Minerva-Modern";
+  /*   font-family: "Minerva-Modern";
  */
   font-size: 32px;
   color: #162835;
@@ -359,23 +369,20 @@
   font-style: normal;
 
   font-size: 18px;
-  color: #8691A9;
+  color: #8691a9;
 
-    margin: 8px 0;
-
-  
+  margin: 8px 0;
 }
 .productRightBlockAMPM {
   display: flex;
   flex-direction: row;
-  
+
   font-family: "SF Pro Display";
   font-style: normal;
 
   font-size: 15px;
-  color: #8691A9;
-      margin: 10px 0;
-
+  color: #8691a9;
+  margin: 10px 0;
 }
 .productRightBlockAMPM div {
   display: flex;
@@ -392,57 +399,53 @@
 .productRightLine {
   width: 100%;
   height: 1px;
-  border-bottom: 1px solid #aebad5;;
-  border-top: 1px solid rgba(0,0,0,0);
+  border-bottom: 1px solid #aebad5;
+  border-top: 1px solid rgba(0, 0, 0, 0);
   margin: 17px 0;
-
 }
 .productRightText3 {
- /* font-family: "SF Pro Display"; */
+  /* font-family: "SF Pro Display"; */
   font-style: normal;
 
   font-size: 18px;
-  color: #35446F;
+  color: #35446f;
   font-weight: 500;
-          margin: 10px 0;
-
+  margin: 10px 0;
 }
 .productRightBlockKeyIngr {
   display: flex;
   flex-direction: row;
-  
+
   font-family: "SF Pro Display";
   font-style: normal;
 
   font-size: 17px;
-  color: #8691A9;
+  color: #8691a9;
   margin: 7px 0;
-
 }
 .productRightBlockKeyIngr div {
   display: flex;
   flex-direction: row;
-    justifu-content: center;
+  justifu-content: center;
   align-items: center;
   margin-right: 22px;
 }
 .productRightBlockKeyIngr div img {
   width: 35px;
   height: 35px;
-    margin-right: 12px;
-
+  margin-right: 12px;
 }
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/
 .Blockline-ResQz {
   width: 100%;
   height: 1px;
-  border-bottom: 1px solid #aebad5;;
-  border-top: 1px solid rgba(0,0,0,0);
+  border-bottom: 1px solid #aebad5;
+  border-top: 1px solid rgba(0, 0, 0, 0);
 }
 #resultContainer-ResQz {
   margin-top: 50px;
   max-width: 900px;
- /* border-top: 1px solid #aebad5; */
+  /* border-top: 1px solid #aebad5; */
   padding: 40px 70px;
   margin: 0 auto;
   font-family: "SF Pro Display";
@@ -452,7 +455,7 @@
 }
 #resultContainer-ResQz #textFirstResultContainer-ResQz {
   font-size: 34px;
-/*  font-family: "SF Pro Display"; */
+  /*  font-family: "SF Pro Display"; */
   font-style: normal;
 
   margin-top: 20px;
@@ -467,7 +470,7 @@
   color: #35446f;
   font-size: 20px;
 
- /* font-family: "Minerva-Modern"; */
+  /* font-family: "Minerva-Modern"; */
   font-style: normal;
 }
 #resultContainer-ResQz #Analys-2-ResQz {

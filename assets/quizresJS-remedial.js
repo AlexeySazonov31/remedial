@@ -688,8 +688,12 @@ function renderingSlider() {
 
   secondSliderText.innerHTML = textSliderArr[countForArr].text2;
 
-  sliderRightImg.removeEventListener("click", nextSlide);
-  sliderLeftImg.removeEventListener("click", prevSlide);
+  if (sliderRightImg) {
+    sliderRightImg.removeEventListener("click", nextSlide);
+  }
+  if (sliderLeftImg) {
+    sliderLeftImg.removeEventListener("click", prevSlide);
+  }
 
   sliderRightImg = document.querySelector(".slider-ResQz-right-img");
   sliderLeftImg = document.querySelector(".slider-ResQz-left-img");

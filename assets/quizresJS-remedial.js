@@ -449,9 +449,6 @@ for (let elem of resultArrQuestions) {
   }
 }
 
-console.log(arrEndCreams);
-console.log(resultArrQuestions);
-
 //------------------------------ кнопка перепройти  ----------------------------------------------------------------------------------------------------------------------
 let Retake = document.querySelector("#retake-ResQz");
 Retake.addEventListener("click", () => {

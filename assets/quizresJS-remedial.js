@@ -562,6 +562,7 @@ let sliderLeftImg;
 // function for left and right images
 
 function renderingSlider() {
+  // clear Img Event
   for (let elem of imagesSlider) {
     elem.removeEventListener("click", nextSlide);
     elem.removeEventListener("click", prevSlide);

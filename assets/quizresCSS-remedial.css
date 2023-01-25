@@ -377,6 +377,22 @@
   .secondStartTextSlider-ResQz {
     padding-bottom: 20px;
   }
+  .animationTextSlider-ResQz1 {
+    font-size: 24px;
+  }
+  .animationTextSlider-ResQz2 {
+    width: 220px;
+    font-size: 18px;
+  }
+  .secondSliderText-ResQz {
+    height: 100px;
+  }
+  .firstSliderText-ResQz {
+    height: 20px;
+  }
+  #progressSlider-ResQz {
+    margin-top: 25px;
+  }
 }
 /*----  progress   --------------*/
 

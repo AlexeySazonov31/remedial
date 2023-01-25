@@ -63,11 +63,8 @@
   }
 }
 @media (max-width: 768px) {
-  #firstText-ResQz {
-    padding-bottom: 40px;
-  }
   #firstText-ResQz h4 {
-    font-size: 40px;
+    font-size: 36px;
     padding-bottom: 5px;
   }
   #firstText-ResQz h5 {

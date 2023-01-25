@@ -689,7 +689,7 @@
 }
 @media (max-width: 768px) {
   .productContainer-ResQz {
-    flex-direction: 100%;
+    flex-direction: column;
     width: 100%;
   }
   .productContainer-ResQz .col-sm-6 {

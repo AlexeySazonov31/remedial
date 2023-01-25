@@ -741,15 +741,36 @@ for (let elem of progressDots) {
     }
   });
 }
-/*  swipe  ----------------------------------------------------------------------------------------------------------------------------------------  */
+/*    event swipe slider  ----------------------------------------------------------------------------------------------------------------------------------------  */
+
 let touchstartX = 0;
 let touchendX = 0;
 
 const sliderSwipeElem = document.querySelector("#slider-ResQz-block");
 
 function checkDirection() {
-  if (touchendX < touchstartX) alert("swiped left!");
-  if (touchendX > touchstartX) alert("swiped right!");
+  if (touchendX < touchstartX) {
+    // left
+    if (primaryIdSlider + 1 > biggest) {
+      primaryIdSlider = small;
+    } else {
+      primaryIdSlider++;
+    }
+    countForArr = primaryIdSlider - 1;
+    animationSide = "left";
+    renderingSlider();
+  }
+  if (touchendX > touchstartX) {
+    // right
+    if (primaryIdSlider - 1 <= 0) {
+      primaryIdSlider = biggest;
+    } else {
+      primaryIdSlider--;
+    }
+    countForArr = primaryIdSlider - 1;
+    animationSide = "right";
+    renderingSlider();
+  }
 }
 
 sliderSwipeElem.addEventListener("touchstart", (e) => {
@@ -761,11 +782,3 @@ sliderSwipeElem.addEventListener("touchend", (e) => {
   checkDirection();
 });
 //--------------------------------------------------------------------------------------------------------------------------------------------------
-// var myBlock = document.getElementById("slider-ResQz-gorisontImg");
-
-// // вызов функции swipe с предварительными настройками
-
-// // обработка свайпов
-// myBlock.addEventListener("swipe", function () {
-//   console.log(e.detail);
-// });

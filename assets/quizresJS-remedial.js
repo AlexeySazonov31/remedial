@@ -556,6 +556,9 @@ const biggest = imagesSlider.length;
 const small = 1;
 let animationSide = "left";
 
+let sliderRightImg;
+let sliderLeftImg;
+
 // function for left and right images
 
 function renderingSlider() {
@@ -684,6 +687,36 @@ function renderingSlider() {
   firstSliderText.innerHTML = textSliderArr[countForArr].text1;
 
   secondSliderText.innerHTML = textSliderArr[countForArr].text2;
+
+  sliderRightImg.removeEventListener("click", nextSlide);
+  sliderLeftImg.removeEventListener("click", prevSlide);
+
+  sliderRightImg = document.querySelector(".slider-ResQz-right-img");
+  sliderLeftImg = document.querySelector(".slider-ResQz-left-img");
+
+  sliderRightImg.addEventListener("click", nextSlide);
+  sliderLeftImg.addEventListener("click", prevSlider);
+
+  function nextSlide() {
+    if (primaryIdSlider + 1 > biggest) {
+      primaryIdSlider = small;
+    } else {
+      primaryIdSlider++;
+    }
+    countForArr = primaryIdSlider - 1;
+    animationSide = "left";
+    renderingSlider();
+  }
+  function prevSlide() {
+    if (primaryIdSlider + 1 > biggest) {
+      primaryIdSlider = small;
+    } else {
+      primaryIdSlider++;
+    }
+    countForArr = primaryIdSlider - 1;
+    animationSide = "left";
+    renderingSlider();
+  }
 }
 
 renderingSlider();
@@ -696,8 +729,6 @@ nextBtnSlider.addEventListener("click", () => {
     primaryIdSlider++;
   }
   countForArr = primaryIdSlider - 1;
-  console.log(primaryIdSlider);
-  console.log(countForArr);
   animationSide = "left";
   renderingSlider();
 });
@@ -710,8 +741,6 @@ prevBtnSlider.addEventListener("click", () => {
     primaryIdSlider--;
   }
   countForArr = primaryIdSlider - 1;
-  console.log(primaryIdSlider);
-  console.log(countForArr);
   animationSide = "right";
   renderingSlider();
 });
@@ -731,62 +760,3 @@ for (let elem of progressDots) {
     }
   });
 }
-//   add Event swipe
-
-/*
-var touchstartX = 0;
-var touchstartY = 0;
-var touchendX = 0;
-var touchendY = 0;
-
-var gesuredZone = document.getElementById("slider-ResQz-block");
-
-gesuredZone.addEventListener(
-  "touchstart",
-  function (event) {
-    touchstartX = event.screenX;
-    touchstartY = event.screenY;
-  },
-  false
-);
-
-gesuredZone.addEventListener(
-  "touchend",
-  function (event) {
-    touchendX = event.screenX;
-    touchendY = event.screenY;
-    handleGesure();
-  },
-  false
-);
-
-function handleGesure() {
-  var swiped = "swiped: ";
-  if (touchendX < touchstartX) {
-    console.log(swiped + "left!");
-    if (primaryIdSlider - 1 <= 0) {
-      primaryIdSlider = biggest;
-    } else {
-      primaryIdSlider--;
-    }
-    countForArr = primaryIdSlider - 1;
-    console.log(primaryIdSlider);
-    console.log(countForArr);
-    animationSide = "right";
-    renderingSlider();
-  }
-  if (touchendX > touchstartX) {
-    console.log(swiped + "right!");
-    if (primaryIdSlider + 1 > biggest) {
-      primaryIdSlider = small;
-    } else {
-      primaryIdSlider++;
-    }
-    countForArr = primaryIdSlider - 1;
-    console.log(primaryIdSlider);
-    console.log(countForArr);
-    animationSide = "left";
-    renderingSlider();
-  }
-}
-*/

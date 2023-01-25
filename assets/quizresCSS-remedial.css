@@ -195,11 +195,11 @@
   padding: 3px;
   border: none;
 
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 #sliderr-ResQz-prev:active,
 #sliderr-ResQz-next:active {
-  transform: scale(1.01);
+  transform: scale(1.05);
   transition: all 0.5s;
 }
 

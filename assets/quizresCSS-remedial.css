@@ -701,6 +701,11 @@
     width: 300px;
   }
 }
+@media (max-width: 550px) {
+  .productContainer-ResQz .col-sm-6 {
+    margin-right: 18%;
+  }
+}
 
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/
 .Blockline-ResQz {

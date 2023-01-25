@@ -391,7 +391,6 @@ for (let i = 0; i < resultArrQuestions.length; i++) {
     ] !== ""
   ) {
     newArr.push(resultArrQuestions[i]);
-    console.log("not active question - delete: " + resultArrQuestions[i]);
   }
 }
 resultArrQuestions = newArr;

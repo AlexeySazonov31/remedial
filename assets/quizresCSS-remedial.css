@@ -78,11 +78,8 @@
   }
 }
 @media (max-width: 749px) {
-  #firstText-ResQz {
-    padding-bottom: 40px;
-  }
   #firstText-ResQz h4 {
-    font-size: 40px;
+    font-size: 36px;
     padding-bottom: 5px;
   }
   #firstText-ResQz h5 {
@@ -91,8 +88,8 @@
   }
 
   .retake-ResQz {
-    font-size: 27px;
-    height: 43px;
+    font-size: 23px;
+    height: 39px;
   }
 }
 

@@ -324,6 +324,47 @@
     left: 54%;
   }
 }
+@media (max-width: 479px) {
+  .slider-ResQz-center-img {
+    width: 145px;
+    top: 450px;
+  }
+  .slider-ResQz-right-img {
+    width: 145px;
+
+    top: 480px;
+    left: 81.5vw;
+  }
+  .slider-ResQz-left-img {
+    width: 145px;
+
+    left: 18.8vw;
+    top: 480px;
+  }
+  .slider-ResQz-hidden-img {
+    width: 50px;
+
+    top: 500px;
+  }
+
+  #sliderr-ResQz-prev {
+    right: 60%;
+  }
+  #sliderr-ResQz-next {
+    left: 60%;
+  }
+  #sliderr-ResQz-prev,
+  #sliderr-ResQz-next {
+    top: 30px;
+  }
+  #sliderr-ResQz-prev img,
+  #sliderr-ResQz-next img {
+    width: 30px;
+  }
+  #slider-ResQz-gorisontImg {
+    height: 165px;
+  }
+}
 /*----  progress   --------------*/
 
 #progressSlider-ResQz {

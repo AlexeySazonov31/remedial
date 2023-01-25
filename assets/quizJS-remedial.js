@@ -432,7 +432,6 @@ function nextQuestion() {
 
   if (buttonActive) {
     questionIndex++;
-    console.log(questionIndex);
 
     // форма ввода данных
     if (questionIndex >= questions.length) {
@@ -467,7 +466,6 @@ function nextQuestion() {
           questionIndex = Number(6 + Number(questions[5].selectedItem));
         }
 
-        console.log(questionIndex);
         clearPage();
         showQuestion();
 
@@ -478,7 +476,6 @@ function nextQuestion() {
         // if (questionIndex == 7) {
         // проверка вопроса с возможностью выбрать несколько вариантов отвнтов
         buttonActive = document.querySelectorAll(".activeBtn");
-        console.log(buttonActive);
         let arr = [];
         for (let elem of buttonActive) {
           arr.push(elem.id);
@@ -500,7 +497,6 @@ function nextQuestion() {
           document.querySelector(".activeBtn").id;
         clearPage();
         showQuestion();
-        console.log(questions);
         return;
       }
     }
@@ -515,7 +511,6 @@ nextBtn.addEventListener("click", () => {
 
 //---------------------------- нажатие на кнопку back ----------------------------------------------------------------------------------------------------------------
 prevBtn.addEventListener("click", () => {
-  console.log(questionIndex);
   if (questionIndex <= 1) {
     prevBtn.style.display = "none";
   }
@@ -673,7 +668,6 @@ function showQuestion() {
 
 //-------------------------------------- отправка формы  ---------------------------------------------------------------------------------------------------------------------
 formBtn.addEventListener("click", () => {
-  console.log("form");
   validation();
 });
 
@@ -752,7 +746,6 @@ function answerVariant() {
 
     RangeQuizColorSkin.addEventListener("input", inpHandler);
     function inpHandler(e) {
-      // console.log(`input: ${e.target.value}`);
       BlockScinColor.style.background = colorsScin[e.target.value];
     }
 
@@ -849,24 +842,18 @@ function validation() {
   let email = document.querySelector(".emailFormQuiz");
   let phone = document.querySelector("input[name='custom_mobile_phone']");
   let name = document.querySelector("input[name='name']");
-  console.log(email.value);
-  console.log(phone.value);
-  console.log(name.value);
   if (!isNameValid(name.value)) {
     name.classList.add("misstake-class");
-    console.log(name.value);
   } else {
     name.classList.remove("misstake-class");
   }
   if (!isNumberValid(phone.value)) {
     phone.classList.add("misstake-class");
-    console.log(phone.value);
   } else {
     phone.classList.remove("misstake-class");
   }
   if (!isEmailValid(email.value)) {
     email.classList.add("misstake-class");
-    console.log(email.value);
   } else {
     email.classList.remove("misstake-class");
   }
@@ -875,7 +862,6 @@ function validation() {
     isNumberValid(phone.value) &&
     isNameValid(name.value)
   ) {
-    console.log("valid - yes");
     name.classList.remove("misstake-class");
     phone.classList.remove("misstake-class");
     email.classList.remove("misstake-class");

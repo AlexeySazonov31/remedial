@@ -309,6 +309,21 @@
     top: 57px;
   }
 }
+@media (max-width: 600px) {
+  .slider-ResQz-right-img {
+    left: 81.5vw;
+  }
+  .slider-ResQz-left-img {
+    left: 18.8vw;
+  }
+
+  #sliderr-ResQz-prev {
+    right: 54%;
+  }
+  #sliderr-ResQz-next {
+    left: 54%;
+  }
+}
 /*----  progress   --------------*/
 
 #progressSlider-ResQz {

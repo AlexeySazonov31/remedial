@@ -720,11 +720,10 @@
   .productContainerRight-ResQz {
     padding-top: 0;
   }
-  .productContainer-ResQz .col-sm-6,  {
-
+  .productContainer-ResQz .col-sm-6 {
+  }
 }
 @media (max-width: 479px) {
-  
   .productContainer-ResQz {
     flex-direction: column;
     width: 100%;

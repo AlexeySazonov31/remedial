@@ -240,6 +240,39 @@
     top: 52px;
   }
 }
+
+@media (max-width: 768px) {
+  .slider-ResQz-center-img {
+    top: 530px;
+  }
+  .slider-ResQz-right-img {
+    top: 565px;
+    left: 68.5vw;
+  }
+  .slider-ResQz-left-img {
+    left: 31.8vw;
+    top: 565px;
+  }
+  .slider-ResQz-hidden-img {
+    top: 585px;
+  }
+
+  /*    text     */
+  #slider-ResQz h4 {
+    font-size: 23.5px;
+  }
+
+  #slider-ResQz h5 {
+    font-size: 18px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .secondStartTextSlider-ResQz {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 749px) {
+}
 /*----  progress   --------------*/
 
 #progressSlider-ResQz {

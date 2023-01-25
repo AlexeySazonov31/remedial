@@ -234,6 +234,11 @@
   .slider-ResQz-hidden-img {
     top: 585px;
   }
+
+  #sliderr-ResQz-prev,
+  #sliderr-ResQz-next {
+    top: 52px;
+  }
 }
 /*----  progress   --------------*/
 

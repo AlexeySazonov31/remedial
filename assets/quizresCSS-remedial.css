@@ -34,10 +34,10 @@
   font-size: 35px;
   font-style: normal;
   text-align: center;
-  text-decoration-line: underline;
   border: none;
   border-bottom: 2px solid #162835;
   color: #162835;
+  padding: 0;
 
   margin: 0 auto;
   width: 200px;

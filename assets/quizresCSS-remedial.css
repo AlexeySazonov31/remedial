@@ -1,5 +1,13 @@
 #quiz-remedial-results-ResQz {
 }
+.productRightLineMb {
+  display: none;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #aebad5;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  margin: 17px 0;
+}
 /*--------- first block --------------------------------------------------------------------------------------------------------------------------------------*/
 
 #firstText-ResQz {
@@ -705,6 +713,9 @@
   }
   .productRightText1 {
     line-height: 38px;
+  }
+  .productRightLineMb {
+    display: block;
   }
 }
 @media (max-width: 550px) {

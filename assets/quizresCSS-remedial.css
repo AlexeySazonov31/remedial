@@ -662,11 +662,20 @@
   }
 }
 @media (max-width: 991px) {
+  #recomTextContainer-ResQz h4 {
+    font-size: 35px;
+    margin: 40px 0;
+  }
   .productContainerRight-ResQz {
     padding-left: 0;
   }
   #recomContainer-ResQz {
     justify-content: flex-start;
+  }
+  .productRightText1 {
+    width: 360px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 

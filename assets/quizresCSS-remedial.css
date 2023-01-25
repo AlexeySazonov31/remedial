@@ -766,6 +766,13 @@
   .productRightText1 {
     font-size: 25px;
     width: 305px;
+    line-height: 33px;
+  }
+  .productRightText2 {
+    font-size: 17px;
+  }
+  .productRightBlockKeyIngr {
+    font-size: 16px;
   }
 }
 

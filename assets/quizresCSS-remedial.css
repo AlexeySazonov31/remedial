@@ -830,5 +830,12 @@
     padding: 40px 0;
   }
 }
-
+@media (max-width: 768px) {
+  #resultContainer-ResQz {
+    padding: 40px 0;
+  }
+  #resultContainer-ResQz #textFirstResultContainer-ResQz {
+    font-size: 35px;
+  }
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/

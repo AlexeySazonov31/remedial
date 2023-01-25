@@ -745,19 +745,21 @@ for (let elem of progressDots) {
 let touchstartX = 0;
 let touchendX = 0;
 
-// function checkDirection() {
-//   if (touchendX < touchstartX) alert("swiped left!");
-//   if (touchendX > touchstartX) alert("swiped right!");
-// }
+const sliderSwipeElem = document.querySelector("#slider-ResQz-block");
 
-// document.addEventListener("touchstart", (e) => {
-//   touchstartX = e.changedTouches[0].screenX;
-// });
+function checkDirection() {
+  if (touchendX < touchstartX) alert("swiped left!");
+  if (touchendX > touchstartX) alert("swiped right!");
+}
 
-// document.addEventListener("touchend", (e) => {
-//   touchendX = e.changedTouches[0].screenX;
-//   checkDirection();
-// });
+sliderSwipeElem.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX;
+});
+
+sliderSwipeElem.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection();
+});
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // var myBlock = document.getElementById("slider-ResQz-gorisontImg");
 

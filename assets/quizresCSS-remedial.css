@@ -31,11 +31,12 @@
   font-family: "Minerva-Modern";
   background: rgba(0, 0, 0, 0);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 35px;
   font-style: normal;
   text-align: center;
   text-decoration-line: underline;
   border: none;
+  border-bottom: 2px solid #162835;
   color: #162835;
 
   margin: 0 auto;

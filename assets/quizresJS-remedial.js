@@ -741,7 +741,7 @@ for (let elem of progressDots) {
     }
   });
 }
-/*  swipe    */
+/*  swipe  ----------------------------------------------------------------------------------------------------------------------------------------  */
 /**
  * Функция определения события swipe на элементе.
  * @param {Object} el - элемент DOM.
@@ -956,3 +956,4 @@ swipe(myBlock, { maxTime: 1000, minTime: 100, maxDist: 150, minDist: 60 });
 myBlock.addEventListener("swipe", function () {
   console.log(e.detail);
 });
+console.log(myBlock);

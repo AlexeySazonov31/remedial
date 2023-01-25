@@ -582,7 +582,7 @@ function renderingSlider() {
       elem.classList.remove("slider-ResQz-hidden-img");
       elem.classList.remove("slider-ResQz-center-img");
 
-      elem.addEventListener("click", nextSlide);
+      elem.addEventListener("click", prevSlide);
     }
   }
 
@@ -611,7 +611,7 @@ function renderingSlider() {
       elem.classList.remove("slider-ResQz-hidden-img");
       elem.classList.remove("slider-ResQz-center-img");
 
-      elem.addEventListener("click", prevSlide);
+      elem.addEventListener("click", nextSlide);
     }
   }
 

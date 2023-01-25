@@ -352,7 +352,7 @@
   }
   #sliderr-ResQz-prev,
   #sliderr-ResQz-next {
-    top: 30px;
+    top: 34px;
   }
   #sliderr-ResQz-prev img,
   #sliderr-ResQz-next img {
@@ -363,7 +363,7 @@
   }
   /*    text     */
   #slider-ResQz h4 {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   #slider-ResQz h5 {
@@ -392,6 +392,12 @@
   }
   #progressSlider-ResQz {
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  #slider-ResQz h4 {
+    font-size: 16px;
   }
 }
 /*----  progress   --------------*/

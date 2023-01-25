@@ -185,10 +185,10 @@
 }
 
 #sliderr-ResQz-prev {
-  right: 35%;
+  right: 45%;
 }
 #sliderr-ResQz-next {
-  left: 35%;
+  left: 43%;
 }
 #sliderr-ResQz-next img {
   width: 35px;
@@ -196,7 +196,14 @@
 #sliderr-ResQz-prev img {
   width: 35px;
 }
-
+@media (max-width: 1800px) {
+  #sliderr-ResQz-prev {
+    right: 35%;
+  }
+  #sliderr-ResQz-next {
+    left: 33%;
+  }
+}
 /*----  progress   --------------*/
 
 #progressSlider-ResQz {
@@ -346,19 +353,6 @@
   }
 }
 @media (max-width: 991px) {
-  .slider-ResQz-left-img {
-    left: 27vw;
-  }
-  .slider-ResQz-right-img {
-    left: 71vw;
-  }
-
-  #sliderr-ResQz-prev {
-    right: 55%;
-  }
-  #sliderr-ResQz-next {
-    left: 55%;
-  }
   .slider-ResQz-center-img {
     top: 580px;
   }

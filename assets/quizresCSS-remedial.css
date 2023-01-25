@@ -654,6 +654,14 @@
   height: 35px;
   margin-right: 12px;
 }
+
+@media (max-width: 1200px) {
+  #recomContainer-ResQz {
+    padding: 0;
+    width: 103%;
+  }
+}
+
 /*--------- fourth block ( Analysis ) --------------------------------------------------------------------------------------------------------------------------------------*/
 .Blockline-ResQz {
   width: 100%;

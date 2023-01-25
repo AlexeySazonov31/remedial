@@ -947,7 +947,7 @@ var swipe = function (el, settings) {
   }
 };
 // элемент
-var myBlock = document.getElementById("slider-ResQz-block");
+var myBlock = document.getElementById("slider-ResQz-gorisontImg");
 
 // вызов функции swipe с предварительными настройками
 swipe(myBlock, { maxTime: 1000, minTime: 100, maxDist: 150, minDist: 60 });

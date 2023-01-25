@@ -700,6 +700,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin: 40px 0;
   }
   .productContainer-ResQz .col-sm-6 {
     width: 300px;

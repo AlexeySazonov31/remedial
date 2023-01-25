@@ -243,18 +243,18 @@
 
 @media (max-width: 768px) {
   .slider-ResQz-center-img {
-    top: 510px;
+    top: 550px;
   }
   .slider-ResQz-right-img {
-    top: 550px;
+    top: 588px;
     left: 71.5vw;
   }
   .slider-ResQz-left-img {
     left: 28.8vw;
-    top: 550px;
+    top: 588px;
   }
   .slider-ResQz-hidden-img {
-    top: 570px;
+    top: 600px;
   }
 
   #sliderr-ResQz-prev {
@@ -283,6 +283,31 @@
   }
 }
 @media (max-width: 749px) {
+  .slider-ResQz-center-img {
+    top: 510px;
+  }
+  .slider-ResQz-right-img {
+    top: 550px;
+    left: 71.5vw;
+  }
+  .slider-ResQz-left-img {
+    left: 28.8vw;
+    top: 550px;
+  }
+  .slider-ResQz-hidden-img {
+    top: 570px;
+  }
+
+  #sliderr-ResQz-prev {
+    right: 55%;
+  }
+  #sliderr-ResQz-next {
+    left: 55%;
+  }
+  #sliderr-ResQz-prev,
+  #sliderr-ResQz-next {
+    top: 57px;
+  }
 }
 /*----  progress   --------------*/
 

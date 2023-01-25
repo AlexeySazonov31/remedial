@@ -46,42 +46,19 @@
 
 @media (max-width: 991px) {
   #firstText-ResQz {
-    text-align: center;
     padding-bottom: 50px;
   }
   #firstText-ResQz h4 {
-    font-size: 45px;
-    /*  font-family: "Minerva-Modern";*/
-    font-style: normal;
-    font-weight: 400;
-    color: #162835;
-
+    font-size: 40px;
     padding-bottom: 10px;
   }
   #firstText-ResQz h5 {
     font-size: 22px;
-    /*  font-family: "SF Pro Display"; */
-    font-style: normal;
-
-    height: 68.8;
-    font-weight: 400;
-    color: #35446f;
-
     padding-bottom: 30px;
   }
 
   .retake-ResQz {
-    font-family: "Minerva-Modern";
-    background: rgba(0, 0, 0, 0);
-    font-weight: 400;
     font-size: 33px;
-    font-style: normal;
-    text-align: center;
-    border: none;
-    border-bottom: 2px solid #162835;
-    color: #162835;
-    padding: 0;
-    width: fit-content;
     height: 50px;
     margin: 0 auto;
     margin-top: 10px;

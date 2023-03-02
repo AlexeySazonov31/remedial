@@ -1971,7 +1971,7 @@
         "type": "blog-template-1",
         "settings": {
           "limit": 6,
-          "sidebar_enable": true,
+          "sidebar_enable": false,
           "sidebar_position": "right"
         }
       },

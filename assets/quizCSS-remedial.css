@@ -1126,7 +1126,7 @@ p.pska {
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 160px;
   padding-bottom: 60px;
 }
 .loader {
@@ -1446,7 +1446,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
   /*       form adaptive        */
   .form-from-GR {
-    padding: 15px 0 40px;
+    padding: 140px 0 40px;
   }
 }
 
@@ -1513,7 +1513,7 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   /*       form adaptive        */
   .form-from-GR {
-    padding: 15px 0 30px;
+    padding: 140px 0 30px;
   }
   .passSeccsess {
     font-size: 36px;
@@ -1577,7 +1577,7 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
   /*       form adaptive        */
   .form-from-GR {
-    padding: 15px 0 25px;
+    padding: 160px 0 25px;
   }
   .passSeccsess {
     font-size: 33px;

@@ -162,6 +162,17 @@
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: '600x600' }}">
   <meta itemprop="brand" content="{{ product.vendor }}">
 
+  {% comment %}JM AggregateRating {% endcomment %}
+  {%- assign reviewRating = product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}
+  {%- assign reviewCount = product.metafields.judgeme.badge | split: "data-number-of-reviews='" | last | split: "'" |first | plus: 0 -%}
+  {%- if reviewCount > 0 -%}
+    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <meta itemprop="ratingValue" content="{{ reviewRating }}"/>
+        <meta itemprop="reviewCount" content="{{ reviewCount }}"/>
+    </div>
+  {%- endif -%}
+  {% comment %}End of JM AggregateRating {% endcomment %}
+  
   <div class="row product-single ">
     <div class="col-md-6">
       <div class="photos">

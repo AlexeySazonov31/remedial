@@ -838,41 +838,43 @@ function isEmailValid(value1) {
 function isNumberValid(value2) {
   return NUMBER_REGEXP.test(value2);
 }
+
 function validation() {
-  let email = document.querySelector(".emailFormQuiz");
-  let phone = document.querySelector("input[name='custom_mobile_phone']");
-  let name = document.querySelector("input[name='name']");
-  if (!isNameValid(name.value)) {
-    name.classList.add("misstake-class");
-  } else {
-    name.classList.remove("misstake-class");
-  }
-  if (!isNumberValid(phone.value)) {
-    phone.classList.add("misstake-class");
-  } else {
-    phone.classList.remove("misstake-class");
-  }
-  if (!isEmailValid(email.value)) {
-    email.classList.add("misstake-class");
-  } else {
-    email.classList.remove("misstake-class");
-  }
-  if (
-    isEmailValid(email.value) &&
-    isNumberValid(phone.value) &&
-    isNameValid(name.value)
-  ) {
-    name.classList.remove("misstake-class");
-    phone.classList.remove("misstake-class");
-    email.classList.remove("misstake-class");
-    qviz.style.display = "none";
-    loader.style.display = "flex";
-    localStorage.setItem("resultArrQuestion", JSON.stringify(questions));
-    ContainerForEndForm.submit();
-    email.value = "";
-    phone.value = "";
-    name.value = "";
-  }
+  // let email = document.querySelector(".emailFormQuiz");
+  // let phone = document.querySelector("input[name='custom_mobile_phone']");
+  // let name = document.querySelector("input[name='name']");
+  // if (!isNameValid(name.value)) {
+  //   name.classList.add("misstake-class");
+  // } else {
+  //   name.classList.remove("misstake-class");
+  // }
+  // if (!isNumberValid(phone.value)) {
+  //   phone.classList.add("misstake-class");
+  // } else {
+  //   phone.classList.remove("misstake-class");
+  // }
+  // if (!isEmailValid(email.value)) {
+  //   email.classList.add("misstake-class");
+  // } else {
+  //   email.classList.remove("misstake-class");
+  // }
+  // if (
+  //   isEmailValid(email.value) &&
+  //   isNumberValid(phone.value) &&
+  //   isNameValid(name.value)
+  // ) {
+  //   name.classList.remove("misstake-class");
+  //   phone.classList.remove("misstake-class");
+  //   email.classList.remove("misstake-class");
+  //   qviz.style.display = "none";
+  //   loader.style.display = "flex";
+  //   localStorage.setItem("resultArrQuestion", JSON.stringify(questions));
+  //   ContainerForEndForm.submit();
+  //   email.value = "";
+  //   phone.value = "";
+  //   name.value = "";
+  // }
+  window.location.href = "https://remedial.store/pages/resultsquiz";
 }
 
 ////////////////////////Fons change///////////////

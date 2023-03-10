@@ -12,3 +12,12 @@
 {%- else -%}
   Missing liquid
 {%- endcase -%}
+{%- assign review_count = product.metafields.judgeme.badge | split: "data-number-of-reviews='" | last | split: "'" |first | plus: 0 -%}
+{%- assign review_value = product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}
+    {% if review_count > 0 %}
+    "aggregateRating":{
+      "@type":"AggregateRating",
+      "ratingValue": {{ review_value }},
+      "reviewCount": {{ review_count }}
+    }, 
+{% endif %}

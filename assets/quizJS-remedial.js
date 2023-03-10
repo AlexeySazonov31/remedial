@@ -874,7 +874,12 @@ function validation() {
   //   phone.value = "";
   //   name.value = "";
   // }
+
+    qviz.style.display = "none";
+    loader.style.display = "flex";
+    localStorage.setItem("resultArrQuestion", JSON.stringify(questions));
   window.location.href = "https://remedial.store/pages/resultsquiz";
+
 }
 
 ////////////////////////Fons change///////////////

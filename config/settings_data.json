@@ -2685,7 +2685,7 @@
       "article-template-1": {
         "type": "article-template-1",
         "custom_css": [
-          "p {font-size: 19px;}"
+          "p {font-size: 18px;}"
         ],
         "settings": {
           "social_sharing_blog": true,

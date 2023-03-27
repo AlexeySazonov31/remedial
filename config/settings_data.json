@@ -2684,6 +2684,9 @@
       },
       "article-template-1": {
         "type": "article-template-1",
+        "custom_css": [
+          "p {font-size: 19px;}"
+        ],
         "settings": {
           "social_sharing_blog": true,
           "same_blog": "In same category",

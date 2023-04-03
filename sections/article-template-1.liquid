@@ -120,7 +120,7 @@
                     <img class="lazyload" data-src="{{ article_extra.image | img_url: '600x' }}" >
                   </a>
                   <p class="same_blog__publish small text-uppercase text-primary2 pt-3 mb-1">
-                    {{ article.published_at | time_tag: format: 'month_day_year' }}
+                    {{ article_extra.published_at | time_tag: format: 'month_day_year' }}
                   </p>
                   <h4 class="text-uppercase"><a href="{{ article_extra.url }}">{{ article_extra.title }}</a></h4>
                 </div>

@@ -217,7 +217,8 @@
           <input type="submit" class="btn btn-theme d-inline-block w-auto mt-4" value="{{ 'blogs.comments.post' | t }}">
 
           {%- if blog.moderated? -%}
-          <p class="text-center">{{ 'blogs.comments.moderated' | t }}</p>
+          <p>{{ 'blogs.comments.moderated' | t }}</p>
+<!--           <p class="text-center">{{ 'blogs.comments.moderated' | t }}</p> -->
           {%- endif -%}
           {%- endform -%}
         </div>

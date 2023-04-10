@@ -2686,7 +2686,9 @@
         "type": "article-template-1",
         "custom_css": [
           "p {font-size: 17px;}",
-          ".rte li {font-size: 17px;}"
+          ".rte li {font-size: 17px;}",
+          ".same_blog__publish.small.text-uppercase.text-primary2.pt-3.mb-1 {display: none;}",
+          ".same_blog.mb-4.mb-sm-0 h4 {margin-top: 20px;}"
         ],
         "settings": {
           "social_sharing_blog": true,

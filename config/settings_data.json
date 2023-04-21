@@ -2389,7 +2389,7 @@
           "1583425647500": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2.jpg",
+              "image": "shopify:\/\/shop_images\/remedial-fon-primary.jpg",
               "posimage": "rightimage",
               "alignment": "left center",
               "text_alignment": "left center",
@@ -2414,7 +2414,7 @@
           "1583425647500"
         ],
         "settings": {
-          "slideshow_height": "adapt",
+          "slideshow_height": "medium",
           "show_overlay": false,
           "autorotate": false,
           "autorotate_speed": 5,

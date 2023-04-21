@@ -2414,7 +2414,7 @@
           "1583425647500"
         ],
         "settings": {
-          "slideshow_height": "medium",
+          "slideshow_height": "adapt",
           "show_overlay": false,
           "autorotate": false,
           "autorotate_speed": 5,

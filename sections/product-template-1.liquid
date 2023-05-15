@@ -130,7 +130,15 @@
 .custom-block-for-bundles {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
+  @media (max-width:991px) {
+    .custom-block-for-bundles {
+  flex-direction: column;
+    }
+  }
+
+
 .bndlr-product {
   max-width: 240px!important;
 }

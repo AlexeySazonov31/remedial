@@ -1,8 +1,6 @@
 <!doctype html>
 <html class="no-js " lang="{{ shop.locale }}">
   <head> 
-    <link rel="canonical" href="{{ canonical_url }}">
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -49,6 +47,10 @@ src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
 <!--     AdSense     -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9796865579236688"
      crossorigin="anonymous"></script>
+
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
 </head>
   <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}" >
     {%- section 'announcement-bar' -%}

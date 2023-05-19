@@ -1,28 +1,4 @@
 <!-- article-content.liquid -->
-
-{%- if collection == null or collection.handle == 'frontpage' or collection.handle == 'all' -%}
-{%- assign found_a_collection = false -%}
-{%- for c in product.collections -%}
-{%- if found_a_collection == false and c.handle != 'frontpage' and c.handle != 'all' and c.all_products_count > 1 -%}
-{%- assign found_a_collection = true -%}
-{%- assign collection = c -%}
-{%- endif -%}
-{%- endfor -%}
-{%- endif -%}
-{%- assign produccount = columns_product -%}
-{%- assign currentProduct = product -%}
-
-
-
-
-
-
-
-
-
-
-
-
 {%- assign new_comment = false -%}
 {%- if comment and comment.created_at -%}
   {%- assign new_comment = true -%}
@@ -78,20 +54,6 @@
         <div class="rte rte--indented-images mb-5" itemprop="articleBody">
           {{ article.content }}
         </div>
-
-<div class="js-slick-carousel" data-aos="fade-up" data-aos-duration="500">
-  <div class="row slick_content" data-section-id="relate-{{section.id}}" data-section-type="slickCarousels" data-dots="{{block.settings.dots}}" data-rows="1" data-slidesToShow="{{block.settings.show}}" data-infinite="false" 
-  data-draggable="{{block.settings.draggable}}" data-arrows="{{block.settings.arrows}}">
-    {%- assign collection_produclists = collection.products -%}
-    {%- for product in collection_produclists limit: 6 -%}
-    <div class="col">
-      {%- include 'product-card' -%}
-    </div>  
-    {%- endfor -%}
-  </div>
-</div>
-
-
         <div class="border-top py-4">
           <div class="d-flex justify-content-between align-items-center">
             <ul class="list-unstyled list-blog-tags">

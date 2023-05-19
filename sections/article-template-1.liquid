@@ -84,11 +84,9 @@
   data-draggable="{{block.settings.draggable}}" data-arrows="{{block.settings.arrows}}">
     {%- assign collection_produclists = collection.products -%}
     {%- for product in collection_produclists limit: 6 -%}
-    {%- if product.handle != currentProduct.handle -%}
     <div class="col">
       {%- include 'product-card' -%}
     </div>  
-    {%- endif -%}
     {%- endfor -%}
   </div>
 </div>

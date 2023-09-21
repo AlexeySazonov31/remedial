@@ -86,9 +86,6 @@
     {%- else -%}
     <div class="product-card__availability">
 {{ 'products.product.sold_out' | t }}
-{%- if product.tags contains 'pre-order' -%}
-can make pre-order
-      {%- endif -%}
     </div>
     {%- endif -%}
     {%- include 'swatch-grid-1' -%}

@@ -11,15 +11,6 @@
            alt="{{ image.alt | escape }}">
            {% include 'second-image'%}
     </a>
-
-     {% if product.tags contains 'pre-order' %}
-<style>
-.product-card--style4 .product-card__overlaybottom {
-display: none!important;
-}
-</style>
-      {% endif %}
-
     <div class="product-card__overlay d-flex justify-content-center flex-column product-card__overlaytop">
       {%- if settings.enable_wishlsit -%}
       <span data-toggle="tooltip" data-placement="left" data-tooltipalltimes="true" class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-btn-wishlist" title="{{ 'products.product.wishlist_text' | t }}" data-handle="{{product.handle}}">
@@ -34,6 +25,9 @@ display: none!important;
       </span>
       {%- endif -%}
     </div>
+     {% if product.tags contains 'pre-order' %}
+
+               {% else %}
     <div  class="product-card__overlay d-flex justify-content-center flex-row product-card__overlaybottom">
       <span data-tooltip="false" data-placement="left" class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-btn-quickview" title="{{ 'products.product.quickview_text' | t }}" data-toggle="modal" data-target="#jsQuickview" data-handle="{{product.handle}}" data-pavailable="{% if product.available %}true{% else %}false{% endif %}">
         
@@ -46,7 +40,8 @@ display: none!important;
         {%- include 'icon-cart-bold' -%}
         </span>
     </div>
-    
+          {% endif %}
+
 
     {%- if settings.enable_countdown_card -%}{%- include 'product-countdown' -%}{%- endif -%}
 

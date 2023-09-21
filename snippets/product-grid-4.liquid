@@ -12,11 +12,11 @@
            {% include 'second-image'%}
     </a>
 
-    product-card__overlay
+    <!-- product-card__overlay -->
      {% if product.tags contains 'pre-order' %}
             {% if product.sold_out %}
               <style>
-                .product-card--style4 .product-card__overlaybottom {
+                .product-card__overlaybottom {
                     display: none!important;
                 }
               </style>

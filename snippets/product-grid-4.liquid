@@ -12,10 +12,14 @@
            {% include 'second-image'%}
     </a>
 
-    <!-- product-card__overlay -->
-            {%- if product.sold_out -%}
-              hey
-            {%- endif -%}
+     {%- if product.tags contains 'pre-order' -%}
+<style>
+.product-card--style4 .product-card__overlaybottom {
+width: none!important;
+}
+</style>
+      {%- endif -%}
+
     <div class="product-card__overlay d-flex justify-content-center flex-column product-card__overlaytop">
       {%- if settings.enable_wishlsit -%}
       <span data-toggle="tooltip" data-placement="left" data-tooltipalltimes="true" class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-btn-wishlist" title="{{ 'products.product.wishlist_text' | t }}" data-handle="{{product.handle}}">

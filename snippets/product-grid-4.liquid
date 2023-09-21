@@ -12,13 +12,13 @@
            {% include 'second-image'%}
     </a>
 
-     {%- if product.tags contains 'pre-order' -%}
+     {% if product.tags contains 'pre-order' %}
 <style>
 .product-card--style4 .product-card__overlaybottom {
 display: none!important;
 }
 </style>
-      {%- endif -%}
+      {% endif %}
 
     <div class="product-card__overlay d-flex justify-content-center flex-column product-card__overlaytop">
       {%- if settings.enable_wishlsit -%}

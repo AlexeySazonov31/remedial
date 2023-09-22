@@ -53,6 +53,11 @@
     <div class="product-tag product-tag--absolute" aria-hidden="true">
            {% if product.tags contains 'pre-order' %}
              Pre-Order
+             <style>
+                 .kaktusp-label {
+                   display:none!important;
+                 }
+             </style>
            {% else %}
       {%- assign sale_minus = product.compare_at_price_min | minus: product.price_min -%}
       {%- assign sale_percent =  sale_minus | times:100 | divided_by: product.compare_at_price_min -%}

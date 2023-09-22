@@ -2389,7 +2389,7 @@
           "1583425647500": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/21.jpg",
+              "image": "shopify:\/\/shop_images\/21.09.jpg",
               "posimage": "rightimage",
               "alignment": "left center",
               "text_alignment": "left center",
@@ -2398,7 +2398,7 @@
               "slide_toptitle_color": "#ffffff",
               "slide_title": "FOR YOU",
               "slide_title_color": "#ffffff",
-              "subheading": "New products by Remedial Pax for your body are available with a discount for pre-order for Black Friday 11\/24",
+              "subheading": "New products by Remedial Pax for your body are available with a discount for pre-order",
               "subheading_color": "#ffffff",
               "button_label": "PRE-ORDER NOW",
               "button_link": "shopify:\/\/collections\/new-arrivals",

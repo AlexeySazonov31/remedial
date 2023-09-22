@@ -2401,7 +2401,7 @@
               "subheading": "New products by Remedial Pax for your body are available with a discount for pre-order for Black Friday 11\/24",
               "subheading_color": "#ffffff",
               "button_label": "PRE-ORDER NOW",
-              "button_link": "https:\/\/remedial.store\/collections\/all",
+              "button_link": "shopify:\/\/collections\/new-arrivals",
               "stylebtn": true,
               "bg_button": "#2d8ce3",
               "color_button": "#ffffff",

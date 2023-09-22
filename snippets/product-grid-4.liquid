@@ -52,7 +52,7 @@
     {%- if product.compare_at_price > product.price -%}
     <div class="product-tag product-tag--absolute" aria-hidden="true">
       {% if product.tags contains 'pre-order' %}
-      Pre-Order
+      Pre-Order<br>
       {%- assign sale_minus = product.compare_at_price_min | minus: product.price_min -%}
       {%- assign sale_percent =  sale_minus | times:100 | divided_by: product.compare_at_price_min -%}
       -{{ sale_percent | append: '%'}}

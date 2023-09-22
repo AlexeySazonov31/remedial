@@ -55,7 +55,7 @@
       {%- assign sale_minus = product.compare_at_price_min | minus: product.price_min -%}
       {%- assign sale_percent =  sale_minus | times:100 | divided_by: product.compare_at_price_min -%}
       -{{ sale_percent | append: '%'}}
-            <br>Pre-Order
+            <span>Pre-Order</span>
              <style>
                  .kaktusp-label {
                    display:none!important;

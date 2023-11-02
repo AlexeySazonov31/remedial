@@ -1722,6 +1722,7 @@
           "collection_width": "container",
           "collection_perpage": 24,
           "collection_perrow": "3",
+          "enable_sidebar": true,
           "sidebar_col": "col-md-3",
           "enable_title": true,
           "enable_description": true
@@ -2389,7 +2390,7 @@
           "1583425647500": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/21.09_95c1380a-998e-460d-b30a-3663b980c4ed.jpg",
+              "image": "shopify:\/\/shop_images\/1.11_4b4cdc0e-04c0-4639-bcc7-aa2ffcd8ca74.jpg",
               "posimage": "rightimage",
               "alignment": "left center",
               "text_alignment": "left center",
@@ -2400,7 +2401,7 @@
               "slide_title_color": "#ffffff",
               "subheading": "New products by Remedial Pax for your body are available with a discount for pre-order",
               "subheading_color": "#ffffff",
-              "button_label": "PRE-ORDER NOW",
+              "button_label": "ORDER NOW",
               "button_link": "shopify:\/\/collections\/new-arrivals",
               "stylebtn": true,
               "bg_button": "#2d8ce3",

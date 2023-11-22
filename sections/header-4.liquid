@@ -95,53 +95,55 @@
   color: var(--header-text);
   transition: all 0.3s ease;
   z-index: 999;
-    background-image: url(https://cdn.shopify.com/s/files/1/0566/4322/3596/files/black_fr_header1.jpg?v=1669289905);
-    background-position: 53% -10%;
-    background-size: 145%; 
-    background-repeat: no-repeat;
 
   top: 0px;
   opacity: 1;
   transition: all 0.2s;
 }
+.backimage-custom {
+    background-image: url(https://cdn.shopify.com/s/files/1/0566/4322/3596/files/black_fr_header1.jpg?v=1669289905);
+    background-position: center center;
+    background-size: 145%; 
+    background-repeat: no-repeat;
+}
 
 @media(max-width: 1900px){
-  .site-header{
+  .backimage-custom{
     background-position: 53% 100%;
     background-size: 160%;
   }
 }
 
 @media(max-width: 1366px){
-  .site-header{
+  .backimage-custom{
     background-position: 50% 100%;
     background-size: 170%;
   }
 }
 
 @media(max-width: 768px){
-  .site-header{
+  .backimage-custom{
     background-position: 55% 100%;
     background-size: 180%;
   }
 }
 
 @media(max-width: 550px){
-  .site-header{
+  .backimage-custom{
     background-position: 50% 100%;
     background-size: 230%;
   }
 }
 
 @media(max-width: 480px){
-  .site-header{
+  .backimage-custom{
     background-position: 50% 100%;
     background-size: 320%;
   }
 }
 
 @media(max-width: 385px){
-  .site-header{
+  .backimage-custom{
     background-position: 50% 100%;
     background-size: 350%;
   }
@@ -1548,7 +1550,7 @@ input[type=search]::-webkit-search-cancel-button {
     </div>
   </section>
   {%- endif -%}
-  <div class="header-bottom py-2 py-lg-0">
+  <div class="header-bottom py-2 py-lg-0 backimage-custom">
     <div class="container-fluid">
       <div class="row no-gutters row-header align-items-center">
         <div class="col d-lg-none">

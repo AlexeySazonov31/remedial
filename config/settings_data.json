@@ -3158,7 +3158,7 @@
       "1595086648291": {
         "type": "featured-products",
         "settings": {
-          "animation": "",
+          "animation": "fade",
           "paddingsection": "120px 0px 90px 0px",
           "paddingmobile": "60px 0px 60px 0px",
           "marginsection": "0px 0px 0px 0px",

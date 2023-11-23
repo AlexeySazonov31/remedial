@@ -2412,6 +2412,7 @@
           },
           "62ad89e6-bf0f-4dd8-bdf3-29bbd78c2b7d": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/3600_1550_banner_giftbox.jpg",
               "posimage": "leftimage",

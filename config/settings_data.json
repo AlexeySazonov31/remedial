@@ -2391,9 +2391,9 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/BF_70.jpg",
-              "posimage": "rightimage",
+              "posimage": "leftimage",
               "alignment": "left center",
-              "text_alignment": "left center",
+              "text_alignment": "right center",
               "bgwrap": "#eff5f9",
               "slide_toptitle": "",
               "slide_toptitle_color": "#ffffff",
@@ -2409,15 +2409,39 @@
               "bg_button_hover": "#1b71c1",
               "color_button_hover": "#ffffff"
             }
+          },
+          "62ad89e6-bf0f-4dd8-bdf3-29bbd78c2b7d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3600_1550_banner_giftbox.jpg",
+              "posimage": "leftimage",
+              "alignment": "left top",
+              "text_alignment": "right bottom",
+              "bgwrap": "#F8EDE7",
+              "slide_toptitle": "",
+              "slide_toptitle_color": "#999",
+              "slide_title": "",
+              "slide_title_color": "#fff",
+              "subheading": "",
+              "subheading_color": "#fff",
+              "button_label": "",
+              "button_link": "https:\/\/remedial.store\/products\/10-product-collection-by-remedial-pax-for-comprehensive-skin-wellness",
+              "stylebtn": true,
+              "bg_button": "#000",
+              "color_button": "#fff",
+              "bg_button_hover": "#b6813c",
+              "color_button_hover": "#fff"
+            }
           }
         },
         "block_order": [
-          "1583425647500"
+          "1583425647500",
+          "62ad89e6-bf0f-4dd8-bdf3-29bbd78c2b7d"
         ],
         "settings": {
           "slideshow_height": "adapt",
           "show_overlay": false,
-          "autorotate": false,
+          "autorotate": true,
           "autorotate_speed": 5,
           "color_arrow": "#262613",
           "color_dot_nav": "#262613",

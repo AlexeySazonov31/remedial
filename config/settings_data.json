@@ -2442,7 +2442,7 @@
           "slideshow_height": "adapt",
           "show_overlay": false,
           "autorotate": true,
-          "autorotate_speed": 5,
+          "autorotate_speed": 3,
           "color_arrow": "#262613",
           "color_dot_nav": "#262613",
           "color_dot_active": "#2d8ce3"

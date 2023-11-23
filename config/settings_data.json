@@ -1481,7 +1481,7 @@
           "enable_login": true,
           "enable_social": true,
           "enablemoney": false,
-          "topbartext": "🔥 24 hours discount on all creams 🔥",
+          "topbartext": "🔥 BLACK FRIDAY SKIN SAVINGS! UP TO 70% OFF SITEWIDE 🔥",
           "topbarbg": "#f2f9ff",
           "rightborderbg": "#cbcdcf",
           "topborderbg": "rgba(0,0,0,0)",
@@ -1512,7 +1512,7 @@
           "dots": false,
           "infinite": true,
           "radius": false,
-          "link_list_head": "main-menu-1",
+          "link_list_head": "",
           "email_sidebar": true,
           "email_sidebar_title": "Newsletter",
           "socialshare": false

@@ -4760,18 +4760,32 @@ theme.productSuggest = (function(){
 
 
 // Stickyheader
-theme.stickyHeader = (function(){
+theme.stickyHeader = (function() {
   var stickHeaderClass = '.site-header--sticky';
-  if ($(stickHeaderClass).length !== 0){
-    $(window).scroll(function() {
-      if (window.pageYOffset >= 30) {
+  var announcementBarClass = '#topbar';
+
+  if ($(stickHeaderClass).length !== 0) {
+    var isHeaderSticky = false;
+
+    function updateStickyHeader() {
+      var isScrollDown = window.scrollY > 30;
+
+      if (isScrollDown && !isHeaderSticky) {
         $(stickHeaderClass).addClass('active');
-      } else {
+        $(announcementBarClass).hide();
+        isHeaderSticky = true;
+      } else if (!isScrollDown && isHeaderSticky) {
         $(stickHeaderClass).removeClass('active');
+        $(announcementBarClass).show();
+        isHeaderSticky = false;
       }
-    });
+    }
+
+    $(window).scroll(updateStickyHeader);
+    updateStickyHeader(); // Call the function on initial load
   }
-})()
+})();
+
 
 theme.PhotoSwipe = (function(){
   var initPhotoSwipeFromDOM = function(gallerySelector) {

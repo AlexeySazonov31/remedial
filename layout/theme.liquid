@@ -1,79 +1,90 @@
 <!doctype html>
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
- <!-- Added by TAPITA SEO SCHEMA-->
-{% if content_for_header contains 'tapita-seo-script-tags' %}
-  {% include 'tapita-seo-schema' %}
-{% endif %}
-<!-- /Added by TAPITA SEO SCHEMA --> 
- 
+    <!-- Added by TAPITA SEO SCHEMA -->
+    {% if content_for_header contains 'tapita-seo-script-tags' %}
+      {% include 'tapita-seo-schema' %}
+    {% endif %}
+    <!-- /Added by TAPITA SEO SCHEMA -->
+    {% if collection.metafields.custom.no_index == true %}
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="{{ settings.color_header_bg }}">
     {%- if settings.favicon != blank -%}
-    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {%- endif -%}
     <link rel="canonical" href="{{ canonical_url }}">
     <title>
-      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+      {{ page_title }}
+      {% if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif %}
+      {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+      {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
     </title>
     {%- if page_description -%}
-    <meta name="description" content="{{ page_description | escape }}">
+      <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
     {%- include 'social-meta-tags' -%}
     {%- include 'header-css' -%}
     {{ content_for_header }}
     {% render 'judgeme_core' %}
-{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+    {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
+    {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
 
-           {{ 'quizCSS-remedial.css' | asset_url | stylesheet_tag }}
-           {{ 'quizresCSS-remedial.css' | asset_url | stylesheet_tag }}
-
-
-
+    {{ 'quizCSS-remedial.css' | asset_url | stylesheet_tag }}
+    {{ 'quizresCSS-remedial.css' | asset_url | stylesheet_tag }}
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1249020162630395');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1249020162630395');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
+    ></noscript>
+    <!-- End Meta Pixel Code -->
 
-<!--     AdSense     -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9796865579236688"
-     crossorigin="anonymous"></script>
+    <!-- AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9796865579236688"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.younet.network/main.js"></script>
+    <script src="https://cdn.younet.network/main.js"></script>
 
-        <!-- SlideRule Script Start -->
-        {% include 'sliderule-data' %}
-        <!-- SlideRule Script End -->
-        </head>
-  <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}" >
+    <!-- SlideRule Script Start -->
+    {% include 'sliderule-data' %}
+    <!-- SlideRule Script End -->
+  </head>
+  <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}">
     {%- section 'announcement-bar' -%}
     {%- include 'loading' -%}
     {%- include 'header' -%}
     <div class="page-container page-element is-moved-by-drawer">
       {%- include 'breadcrumb' -%}
       <main class="main-content" id="MainContent" role="main">
-        {%- if settings.enable_animationscroll -%}<div id ="js-scroll">{% endif%}
-          {%- if settings.enable_animationscroll -%}<div data-scroll-section>{% endif%}
+        {%- if settings.enable_animationscroll -%}<div id="js-scroll">{% endif %}
+        {%- if settings.enable_animationscroll -%}<div data-scroll-section>{% endif %}
         {%- include 'slideshow' -%}
-        {%- if settings.enable_animationscroll -%}</div>{% endif%}
+        {%- if settings.enable_animationscroll -%}</div>{% endif %}
         {{ content_for_layout }}
-        {%- if settings.enable_animationscroll -%}</div>{% endif%}
+        {%- if settings.enable_animationscroll -%}</div>{% endif %}
       </main>
       {%- include 'footer' -%}
       {%- include 'popup-newsletter' -%}
@@ -89,14 +100,11 @@ src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
     {%- include 'popup-compare' -%}
     {%- include 'header-js' -%}
     {%- if settings.show_multiple_currencies -%}
-    {{ "/services/javascripts/currencies.js" | script_tag }}
+      {{ '/services/javascripts/currencies.js' | script_tag }}
     {%- endif -%}
-    {{ "//cdn.shopify.com/s/files/1/0483/1546/5894/t/1/assets/optimizer.js" | script_tag}}
+    {{ '//cdn.shopify.com/s/files/1/0483/1546/5894/t/1/assets/optimizer.js' | script_tag }}
 
-    
-    {{ "quizJS-remedial.js" | asset_url | script_tag }}     
-    {{ "quizresJS-remedial.js" | asset_url | script_tag }}     
-
-
+    {{ 'quizJS-remedial.js' | asset_url | script_tag }}
+    {{ 'quizresJS-remedial.js' | asset_url | script_tag }}
   </body>
 </html>

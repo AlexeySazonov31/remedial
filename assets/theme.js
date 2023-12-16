@@ -4764,7 +4764,7 @@ theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
   if ($(stickHeaderClass).length !== 0){
     $(window).scroll(function() {
-      if (window.pageYOffset >= 10) {
+      if (window.pageYOffset >= 50) {
         $(stickHeaderClass).addClass('active');
       } else {
         $(stickHeaderClass).removeClass('active');

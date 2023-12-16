@@ -9999,11 +9999,15 @@ a.text-primary{
 
 @media only screen and (max-width: 768px) {
 .site-header--sticky.active {
-    position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust as needed */
 }
-  .site-header--sticky.active #topbar {
-    display: none;
+
+.site-header--sticky.active #topbar {
+  display: none;
 }
+
   }
 
 

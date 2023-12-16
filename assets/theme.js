@@ -4762,16 +4762,21 @@ theme.productSuggest = (function(){
 // Stickyheader
 theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
+  var topbarId = '#topbar';
+  
   if ($(stickHeaderClass).length !== 0){
     $(window).scroll(function() {
       if (window.pageYOffset >= 20) {
         $(stickHeaderClass).addClass('active');
+        $(topbarId).slideUp(); // Smoothly hide #topbar
       } else {
         $(stickHeaderClass).removeClass('active');
+        $(topbarId).slideDown(); // Smoothly show #topbar
       }
     });
   }
-})()
+})();
+
 
 theme.PhotoSwipe = (function(){
   var initPhotoSwipeFromDOM = function(gallerySelector) {

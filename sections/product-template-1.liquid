@@ -152,7 +152,21 @@
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: '600x600' }}">
   <meta itemprop="brand" content="{{ product.vendor }}" >
   <meta itemprop="description" content="{{ product.metafields.info.shortdesc }}. Remedial is your safety and honest skincare brand." >
-
+ <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Offer",
+      "hasMerchantReturnPolicy": {
+        "@type": "ReturnPolicy",
+        "value": true
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "type": "FreeShipping",
+        "price": "0"
+      }
+    }
+  </script>
 
   {% comment %}JM AggregateRating {% endcomment %}
   {%- assign reviewRating = product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}

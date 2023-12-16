@@ -4760,6 +4760,7 @@ theme.productSuggest = (function(){
 
 
 // Stickyheader
+@media only screen and (max-width: 768px) {
 theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
   var topbarId = '#topbar';
@@ -4791,7 +4792,7 @@ theme.stickyHeader = (function(){
     $(window).scroll(debouncedToggle);
   }
 })();
-
+}
 
 
 theme.PhotoSwipe = (function(){

@@ -4763,19 +4763,35 @@ theme.productSuggest = (function(){
 theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
   var topbarId = '#topbar';
-  
+
+  function debounce(func, delay) {
+    var timer;
+    return function() {
+      clearTimeout(timer);
+      timer = setTimeout(function() {
+        func.apply(this, arguments);
+      }, delay);
+    };
+  }
+
   if ($(stickHeaderClass).length !== 0){
-    $(window).scroll(function() {
-      if (window.pageYOffset >= 0.01) {
+    var toggleStickyHeader = function() {
+      if (window.pageYOffset >= 20) {
         $(stickHeaderClass).addClass('active');
         $(topbarId).slideUp(); // Smoothly hide #topbar
       } else {
         $(stickHeaderClass).removeClass('active');
         $(topbarId).slideDown(); // Smoothly show #topbar
       }
-    });
+    };
+
+    // Debounce the toggle function to prevent rapid class toggling
+    var debouncedToggle = debounce(toggleStickyHeader, 200);
+
+    $(window).scroll(debouncedToggle);
   }
 })();
+
 
 
 theme.PhotoSwipe = (function(){

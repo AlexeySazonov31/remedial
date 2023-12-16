@@ -4766,7 +4766,7 @@ theme.stickyHeader = (function(){
   
   if ($(stickHeaderClass).length !== 0){
     $(window).scroll(function() {
-      if (window.pageYOffset >= 5) {
+      if (window.pageYOffset >= 0) {
         $(stickHeaderClass).addClass('active');
         $(topbarId).slideUp(); // Smoothly hide #topbar
       } else {

@@ -4760,7 +4760,6 @@ theme.productSuggest = (function(){
 
 
 // Stickyheader
-
 theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
   var topbarId = '#topbar';
@@ -4775,23 +4774,47 @@ theme.stickyHeader = (function(){
     };
   }
 
-  if ($(stickHeaderClass).length !== 0){
-    var toggleStickyHeader = function() {
-      if (window.pageYOffset >= 20) {
-        $(stickHeaderClass).addClass('active');
-        $(topbarId).slideUp(); // Smoothly hide #topbar
+  function toggleStickyHeader() {
+    if (window.pageYOffset >= 20) {
+      $(stickHeaderClass).addClass('active');
+      $(topbarId).slideUp(); // Smoothly hide #topbar
+    } else {
+      $(stickHeaderClass).removeClass('active');
+      $(topbarId).slideDown(); // Smoothly show #topbar
+    }
+  }
+
+  var debouncedToggle = debounce(toggleStickyHeader, 200);
+
+  if ($(stickHeaderClass).length !== 0) {
+    // Initial check and toggle for non-scroll situations
+    toggleStickyHeader();
+
+    // Scroll event with debounce
+    $(window).scroll(debouncedToggle);
+
+    // Mobile-specific (max-width: 768px) media query
+    var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
+    
+    // Function to handle changes in media query
+    var handleMobileMediaQuery = function (mediaQuery) {
+      if (mediaQuery.matches) {
+        // Apply sticky header for mobile
+        $(window).scroll(debouncedToggle);
       } else {
+        // Remove sticky header for larger screens
         $(stickHeaderClass).removeClass('active');
-        $(topbarId).slideDown(); // Smoothly show #topbar
+        $(topbarId).slideDown();
+        $(window).off('scroll', debouncedToggle);
       }
     };
 
-    // Debounce the toggle function to prevent rapid class toggling
-    var debouncedToggle = debounce(toggleStickyHeader, 200);
-
-    $(window).scroll(debouncedToggle);
+    // Call the function initially and add a listener for changes
+    handleMobileMediaQuery(mobileMediaQuery);
+    mobileMediaQuery.addListener(handleMobileMediaQuery);
   }
 })();
+
 
 
 

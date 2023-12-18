@@ -4,6 +4,12 @@
   "@type": "Product",
   "name": "{{ product.title }}",
   "description": "{{ product.description | escape }}",
+  "image": "{{ product.featured_image | image_url: width: 300 }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ product.vendor | default: shop.name }}"
+  },
+  "sku": "{{ product.variants.first.sku }}",
   "offers": {
     "@type": "Offer",
     "priceCurrency": "{{ shop.currency }}",

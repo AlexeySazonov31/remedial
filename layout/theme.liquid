@@ -1,6 +1,7 @@
 <!doctype html>
 {% if current_tags != blank and template contains 'blog' %}
 <meta http-equiv="refresh" content="0;URL={{ blog.url }}" />
+{% break %}
 {% endif %}
 <html class="no-js " lang="{{ shop.locale }}">
   <head>

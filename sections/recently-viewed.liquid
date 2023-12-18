@@ -2,8 +2,8 @@
 <style>
   .js-recently-view-button{display:none!important;position:fixed;z-index:1;background-size:contain;background-position:center;bottom:calc(3vh + 60px);right:4vh;width:50px;height:50px;line-height:50px;text-align:center;cursor:pointer;display:block;border:1px solid;border-radius:50%;overflow:hidden;opacity:0;visibility:hidden;transition:all ease .3s}.js-recently-view-button.active{opacity:1;visibility:visible}@media (max-width:767px){.js-recently-view-button{bottom:3vh;right:3vh}}
 </style>
-<a data-tooltip="true" title="{{section.settings.title}}" href="javascript:void(0)" class="js-recently-view-button" data-toggle="modal" data-target="#jsRecentlyViewed" data-limit="{{section.settings.limit}}">
-</a>
+<button data-tooltip="true" title="{{section.settings.title}}" class="js-recently-view-button" data-toggle="modal" data-target="#jsRecentlyViewed" data-limit="{{section.settings.limit}}">
+</button>
 <div class="modal fade" id="jsRecentlyViewed" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog--viewed modal-dialog-centered" role="document">
     <div class="modal-content">

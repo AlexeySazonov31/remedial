@@ -1,6 +1,6 @@
 <!doctype html>
 {% if current_tags != blank and template contains 'blog' %}
-<script>location.pathname="{{ blog.url }}";</script>
+<meta http-equiv="refresh" content="0;URL={{ blog.url }}" />
 {% endif %}
 <html class="no-js " lang="{{ shop.locale }}">
   <head>

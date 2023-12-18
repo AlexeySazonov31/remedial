@@ -1551,7 +1551,7 @@ input[type=search]::-webkit-search-cancel-button {
               {% else %}
               {% if template != 'customers/login' %} {% comment DOES NOT APPEAR ON LOGIN PAGE - AVOID CONFLICT %} {% endcomment %}
               <div class="header--acount d-none d-lg-inline-block topbar-block" >
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#jsLogin" class="site-header__link site-account js-open-login">
+                <a href="/account/login" data-toggle="modal" data-target="#jsLogin" class="site-header__link site-account js-open-login">
                   
                   <span class="account-text">{{'customer.login.sign_in' | t}}</span>
                 </a> 

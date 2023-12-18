@@ -245,11 +245,8 @@
         {% endif %}
       </div>
     </div>
-    <div class="col-12 col-md-6 order-1" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <div class="col-12 col-md-6 order-1">
       <div class="product-single__info-wrapper">
-        <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-        <meta itemprop="priceValidUntil" content="2025-08-09">
-        <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
         <div class="product-single__meta small--text-center">
           <h1 itemprop="name" class="product-single__title">{{ product.title }}<sup><span id="ProductSaleTag-{{ section.id }}" class="{% unless product.compare_at_price > product.price %}hide{% endunless %}">
             <span class="product-tag gradient-theme">

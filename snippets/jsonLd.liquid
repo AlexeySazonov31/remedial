@@ -3,7 +3,7 @@
   "@context": "http://schema.org/",
   "@type": "Product",
   "name": "{{ product.title }}",
-  "description": "{{ product.description | escape | strip_html }}",
+  "description": "{{ product.description | strip_html | escape}}",
   "image": "{{ product.featured_image | image_url: width: 300 }}",
   "brand": {
     "@type": "Brand",

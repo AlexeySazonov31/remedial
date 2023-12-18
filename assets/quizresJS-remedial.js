@@ -80,14 +80,15 @@ let parentCotainer = document.querySelector("#quiz-remedial-results-ResQz");
 let recomContainer = document.querySelector("#recomContainer-ResQz");
 let resultContainer = document.querySelector("#resultContainer-ResQz");
 let recomTextContainer = document.querySelector("#recomTextContainer-ResQz");
-
-// проверка на прохождение квиза ( если нет  )--------------------------------------------------------------------------------------------------------------------
-if (!resultArrQuestions) {
-  let RetakeNotQuiz = (parentCotainer.innerHTML =
-    "<div class='noData-Res-Qz'><h4>Take the quiz to get personalized recommendations</h4><button id='retake-ResQz' class='retake-ResQz'>GO TO THE QUIZ</button></div>");
-  document.querySelector("#retake-ResQz").addEventListener("click", () => {
-    document.location.href = "http://remedial.store/pages/quiz";
-  });
+if(parentCotainer != null){
+  // проверка на прохождение квиза ( если нет  )--------------------------------------------------------------------------------------------------------------------
+  if (!resultArrQuestions) {
+    let RetakeNotQuiz = (parentCotainer.innerHTML =
+      "<div class='noData-Res-Qz'><h4>Take the quiz to get personalized recommendations</h4><button id='retake-ResQz' class='retake-ResQz'>GO TO THE QUIZ</button></div>");
+    document.querySelector("#retake-ResQz").addEventListener("click", () => {
+      document.location.href = "http://remedial.store/pages/quiz";
+    });
+  }
 }
 
 //------------------------------------------------------------------------------------------------------------------

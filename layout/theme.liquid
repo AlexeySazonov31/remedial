@@ -1,5 +1,8 @@
 <!doctype html>
-<html {{ current_tags }} class="no-js " lang="{{ shop.locale }}">
+{% if current_tags != blank and template contains 'blog' %}
+<script>location.pathname="{{ blog.url }}";</script>
+{% endif %}
+<html class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
     {% if content_for_header contains 'tapita-seo-script-tags' %}

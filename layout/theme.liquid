@@ -1,5 +1,5 @@
 <!doctype html>
-<html {{ page.handle }} class="no-js " lang="{{ shop.locale }}">
+<html {{ template }} class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
     {% if content_for_header contains 'tapita-seo-script-tags' %}
@@ -35,10 +35,10 @@
     {% render 'judgeme_core' %}
     {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
     {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
-
+    {% if page.handle contains 'quiz' %}
     {{ 'quizCSS-remedial.css' | asset_url | stylesheet_tag }}
     {{ 'quizresCSS-remedial.css' | asset_url | stylesheet_tag }}
-
+    {% endif %}
     <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -105,8 +105,9 @@
       {{ '/services/javascripts/currencies.js' | script_tag }}
     {%- endif -%}
     {{ '//cdn.shopify.com/s/files/1/0483/1546/5894/t/1/assets/optimizer.js' | script_tag }}
-    
+    {% if page.handle contains 'quiz' %}
     {{ 'quizJS-remedial.js' | asset_url | script_tag }}
     {{ 'quizresJS-remedial.js' | asset_url | script_tag }}
+    {% endif %}
   </body>
 </html>

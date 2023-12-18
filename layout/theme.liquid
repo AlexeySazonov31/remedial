@@ -1,5 +1,5 @@
 <!doctype html>
-<html {{ template }} class="no-js " lang="{{ shop.locale }}">
+<html class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
     {% if content_for_header contains 'tapita-seo-script-tags' %}
@@ -112,5 +112,14 @@
     {% if template contains 'product' %}
       {% render 'jsonLd' %}
     {% endif %}
+    <script>
+      var links = document.querySelectorAll('a');
+      links.forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (href && !href.endsWith('/')) {
+              link.setAttribute('href', href + '/');
+          }
+      });
+    </script>
   </body>
 </html>

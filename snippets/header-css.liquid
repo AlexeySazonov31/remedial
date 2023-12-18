@@ -48,13 +48,13 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
     {%- if settings.font_family_custom_body -%}
       {%- if settings.font_family2_google == blank -%}
         {%- assign font2 = settings.font_family2 -%}
-        {{ font2 | font_face }}
+        {{ font2 | font_face: font_display: 'swap' }}
         {%- assign font2_bold = font2 | font_modify: 'weight', 'bolder' -%}
         {%- assign font2_italic = font2 | font_modify: 'style', 'italic' -%}
         {%- assign font2_bold_italic = font2_bold | font_modify: 'style', 'italic' -%}
-        {{ font2_bold | font_face }}
-        {{ font2_italic | font_face }}
-        {{ font2_bold_italic | font_face }}
+        {{ font2_bold | font_face: font_display: 'swap' }}
+        {{ font2_italic | font_face: font_display: 'swap' }}
+        {{ font2_bold_italic | font_face: font_display: 'swap' }}
         {%- capture font_family_2 -%}{{font2.family}},{{ font2.fallback_families }}{%- endcapture -%}
         {%- else -%}
           @import url('https://fonts.googleapis.com/css?family={{settings.font_family2_google | replace: ' ','+'}}:300,400,500,600,700&display=swap');
@@ -66,13 +66,13 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
   {%- else -%}
     {%- if settings.font_family_google == blank -%}
     {%- assign font1 = settings.font_family -%}
-    {{ font1 | font_face }}
+    {{ font1 | font_face: font_display: 'swap' }}
     {%- assign font1_bold = font1 | font_modify: 'weight', 'bolder' -%}
     {%- assign font1_italic = font1 | font_modify: 'style', 'italic' -%}
     {%- assign font1_bold_italic = font1_bold | font_modify: 'style', 'italic' -%}
-    {{ font1_bold | font_face }}
-    {{ font1_italic | font_face }}
-    {{ font1_bold_italic | font_face }}
+    {{ font1_bold | font_face: font_display: 'swap' }}
+    {{ font1_italic | font_face: font_display: 'swap' }}
+    {{ font1_bold_italic | font_face: font_display: 'swap' }}
     {%- capture font_family_1 -%}{{font1.family}},{{ font1.fallback_families }}{%- endcapture -%}
     {%- else -%}
     @import url('https://fonts.googleapis.com/css?family={{settings.font_family_google | replace: ' ','+'}}:300,400,500,600,700&display=swap');
@@ -80,13 +80,13 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
     {%- endif -%}
     {%- if settings.font_family2_google == blank -%}
     {%- assign font2 = settings.font_family2 -%}
-    {{ font2 | font_face }}
+    {{ font2 | font_face: font_display: 'swap' }}
     {%- assign font2_bold = font2 | font_modify: 'weight', 'bolder' -%}
     {%- assign font2_italic = font2 | font_modify: 'style', 'italic' -%}
     {%- assign font2_bold_italic = font2_bold | font_modify: 'style', 'italic' -%}
-    {{ font2_bold | font_face }}
-    {{ font2_italic | font_face }}
-    {{ font2_bold_italic | font_face }}
+    {{ font2_bold | font_face: font_display: 'swap' }}
+    {{ font2_italic | font_face: font_display: 'swap' }}
+    {{ font2_bold_italic | font_face: font_display: 'swap' }}
     {%- capture font_family_2 -%}{{font2.family}},{{ font2.fallback_families }}{%- endcapture -%}
     {%- else -%}
       @import url('https://fonts.googleapis.com/css?family={{settings.font_family2_google | replace: ' ','+'}}:300,400,500,600,700&display=swap');
@@ -94,13 +94,13 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
     {%- endif -%}
     {%- if settings.font_family3_google == blank -%}
     {%- assign font3 = settings.font_family3 -%}
-    {{ font3 | font_face }}
+    {{ font3 | font_face: font_display: 'swap' }}
     {%- assign font3_bold = font3 | font_modify: 'weight', 'bolder' -%}
     {%- assign font3_italic = font3 | font_modify: 'style', 'italic' -%}
     {%- assign font3_bold_italic = font3_bold | font_modify: 'style', 'italic' -%}
-    {{ font3_bold | font_face }}
-    {{ font3_italic | font_face }}
-    {{ font3_bold_italic | font_face }}
+    {{ font3_bold | font_face: font_display: 'swap' }}
+    {{ font3_italic | font_face: font_display: 'swap' }}
+    {{ font3_bold_italic | font_face: font_display: 'swap' }}
     {%- capture font_family_3 -%}{{font3.family}},{{ font3.fallback_families }}{%- endcapture -%}
     {%- else -%}
       @import url('https://fonts.googleapis.com/css?family={{settings.font_family3_google | replace: ' ','+'}}:300,400,500,600,700&display=swap');

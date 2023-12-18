@@ -416,8 +416,10 @@ showQuestion();
 
 // очистка вопроса и ответов
 function clearPage() {
+  if(ContainerForQuistion != null){
   ContainerForQuistion.innerHTML = "";
   ContainerForAnswers.innerHTML = "";
+  }
 }
 
 //---------------------------- функция перехода к следующему вопросу ----------------------------------------------------------------------------------------------------------------

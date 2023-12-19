@@ -120,6 +120,11 @@
               link.setAttribute('href', href + '/');
           }
       });
+      let currentUrl = window.location.href;
+      if (!currentUrl.endsWith('/')) {
+        let newUrl = currentUrl + '/';
+        history.pushState({}, '', newUrl);
+      }
     </script>
   </body>
 </html>

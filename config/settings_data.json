@@ -2436,6 +2436,7 @@
           },
           "2bcb5a46-0b78-4da9-886a-f2b399d54a8f": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "posimage": "leftimage",
               "alignment": "center center",

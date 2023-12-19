@@ -144,16 +144,16 @@
   max-width: 240px!important;
 }
 </style>
-<div class="container js-recently-view" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" data-ajax="true" data-stock="{{ section.settings.stock_enable }}" data-handle="{{product.handle}}">
+<div class="container js-recently-view" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" data-ajax="true" data-stock="{{ section.settings.stock_enable }}" data-handle="{{product.handle}}">
   {% assign product_image_size = '480x480' %}
   {% assign current_variant = product.selected_or_first_available_variant %}
-  <meta itemprop="name" content="{{ product.title }}">
+  <!-- <meta itemprop="name" content="{{ product.title }}">
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: '600x600' }}">
   <meta itemprop="brand" content="{{ product.vendor }}" >
   <meta itemprop="description" content="{{ product.metafields.info.shortdesc }}. Remedial is your safety and honest skincare brand." >
 
-  
+   -->
   <div class="row product-single">
     <div class="col-md-6">
       <div class="photos">

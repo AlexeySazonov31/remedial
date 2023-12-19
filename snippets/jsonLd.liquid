@@ -10,12 +10,7 @@
   "brand": {
     "@type": "Brand",
     "name": "{{ product.vendor | default: shop.name }}"
-  },{% if reviewCount > 0 %}
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "{{ reviewRating }}",
-    "reviewCount": "{{ reviewCount }}"
-  },{% endif %}
+  },
   "sku": "{{ product.variants.first.sku }}",
   "offers": {
     "@type": "Offer",
@@ -108,6 +103,11 @@
       "applicableCountry": "US",
       "merchantReturnLink": "{{ shop.url }}/pages/return-policy"
     }
-  }
+  }{% if reviewCount > 0 %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ reviewRating }}",
+    "reviewCount": "{{ reviewCount }}"
+  }{% endif %}
 }
 </script>

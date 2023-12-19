@@ -68,8 +68,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdn.younet.network/main.js"></script>
-
     <!-- SlideRule Script Start -->
     {% include 'sliderule-data' %}
     <!-- SlideRule Script End -->
@@ -112,6 +110,7 @@
     {% if template contains 'product' %}
       {% render 'jsonLd' %}
     {% endif %}
+    <script>var appElement = document.getElementById('ctn-younet-content');if (appElement) {appElement.style.display = 'block';}</script>
     <script>
       var links = document.querySelectorAll('a');
       links.forEach(function(link) {

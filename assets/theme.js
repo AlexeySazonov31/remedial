@@ -4777,7 +4777,7 @@ theme.stickyHeader = (function(){
   function toggleStickyHeader() {
     if (window.pageYOffset >= 20) {
       $(stickHeaderClass).addClass('active');
-      $(topbarId).slideUp(); // Smoothly hide #topbar
+      $(topbarId).slideUp('fast'); // Smoothly hide #topbar
     } else {
       $(stickHeaderClass).removeClass('active');
       $(topbarId).slideDown(); // Smoothly show #topbar
@@ -4804,7 +4804,7 @@ theme.stickyHeader = (function(){
       } else {
         // Remove sticky header for larger screens
         $(stickHeaderClass).removeClass('active');
-        $(topbarId).slideDown();
+        $(topbarId).slideDown('fast');
         $(window).off('scroll', debouncedToggle);
       }
     };

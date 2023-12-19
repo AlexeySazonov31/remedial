@@ -1,14 +1,23 @@
+{%- assign reviewRating = product.metafields.judgeme.badge | split: "data-average-rating='" | last | split: "'" |first | plus: 0 -%}
+{%- assign reviewCount = product.metafields.judgeme.badge | split: "data-number-of-reviews='" | last | split: "'" |first | plus: 0 -%}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org/",
   "@type": "Product",
   "name": "{{ product.title }}",
-  "description": "{{ product.description | strip_html | escape}}",
+  "description": "{{ product.metafields.info.shortdesc | default: product.description | strip_html | escape}}",
   "image": "{{ product.featured_image | image_url: width: 300 }}",
   "brand": {
     "@type": "Brand",
     "name": "{{ product.vendor | default: shop.name }}"
   },
+  {%- if reviewCount > 0 -%}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ reviewRating }}",
+    "reviewCount": "{{ reviewCount }}"
+  },
+  {% endif %}
   "sku": "{{ product.variants.first.sku }}",
   "offers": {
     "@type": "Offer",

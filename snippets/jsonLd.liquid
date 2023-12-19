@@ -10,14 +10,12 @@
   "brand": {
     "@type": "Brand",
     "name": "{{ product.vendor | default: shop.name }}"
-  },
-  {% if reviewCount > 0 %}
+  },{% if reviewCount > 0 %}
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ reviewRating }}",
     "reviewCount": "{{ reviewCount }}"
-  },
-  {% endif %}
+  },{% endif %}
   "sku": "{{ product.variants.first.sku }}",
   "offers": {
     "@type": "Offer",

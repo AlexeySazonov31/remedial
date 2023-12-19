@@ -2390,16 +2390,16 @@
           "1583425647500": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/1.11_4b4cdc0e-04c0-4639-bcc7-aa2ffcd8ca74.jpg",
+              "image": "shopify:\/\/shop_images\/3.jpg",
               "posimage": "leftimage",
               "alignment": "left center",
               "text_alignment": "left center",
               "bgwrap": "#eff5f9",
-              "slide_toptitle": "Elevate Your Beauty Regimen!",
+              "slide_toptitle": "",
               "slide_toptitle_color": "#ffffff",
-              "slide_title": "Revitalize",
+              "slide_title": "Remedial",
               "slide_title_color": "#ffffff",
-              "subheading": "Experience Visible Results with Our Advanced Formula",
+              "subheading": "",
               "subheading_color": "#ffffff",
               "button_label": "order now",
               "button_link": "shopify:\/\/collections\/new-arrivals",
@@ -2433,11 +2433,34 @@
               "bg_button_hover": "#b6813c",
               "color_button_hover": "#ffffff"
             }
+          },
+          "2bcb5a46-0b78-4da9-886a-f2b399d54a8f": {
+            "type": "image",
+            "settings": {
+              "posimage": "leftimage",
+              "alignment": "center center",
+              "text_alignment": "center center",
+              "bgwrap": "#F8EDE7",
+              "slide_toptitle": "Design by Shopifytemplate",
+              "slide_toptitle_color": "#999",
+              "slide_title": "Image slide",
+              "slide_title_color": "#fff",
+              "subheading": "Tell your brand's story through images",
+              "subheading_color": "#fff",
+              "button_label": "",
+              "button_link": "",
+              "stylebtn": false,
+              "bg_button": "#000",
+              "color_button": "#fff",
+              "bg_button_hover": "#b6813c",
+              "color_button_hover": "#fff"
+            }
           }
         },
         "block_order": [
           "1583425647500",
-          "62ad89e6-bf0f-4dd8-bdf3-29bbd78c2b7d"
+          "62ad89e6-bf0f-4dd8-bdf3-29bbd78c2b7d",
+          "2bcb5a46-0b78-4da9-886a-f2b399d54a8f"
         ],
         "settings": {
           "slideshow_height": "adapt",

@@ -4784,7 +4784,7 @@ theme.stickyHeader = (function(){
     }
   }
 
-  var debouncedToggle = debounce(toggleStickyHeader, 1);
+  var debouncedToggle = debounce(toggleStickyHeader, 200);
 
   if ($(stickHeaderClass).length !== 0) {
     // Initial check and toggle for non-scroll situations

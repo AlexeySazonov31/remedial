@@ -103,6 +103,11 @@
       "applicableCountry": "US",
       "merchantReturnLink": "{{ shop.url }}/pages/return-policy"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ reviewRating | default: 0 }}",
+    "reviewCount": "{{ reviewCount | default: 0 }}"
   }
 }
 </script>

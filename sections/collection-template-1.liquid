@@ -186,6 +186,9 @@
               </h1>
             {%- endif -%}
           </header>
+          {% if collection.products_count == 0 %}
+            <div class="bundler-target-element" data-bndlr-ccid="689h"></div>
+          {% else %}
           <div class="category-heading">
             <div class="row">
               {%- if section.settings.enable_sidebar -%}
@@ -239,6 +242,7 @@
               </div>
             {%- endif -%}
           </div>
+          {% endif %}
         </div>
       </div>
     </div>

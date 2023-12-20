@@ -2209,10 +2209,8 @@ theme.Slideshow = (function() {
     };
 
     this.$slideshow.on('beforeChange', beforeChange.bind(this));
-    this.$slideshow.on('init', function() {
-      slideshowA11ySetup.bind(this)();
-      removeRoleAttributes.bind(this)();
-  });
+    this.$slideshow.on('init', slideshowA11ySetup.bind(this));
+    this.$slideshow.on('init', removeRoleAttributes.bind(this));
 
     // Add class to style mobile dots & show the correct text content for the
     // first slide on mobile when the slideshow initialises

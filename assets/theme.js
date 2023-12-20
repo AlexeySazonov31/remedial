@@ -2659,7 +2659,7 @@ theme.slickCarousel = (function (){
   function removeRoleAttributes() {
       setTimeout(function(){
          $('.services-slider [role]').each(function(e){
-          $(this).removeAttr('role');
+          $(this).removeAttr('role').removeAttr('aria-selected').removeAttr('aria-controls').removeAttr('aria-hidden');
         });
       },100)
   }

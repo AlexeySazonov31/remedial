@@ -2542,16 +2542,8 @@ theme.Cart = (function() {
 
 // Instagrams
 theme.Instagrams = (function() {
-  function removeRoleAttributes() {
-      setTimeout(function(){
-         $('.services-slider div[role]').each(function(e){
-          $(this).removeAttr('role');
-        });
-      },100)
-  }
   function Instagrams(container) {
     this.$container = $(container).on('init', this._a11y.bind(this));
-    this.$container = $(container).on('init', this.removeRoleAttributes.bind(this));
     //console.log(this.$container);
     this.settings = {
       style 			: this.$container.data('style'),
@@ -2664,8 +2656,16 @@ theme.Instagrams = (function() {
 
 // Slick carousel
 theme.slickCarousel = (function (){
+  function removeRoleAttributes() {
+      setTimeout(function(){
+         $('.services-slider div[role]').each(function(e){
+          $(this).removeAttr('role');
+        });
+      },100)
+  }
   function Carousels(container) {
     this.$container = $(container).on('init', this._a11y.bind(this));
+    this.$container = $(container).on('init', this.removeRoleAttributes.bind(this));
     this.settings = {
       rows 				: this.$container.data('rows') || 1,
       slidesToShow 		: this.$container.data('slidestoshow') || 1,

@@ -497,7 +497,7 @@ height:700px;
           {%- assign text_alignments = block.settings.text_alignment | split: ' ' -%}
           {%- assign text_horizontal_alignment = text_alignments.first -%}
           {%- assign text_vertical_alignment = text_alignments.last | strip -%}
-          <div class="slideshow__slide slideshow__slide--{{ block.id }} {{block.settings.posimage}}" {{ block.shopify_attributes }} style="background-color: {{block.settings.bgwrap}};">
+          <div class="slideshow__slide slideshow__slide--{{ block.id }} {{block.settings.posimage}}" role="option" {{ block.shopify_attributes }} style="background-color: {{block.settings.bgwrap}};">
             {%- if block.settings.image == blank -%}
             <div class="slideshow__image js">
               <div class="placeholder-background">

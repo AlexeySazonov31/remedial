@@ -2237,7 +2237,7 @@ theme.Slideshow = (function() {
   }
   function removeRoleAttributes() {
       console.log(this.$slideshow.find('div'));
-      this.$slideshow.find('div').removeAttr('role');
+      this.$slideshow.find('[role]').removeAttr('role');
   }
   function slideshowA11ySetup(event, obj) {
     var $slider = obj.$slider;

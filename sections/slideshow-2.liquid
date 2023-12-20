@@ -509,9 +509,9 @@ height:700px;
             {%- else -%}
             <div class="slideshow__image box ratio-container lazyload js{%- unless forloop.first -%} lazypreload{%- endunless -%}"
                  data-bgset="{%- include 'bgset', image: block.settings.image -%}"
-                 data-sizes="auto" 
+                 data-sizes="auto"
                  data-parent-fit="contain"
-                 style="background-position: {{ block.settings.alignment }};background-image: url({{ block.settings.image | image_url: width: 1 }})">
+                 style="background-position: {{ block.settings.alignment }};">
              <link rel="preload" as="image" href="{{ block.settings.image | img_url: 'master' }}" imagesrcset="{%- include 'bgset', image: block.settings.image -%}" />
 
               {%- if section.settings.show_overlay -%}<div class="slideshow__overlay"></div>{%- endif -%}

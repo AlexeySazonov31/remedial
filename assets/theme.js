@@ -2236,7 +2236,7 @@ theme.Slideshow = (function() {
     slideshowPostInitA11ySetup.bind(this)();
   }
   function removeRoleAttributes() {
-      this.$slideshow.find('[role]').each(function(e){
+      $('[data-section-type="slideshow-section"] div[role]').each(function(e){
         $(this).removeAttr('role');
       });
   }

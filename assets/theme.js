@@ -2209,7 +2209,10 @@ theme.Slideshow = (function() {
     };
 
     this.$slideshow.on('beforeChange', beforeChange.bind(this));
-    this.$slideshow.on('init', slideshowA11ySetup.bind(this));
+    this.$slideshow.on('init', function() {
+      slideshowA11ySetup.bind(this)();
+      removeRoleAttributes.bind(this)();
+  });
 
     // Add class to style mobile dots & show the correct text content for the
     // first slide on mobile when the slideshow initialises
@@ -2234,7 +2237,9 @@ theme.Slideshow = (function() {
     // adds a11y features.
     slideshowPostInitA11ySetup.bind(this)();
   }
-
+  function removeRoleAttributes() {
+      this.$slideshow.find('div').removeAttr('role');
+  }
   function slideshowA11ySetup(event, obj) {
     var $slider = obj.$slider;
     var $list = obj.$list;

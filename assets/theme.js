@@ -2665,7 +2665,7 @@ theme.slickCarousel = (function (){
   }
   function Carousels(container) {
     this.$container = $(container).on('init', this._a11y.bind(this));
-    this.$container = $(container).on('init', this.removeRoleAttributes.bind(this));
+    this.$container = $(container).on('init', removeRoleAttributes);
     this.settings = {
       rows 				: this.$container.data('rows') || 1,
       slidesToShow 		: this.$container.data('slidestoshow') || 1,

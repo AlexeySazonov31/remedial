@@ -2236,9 +2236,12 @@ theme.Slideshow = (function() {
     slideshowPostInitA11ySetup.bind(this)();
   }
   function removeRoleAttributes() {
-      $('[data-section-type="slideshow-section"] div[role]').each(function(e){
-        $(this).removeAttr('role');
-      });
+      setTimeout(function(){
+         $('[data-section-type="slideshow-section"] div[role]').each(function(e){
+          $(this).removeAttr('role');
+        });
+      },100)
+     
   }
   function slideshowA11ySetup(event, obj) {
     var $slider = obj.$slider;

@@ -2241,7 +2241,6 @@ theme.Slideshow = (function() {
           $(this).removeAttr('role');
         });
       },100)
-     
   }
   function slideshowA11ySetup(event, obj) {
     var $slider = obj.$slider;
@@ -2543,8 +2542,16 @@ theme.Cart = (function() {
 
 // Instagrams
 theme.Instagrams = (function() {
+  function removeRoleAttributes() {
+      setTimeout(function(){
+         $('.services-slider div[role]').each(function(e){
+          $(this).removeAttr('role');
+        });
+      },100)
+  }
   function Instagrams(container) {
     this.$container = $(container).on('init', this._a11y.bind(this));
+    this.$container = $(container).on('init', this.removeRoleAttributes.bind(this));
     //console.log(this.$container);
     this.settings = {
       style 			: this.$container.data('style'),

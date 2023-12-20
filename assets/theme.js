@@ -2658,7 +2658,7 @@ theme.Instagrams = (function() {
 theme.slickCarousel = (function (){
   function removeRoleAttributes() {
       setTimeout(function(){
-         $('.services-slider div[role]').each(function(e){
+         $('.services-slider [role]').each(function(e){
           $(this).removeAttr('role');
         });
       },100)

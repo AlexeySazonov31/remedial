@@ -2441,20 +2441,20 @@
               "posimage": "leftimage",
               "alignment": "center center",
               "text_alignment": "center center",
-              "bgwrap": "#F8EDE7",
+              "bgwrap": "#f8ede7",
               "slide_toptitle": "Design by Shopifytemplate",
-              "slide_toptitle_color": "#999",
+              "slide_toptitle_color": "#999999",
               "slide_title": "Image slide",
-              "slide_title_color": "#fff",
+              "slide_title_color": "#ffffff",
               "subheading": "Tell your brand's story through images",
-              "subheading_color": "#fff",
+              "subheading_color": "#ffffff",
               "button_label": "",
               "button_link": "",
               "stylebtn": false,
-              "bg_button": "#000",
-              "color_button": "#fff",
+              "bg_button": "#000000",
+              "color_button": "#ffffff",
               "bg_button_hover": "#b6813c",
-              "color_button_hover": "#fff"
+              "color_button_hover": "#ffffff"
             }
           }
         },
@@ -3797,53 +3797,11 @@
           "setwidth": "container",
           "padding": true
         }
-      },
-      "eb6d8a50-fe92-439d-a519-3941d713bb24": {
-        "type": "advanced-content",
-        "blocks": {
-          "d2959986-47be-4700-85a7-2a809f567f7a": {
-            "type": "html",
-            "settings": {
-              "code": "<h3 class=\"follow_us_inst\">Follow us <a class=\"link_follow_us_inst\" href=\"https:\/\/www.instagram.com\/remedialpax\/\">@remedialpax<\/a>\n<\/h3>",
-              "width": "100%",
-              "align": "auto"
-            }
-          },
-          "eb6d8a50-fe92-439d-a519-3941d713bb24-16655881308e6f44e3-0": {
-            "type": "html",
-            "settings": {
-              "code": "<div id=\"insta-feed\"><\/div>",
-              "width": "100%",
-              "align": "auto"
-            }
-          }
-        },
-        "block_order": [
-          "d2959986-47be-4700-85a7-2a809f567f7a",
-          "eb6d8a50-fe92-439d-a519-3941d713bb24-16655881308e6f44e3-0"
-        ],
-        "settings": {
-          "animation": "",
-          "paddingsection": "0px 0px 0px 0px",
-          "paddingmobile": "60px 0px 60px 0px",
-          "marginsection": "0px 0px 0px 0px",
-          "marginmobile": "0px 0px 0px 0px",
-          "zindex": "0",
-          "bgsection": "#fefefe",
-          "rangebg": 0,
-          "bgbefore": "rgba(0,0,0,0)",
-          "title_top": "",
-          "title": "",
-          "des": "",
-          "setwidth": "container",
-          "padding": true
-        }
       }
     },
     "content_for_index": [
       "0e9c522c-c812-4d6a-bee9-a6bd73c4e856",
       "1595086648291",
-      "eb6d8a50-fe92-439d-a519-3941d713bb24",
       "162870190508b20d30"
     ],
     "blocks": {

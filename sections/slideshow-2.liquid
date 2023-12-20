@@ -592,7 +592,7 @@ height:700px;
         {%- assign show_link_button = true -%}
         {%- endif -%}
         {%- if show_text or show_link_button -%}
-        <div class="slideshow__text-content slideshow__text-content--mobile slideshow__text-content--mobile-{{ forloop.index0 }} text-center" {% unless forloop.first %}style="display:none"{% endunless %}>
+        <div class="slideshow__text-content slideshow__text-content--mobile slideshow__text-content--mobile-{{ forloop.index0 }} text-center" role="option" {% unless forloop.first %}style="display:none"{% endunless %}>
       <div class="container" style="background-color: {{block.settings.bgwrap}};">
             {%- unless block.settings.slide_toptitle == blank -%}
             <p class="slideshow__toptitle slideshow__toptitle--mobile mb-0 subtop" style="color:{{block.settings.slide_toptitle_color}};">

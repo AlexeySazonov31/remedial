@@ -2399,7 +2399,7 @@
               "slide_toptitle_color": "#ffffff",
               "slide_title": "",
               "slide_title_color": "#ffffff",
-              "subheading": "<body>\n  <p><font size=\"6\" color=\"burgundy\" face=\"Arial\"> Have yourself a merry little. Body Сreams,Retinol, Collagen. Hair  Growth \n<p> With 20% Off! 🎅\n<\/p>\n \n<\/font><\/p>\n<\/body>",
+              "subheading": "<body>\n  <p><font size=\"6\" color=\"white\" face=\"Arial\"> Have yourself a merry little. Body Сreams,Retinol, Collagen. Hair  Growth \n<p> With 20% Off! 🎅\n<\/p>\n \n<\/font><\/p>\n<\/body>",
               "subheading_color": "#ffffff",
               "button_label": "order now",
               "button_link": "shopify:\/\/collections\/new-arrivals",
@@ -3842,9 +3842,9 @@
         "settings": {
           "button_color": "#004f71",
           "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "button_text": "chat_with_us",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       }

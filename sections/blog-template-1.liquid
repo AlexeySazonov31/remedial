@@ -62,7 +62,7 @@
   
         {%- if paginate.pages > 1 -%}
         <div class="pagination">
-          {{ paginate | default_pagination | replace: '' | replace: '', '' }}
+          {{ paginate }}
         </div>
   
   

@@ -60,13 +60,10 @@
           {%- endfor -%}
         </div>
   
-        {%- if paginate.pages > 1 -%}
-        <div class="pagination">
-          {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
-        </div>
+    
   
   
-        {%- endif -%}
+ 
       </div> -->
       {%- endpaginate -%}
       {%- if section.settings.sidebar_enable -%}

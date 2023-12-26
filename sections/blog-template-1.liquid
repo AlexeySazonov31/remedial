@@ -49,26 +49,30 @@
   {%- endif -%}
   <div class="container pt-4">
     <div class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %}">
-        <div class="{% if section.settings.sidebar_enable %}col-md-8 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %}{% else %}col-12{% endif %}">
-          <div class="row js-pagination-content">
-            {%- paginate blog.articles by 8 -%}
-            {%- for article in blog.articles -%}
-            <div class="col-12 col-md-4 {% if forloop.index == 3 %}col--last{% endif %}">
-              {%- include 'blog-card' -%}
-            </div>
-            {%- endfor -%}
-            <div class="js-pagination">
-              {%- if paginate.next -%}
-              <a href="{{ paginate.next.url }}"></a>
-              {%- endif -%}
-            </div>
-            {%- endpaginate -%}
+      {%- assign limit = section.settings.limit | minus:1 -%}
+      {%- paginate blog.articles by limit -%}
+      <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
+        <div class="row">
+          {%- for article in blog.articles -%}
+          <div class="{{col}} {% if forloop.index == 3 %}col--last{% endif %}">
+            {%- include 'blog-card' -%}
           </div>
+          {%- endfor -%}
         </div>
-        {%- if section.settings.sidebar_enable -%}
-        {%- include 'blogSidebar' -%}
+  
+        {%- if paginate.pages > 1 -%}
+        <div class="pagination">
+          {{ paginate | default_pagination | replace: '' | replace: '', '&rarr;' }}
+        </div>
+  
+  
         {%- endif -%}
       </div>
+      {%- endpaginate -%}
+      {%- if section.settings.sidebar_enable -%}
+      {%- include 'blogSidebar' -%}
+      {%- endif -%}
+    </div>
   </div>
   
   {% schema %}

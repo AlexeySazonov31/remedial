@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="js-grid">
-            {%- paginate blog.articles by 24 -%}
+            {%- paginate blog.articles by 5 -%}
             {%- for article in blog.articles -%}
             <div class="{{section.settings.item_width}} grid-item {% for tag in article.tags %}{{ tag | camelcase }} {% endfor %}">
               {%- include 'blog-card' -%}

@@ -81,7 +81,7 @@
      <div class="">
        <div class="row">
          {%- for article in blog.articles -%}
-         <div class="{{col}} {% if forloop.index == 1 %}col--last{% endif %}">
+         <div class="{{col}} {% if forloop.index == 10 %}col--last{% endif %}">
            {%- include 'blog-card' -%}
          </div>
          {%- endfor -%}

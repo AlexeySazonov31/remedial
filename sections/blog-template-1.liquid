@@ -83,6 +83,7 @@
          {%- for article in blog.articles -%}
          <div class="{{col}} {% if forloop.index == 10 %}col--last{% endif %}">
            {%- include 'blog-card' -%}
+           
          </div>
          {%- endfor -%}
        </div>

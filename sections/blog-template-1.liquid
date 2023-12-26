@@ -41,63 +41,36 @@
      }
    {%- endif -%}
  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  {%- if settings.bloggrid  == 'blog-3'%}
    {% assign col = "col-6" %}
  {%- else -%}
    {% assign col = "col-12 col-md-12" %}
  {%- endif -%}
  <div class="container pt-4">
-   <div class="row">
-     {%- assign limit = section.settings.limit -%}
+   <div class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %}">
+     {%- assign limit = section.settings.limit | minus:1 -%}
      {%- paginate blog.articles by limit -%}
-     <div class="">
+     <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
        <div class="row">
          {%- for article in blog.articles -%}
-         <div class="{{col}} {% if forloop.index == 10 %}col--last{% endif %}">
+         <div class="{{col}} {% if forloop.index == 3 %}col--last{% endif %}">
            {%- include 'blog-card' -%}
-           
          </div>
          {%- endfor -%}
        </div>
  
        {%- if paginate.pages > 1 -%}
        <div class="pagination">
-         {{ paginate  | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+         {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
        </div>
  
  
        {%- endif -%}
      </div>
      {%- endpaginate -%}
-  
+     {%- if section.settings.sidebar_enable -%}
+     {%- include 'blogSidebar' -%}
+     {%- endif -%}
    </div>
  </div>
  

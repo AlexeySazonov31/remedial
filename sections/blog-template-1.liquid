@@ -1,46 +1,4 @@
-<!-- blog-template-1.liquid -->
-<style>
-   .sidebar-blog-wrap.is_stuck{padding-top:20px}
-   .blog__item .blog__content{
-     text-align: left;
-   }
-   @media (min-width: 768px){
-     .blog__item {
-       display: flex;
-       flex-wrap: wrap;
-     }
-     .blog__item .content-block__image,.blog__item .blog__content{
-       flex: 0 0 50%;
-       max-width: 50%;
-     }
-     .blog__item .blog__content{
-       padding:20px 20px 50px 40px;
-     }
-   }
-  
-   .blog__title-link{
-     font-size: 30px;
-     margin-bottom: 30px;
-   }
-   {%- if settings.bloggrid  == 'blog-3'%}
-     .blog__item.blog__item--3 .content-block__image,.blog__item.blog__item--3 .blog__content{
-       flex: 0 0 100%;
-       max-width: 100%;
-     }
-     .article__photo-container{
-       margin-bottom: 0;
-     }
-   {%- endif -%}
-   {%- if settings.bloggrid  == 'blog-5'%}
-     .blog__item.blog__item--5 .content-block__image,.blog__item.blog__item--5 .blog__content{
-       flex: 0 0 100%;
-       max-width: 100%;
-     }
-     .article__photo-container{
-       margin-bottom: 0;
-     }
-   {%- endif -%}
- </style>
+
  {%- if settings.bloggrid  == 'blog-3'%}
    {% assign col = "col-6" %}
  {%- else -%}

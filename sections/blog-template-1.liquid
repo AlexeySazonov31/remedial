@@ -81,7 +81,7 @@
      <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
        <div class="row">
          {%- for article in blog.articles -%}
-         <div class="{{col}} {% if forloop.index == 3 %}col--last{% endif %}">
+         <div class="{{col}} {% if forloop.index == 1 %}col--last{% endif %}">
            {%- include 'blog-card' -%}
          </div>
          {%- endfor -%}

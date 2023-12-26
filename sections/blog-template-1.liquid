@@ -51,23 +51,7 @@
     <div class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %}">
       {%- assign limit = section.settings.limit | minus:1 -%}
       {%- paginate blog.articles by limit -%}
-      <!-- <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
-        <div class="row">
-          {%- for article in blog.articles -%}
-          <div class="{{col}} {% if forloop.index == 3 %}col--last{% endif %}">
-            {%- include 'blog-card' -%}
-          </div>
-          {%- endfor -%}
-        </div>
-  
-        {%- if paginate.pages > 1 -%}
-        <div class="pagination">
-          {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
-        </div>
-  
-  
-        {%- endif -%}
-      </div> -->
+     
       {%- endpaginate -%}
       {%- if section.settings.sidebar_enable -%}
       {%- include 'blogSidebar' -%}

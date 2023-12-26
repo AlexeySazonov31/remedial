@@ -72,6 +72,76 @@
 
 
 
+   {%- paginate collection.products by productPerpage -%}
+   <div class="{{section.settings.collection_width}}">
+     <div class="row flex-lg-row-reverse">
+       {%- if section.settings.enable_sidebar -%}
+       <div class="{{section.settings.sidebar_col}} col-12 js-sidebar">
+         <div class="sidebar collection-sidebar js-stick-parent">
+           {%- include 'sidebar' -%}
+         </div>
+       </div>
+       {%- endif -%}
+       <div class="col ">
+         <div class="pr-lg-5 pr-md-0 pl-0">
+           <header class="section-header">
+             {%- if section.settings.enable_title -%}
+             <h1 class="section-header__title js-collection-title h3">
+               {{ collection.title }}
+             </h1>
+             {%- endif -%}
+             {%- if section.settings.enable_description and collection.description != blank -%}
+             <div class="section-header__subtext mt-4">
+               {{ collection.description }}
+             </div>
+             {%- endif -%}
+           </header>
+           <div class="category-heading">
+             <div class="row">
+               {%- if section.settings.enable_sidebar -%}
+               <div class="col col-3 col-left d-lg-none">
+                 <span class="js-toggle-filter d-flex align-items-center px-3">
+                   {%- include 'icon-sliders' -%}
+                   <span class="ml-2">{{'collections.general.filter' | t}}</span>
+                 </span>
+               </div>
+               {%- endif -%}
+               <div class="col-sm-6 col-mid">
+                 <div class="d-flex align-items-center h-100">
+                 <span class="js-btn-view btn-view-2 {% if productPerrow == '2' %}active{% endif %}" data-col="2"></span>
+                 <span class="js-btn-view btn-view-3 {% if productPerrow == '3' %}active{% endif %}" data-col="3"></span>
+                 <span class="js-btn-view btn-view-4 {% if productPerrow == '4' %}active{% endif %}" data-col="4"></span>
+                 </div>
+               </div>
+               <div class="col col-right">
+                 {%- include 'collection-sortby' -%}
+               </div>
+             </div>
+           </div>
+           <div id="js-product-ajax"><!-- ONLY HAVE LIST OF PRODUCTS AND PAGINATION TO LOAD AJAX -->
+             <div class="row">
+               {%- for product in collection.products -%}
+               <div class="{{gridProduct}}">
+                 {%- include 'product-card', product: product -%}
+               </div>
+               {%- else -%}
+               {%- include 'collection-blank' -%}
+               {%- endfor -%}
+             </div>
+             {%- if paginate.pages > 1 -%}
+             <div class="pagination js-pagination">
+               {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+             </div>
+             {%- endif -%}
+           </div>
+         </div>
+       </div>
+     </div>
+     {%- include 'coupon_code' -%}
+   </div>
+   {%- endpaginate -%}
+
+
 
 
 

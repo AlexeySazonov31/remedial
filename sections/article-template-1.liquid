@@ -36,7 +36,19 @@
         <noscript>
           {{ article | img_url: '1024x1024' | img_tag: article.title | escape }}
         </noscript>
-   
+        <div class="article__photo-container mb-4">
+          <div class="article__photo-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+            {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="lazyload"
+                 src="{%- include 'srcBlank' -%}"
+                 data-src="{{ img_url }}"
+                 data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                 data-aspectratio="{{ article.image.aspect_ratio }}"
+                 data-sizes="auto"
+                 alt="{{ article.title | escape }}">
+          </div>
+        </div>
+{{ product.price }}
       </div>
       {%- endif -%}
       <div class="content-block">

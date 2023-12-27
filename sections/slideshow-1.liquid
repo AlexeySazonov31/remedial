@@ -521,6 +521,11 @@
               {{ block.settings.subheading }} 
             </span>
             {%- endunless -%}
+            {%- unless block.settings.main_title == blank -%}
+            <span class="mega-subtitle slideshow__subtitle slideshow__subtitle--mobile mb-3" style="color:{{block.settings.subheading_color}}">
+              {{ block.settings.main_title }} 
+            </span>
+            {%- endunless -%}
     
             {%- if show_link_button -%}
             <style>

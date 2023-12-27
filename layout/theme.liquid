@@ -73,9 +73,11 @@
     <!-- SlideRule Script End -->
   </head>
   <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}">
-   
+    {%- section 'announcement-bar' -%}
+    {%- include 'loading' -%}
+    {%- include 'header' -%}
     <div class="page-container page-element is-moved-by-drawer">
-      {%- include 'breadcrumb' -%}
+      
       <main class="main-content" id="MainContent" role="main">
         {%- if settings.enable_animationscroll -%}<div id="js-scroll">{% endif %}
         {%- if settings.enable_animationscroll -%}<div data-scroll-section>{% endif %}

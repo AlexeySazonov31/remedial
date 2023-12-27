@@ -2100,12 +2100,13 @@ if (function() {
             } catch (e) {
                 Q = {
                     apply: Y.length ? function(e, t) {
-                        J.apply(e, Z.call(t))
-                    } : function(e, t) {
-                        for (var n = e.length, i = 0; e[n++] = t[i++];)
-                        ;
-                        e.length = n - 1
-                    }
+                            J.apply(e, Z.call(t))
+                        } :
+                        function(e, t) {
+                            for (var n = e.length, i = 0; e[n++] = t[i++];)
+                            ;
+                            e.length = n - 1
+                        }
                 }
             }
             w = t.support = {},
@@ -2603,14 +2604,42 @@ if (function() {
                     }
                     return o
                 },
-
+                P = t.select = function(e, t, n, i) {
+                    var r, o, s, a, l, c = "function" == typeof e && e,
+                        p = !i && C(e = c.selector || e);
+                    if (n = n || [],
+                        1 === p.length) {
+                        if (o = p[0] = p[0].slice(0),
+                            o.length > 2 && "ID" === (s = o[0]).type && w.getById && 9 === t.nodeType && D && x.relative[o[1].type]) {
+                            if (t = (x.find.ID(s.matches[0].replace(ke, we), t) || [])[0], !t)
+                                return n;
+                            c && (t = t.parentNode),
+                                e = e.slice(o.shift().value.length)
+                        }
+                        for (r = he.needsContext.test(e) ? 0 : o.length; r-- && (s = o[r], !x.relative[a = s.type]);)
+                            if ((l = x.find[a]) && (i = l(s.matches[0].replace(ke, we), ye.test(o[0].type) && u(t.parentNode) || t))) {
+                                if (o.splice(r, 1),
+                                    e = i.length && d(o), !e)
+                                    return Q.apply(n, i),
+                                        n;
+                                break
+                            }
+                    }
+                    return (c || E(e, p))(i, t, !D, n, !t || ye.test(e) && u(t.parentNode) || t),
+                        n
+                },
                 w.sortStable = R.split("").sort(V).join("") === R,
                 w.detectDuplicates = !!A,
                 N(),
                 w.sortDetached = r(function(e) {
                     return 1 & e.compareDocumentPosition(L.createElement("div"))
                 }),
-
+                r(function(e) {
+                    return e.innerHTML = "<a href='#'></a>",
+                        "#" === e.firstChild.getAttribute("href")
+                }) || o("type|href|height|width", function(e, t, n) {
+                    return n ? void 0 : e.getAttribute(t, "type" === t.toLowerCase() ? 1 : 2)
+                }),
                 w.attributes && r(function(e) {
                     return e.innerHTML = "<input/>",
                         e.firstChild.setAttribute("value", ""),
@@ -17635,7 +17664,6 @@ Ajaxinate.prototype.initialize = function() {
                     O = null), !s.__benchmark) {
                 if (C === s.rootElement)
                     return void
-
                 function(e) {
                     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100;
                     clearTimeout(x),

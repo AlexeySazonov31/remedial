@@ -148,7 +148,30 @@
 </style>
 
 
-<div class="jopa">sdfsdfwefwefwef</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {%- assign productPerpage = section.settings.collection_perpage -%}
 {%- assign productPerrow = section.settings.collection_perrow -%}
@@ -253,93 +276,5 @@
   </div>
 {%- endpaginate -%}
 
-{% schema %}
-  {
-    "name": "Collection Sidebar Left",
-    "settings": [
-      {
-        "type": "select",
-        "id": "collection_width",
-        "label": "Set Width Collection",
-        "default": "container",
-        "options": [
-          {
-            "value": "container",
-            "label": "Container"
-          },
-          {
-            "value": "container-fluid",
-            "label": "Container Fluid"
-          }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "collection_perpage",
-        "min": 12,
-        "max": 50,
-        "step": 1,
-        "label": "Number displayed",
-        "default": 24
-      },
-      {
-        "type": "select",
-        "id": "collection_perrow",
-        "label": "Products per row",
-		"default": "3",
-        "options": [
-          {
-            "value": "2",
-            "label": "2"
-          },
-          {
-            "value": "3",
-            "label": "3"
-          },
-          {
-            "value": "4",
-            "label": "4"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_sidebar",
-		    "default": true,
-        "label": "Show Sidebar"
-      },
-      {
-        "type": "select",
-        "id": "sidebar_col",
-        "label": "Sidebar width",
-		"default": "col-md-3",
-        "options": [
-          {
-            "value": "col-md-2-4",
-            "label": "20%"
-          },
-          {
-            "value": "col-md-3",
-            "label": "25%"
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Collection meta"
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_title",
-		"default": true,
-        "label": "Show Title"
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_description",
-		"default": true,
-        "label": "Show description"
-      }
-]
-  }
-{% endschema %}
+
+

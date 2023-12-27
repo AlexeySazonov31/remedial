@@ -29,8 +29,7 @@
     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
-    {%- include 'social-meta-tags' -%}
-    {%- include 'header-css' -%}
+    
     {{ content_for_header }}
     
   </head>

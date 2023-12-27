@@ -1,54 +1,6 @@
 <!-- featured-articles.liquid -->
-<style>
-  .blog-section{{section.id}}{
-    position: relative;
-    z-index: {{section.settings.zindex}};
-  }
-  .blog-section{{section.id}}::before{
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    content: "";
-    height: {{section.settings.rangebg}}%;
-    background-color: {{section.settings.bgbefore}};
-  }
-</style>
-<div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos={{section.settings.animation}}>
-  {%- include 'style-section' -%}
-<div class="{{ section.settings.setwidth }}">
-  <div class="section-block">
-    {%- include 'section-heading' -%}
-    <div class="bloglist-wrapper dots-negative " data-aos={{section.settings.animation}}>
-      <div class="bloglist-slider row" id="Bloglist-{{ section.id }}"
-           data-rows="{{section.settings.rows}}"
-           data-slidesToShow="{{section.settings.show}}"
-           data-arrows="{{ section.settings.arrows }}"
-           data-dots="{{ section.settings.dots }}" 
-           data-draggable="{{ section.settings.draggable }}" 
-           data-infinite="{{ section.settings.infinite }}" 
-           data-section-id="{{ section.id }}" 
-           data-section-type="slickCarousels">
-        {%- assign blog = blogs[section.settings.blog] -%}
-        {%- assign limit = section.settings.limit -%}
-        {%- if blog != blank -%}
-        {%- for article in blog.articles limit: limit  -%}
-        <div class="bloglist-item col">
-          {%- include 'blog-card' -%}
-        </div>
-        {%- endfor -%}
-        {%- else -%}
-        {%- for i in (1..limit) -%}
-        <div class="bloglist-item col">
-          {%- include 'blog-grid-blank' -%}
-        </div>
-        {%- endfor -%}
-        {%- endif -%}
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
+
 
 {% schema %}
 {

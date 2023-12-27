@@ -2516,15 +2516,15 @@ theme.Cart = (function() {
       );
     },
 
-    _attributeToString: function(attr) {
-      if (typeof attr !== 'string') {
-        attr = String(attr);
-        if (attr === 'undefined') {
-          attr = '';
-        }
-      }
-      return $.trim(attr);
-    },
+    // _attributeToString: function(attr) {
+    //   if (typeof attr !== 'string') {
+    //     attr = String(attr);
+    //     if (attr === 'undefined') {
+    //       attr = '';
+    //     }
+    //   }
+    //   return $.trim(attr);
+    // },
 
     _cookiesEnabled: function() {
       var cookieEnabled = navigator.cookieEnabled;

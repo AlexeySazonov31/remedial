@@ -507,17 +507,13 @@ height:700px;
               {%- if section.settings.show_overlay -%}<div class="slideshow__overlay"></div>{%- endif -%}
             </div>
             {%- else -%}
-            <div class="slideshow__image box ratio-container js">
-               <div class="image-content__image-wrapper" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;">
-                {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                <img class="image-content__image"
-                  src="{{ block.settings.image | img_url: '1x' }}"
-                  data-src="{{ img_url }}"
-                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-                  data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                  data-sizes="auto"
-                  alt="{{ block.settings.image.alt | escape }}">
-              </div>
+            <div class="slideshow__image box ratio-container lazyload js{%- unless forloop.first -%} lazypreload{%- endunless -%}"
+                 data-bgset="{%- include 'bgset', image: block.settings.image -%}"
+                 data-sizes="auto"
+                 data-parent-fit="contain"
+                 style="background-position: {{ block.settings.alignment }};">
+             <link rel="preload" as="image" href="{{ block.settings.image | img_url: 'master' }}" imagesrcset="{%- include 'bgset', image: block.settings.image -%}" />
+
               {%- if section.settings.show_overlay -%}<div class="slideshow__overlay"></div>{%- endif -%}
             </div>
             {%- endif -%}

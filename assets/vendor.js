@@ -2262,7 +2262,9 @@ if (function() {
                     i = n && K.call(x.attrHandle, t.toLowerCase()) ? n(e, t, !D) : void 0;
                 return void 0 !== i ? i : w.attributes || !D ? e.getAttribute(t) : (i = e.getAttributeNode(t)) && i.specified ? i.value : null
             },
-            t.error = function(e) {},
+            t.error = function(e) {
+                throw new Error("Syntax error, unrecognized expression: "+e)
+            },
             t.uniqueSort = function(e) {
                 var t, n = [],
                     i = 0,

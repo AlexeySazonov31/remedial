@@ -246,28 +246,7 @@
               </div>
             </div>
           </div>
-          <div id="js-product-ajax">
-            <!-- ONLY HAVE LIST OF PRODUCTS AND PAGINATION TO LOAD AJAX -->
-            <div class="row">
-              {%- for product in collection.products -%}
-                <div class="{{gridProduct}}">
-                  {%- include 'product-card', product: product -%}
-                </div>
-              {%- else -%}
-                {%- include 'collection-blank' -%}
-              {%- endfor -%}
-            </div>
-            {%- if paginate.pages > 1 -%}
-              <div class="pagination js-pagination">
-                {{
-                  paginate
-                  | default_pagination
-                  | replace: '&laquo; Previous', '&larr;'
-                  | replace: 'Next &raquo;', '&rarr;'
-                }}
-              </div>
-            {%- endif -%}
-          </div>
+          
           {% endif %}
         </div>
       </div>

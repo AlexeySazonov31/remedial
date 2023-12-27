@@ -50,7 +50,15 @@
         </div>
 
         <div>
-{%- include 'product-card', product: product -%}
+ <div class="row">
+              {%- for product in collection.products -%}
+                <div class="{{gridProduct}}">
+                  {%- include 'product-card', product: product -%}
+                </div>
+              {%- else -%}
+                {%- include 'collection-blank' -%}
+              {%- endfor -%}
+            </div>
 </div>
 
       </div>

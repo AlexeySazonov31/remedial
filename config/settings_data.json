@@ -1962,7 +1962,7 @@
       "blog-template-1": {
         "type": "blog-template-1",
         "settings": {
-          "limit": 6,
+          "limit": 8,
           "sidebar_enable": false,
           "sidebar_position": "right"
         }

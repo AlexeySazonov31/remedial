@@ -73,9 +73,7 @@
     <!-- SlideRule Script End -->
   </head>
   <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}">
-    {%- section 'announcement-bar' -%}
-    {%- include 'loading' -%}
-    {%- include 'header' -%}
+   
     <div class="page-container page-element is-moved-by-drawer">
       {%- include 'breadcrumb' -%}
       <main class="main-content" id="MainContent" role="main">
@@ -102,7 +100,9 @@
     {%- if settings.show_multiple_currencies -%}
       {{ '/services/javascripts/currencies.js' | script_tag }}
     {%- endif -%}
+    {% unless request.design_mode %}
     {% render 'mrk-optamization' %}
+    {% endunless %}
     {% if page.handle contains 'quiz' %}
     {{ 'quizJS-remedial.js' | asset_url | script_tag }}
     {{ 'quizresJS-remedial.js' | asset_url | script_tag }}
@@ -112,13 +112,13 @@
     {% endif %}
     <script>var appElement = document.getElementById('ctn-younet-content');if (appElement) {appElement.style.display = 'block';}</script>
     <script>
-    //   var links = document.querySelectorAll('a');
-    //   links.forEach(function(link) {
-    //       var href = link.getAttribute('href');
-    //       if (href && !href.endsWith('/')) {
-    //           link.setAttribute('href', href + '/');
-    //       }
-    //   });
+      var links = document.querySelectorAll('a');
+      links.forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (href && !href.endsWith('/')) {
+              link.setAttribute('href', href + '/');
+          }
+      });
       let currentUrl = window.location.href;
       if (!currentUrl.endsWith('/')) {
         let newUrl = currentUrl + '/';

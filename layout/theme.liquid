@@ -2,7 +2,9 @@
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
-    
+    {% if content_for_header contains 'tapita-seo-script-tags' %}
+      {% include 'tapita-seo-schema' %}
+    {% endif %}
     <!-- /Added by TAPITA SEO SCHEMA -->
     {% if collection.metafields.custom.no_index == true %}
       <meta name="robots" content="noindex">

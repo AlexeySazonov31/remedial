@@ -581,62 +581,7 @@
               {%- endfor -%}
             </div>
           </div>
-          <div class="slideshow__text-wrap slideshow__text-wrap--mobile bg-white">
-            {%- for block in section.blocks -%}
-            {%- assign show_text = false -%}
-            {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
-            {%- assign show_text = true -%}
-            {%- endunless -%}
-            {%- assign show_link_button = false -%}
-            {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
-            {%- assign show_link_button = true -%}
-            {%- endif -%}
-            {%- if show_text or show_link_button -%}
-            <div class="slideshow__text-content slideshow__text-content--mobile slideshow__text-content--mobile-{{ forloop.index0 }} text-center" role="option" {% unless forloop.first %}style="display:none"{% endunless %}>
-          <div class="container" style="background-color: {{block.settings.bgwrap}};">
-                {%- unless block.settings.slide_toptitle == blank -%}
-                <p class="slideshow__toptitle slideshow__toptitle--mobile mb-0 subtop" style="color:{{block.settings.slide_toptitle_color}};">
-                  {{ block.settings.slide_toptitle }}
-                </p>
-                {%- endunless -%}
-                
-                {%- unless block.settings.slide_title == blank -%}
-                <h2 class="h1 mega-title slideshow__title slideshow__title--mobile font-family-2 py-3" style="color:{{block.settings.slide_title_color}};">
-                  {{ block.settings.slide_title }}
-                </h2>
-                {%- endunless -%}
-                
-                {%- unless block.settings.subheading == blank -%}
-                <div class="mega-subtitle slideshow__subtitle slideshow__subtitle--mobile" style="color:{{block.settings.subheading_color}};">
-                  {{ block.settings.subheading }}
-                </div>
-                {%- endunless -%}
-        
-                {%- if show_link_button -%}
-                <style>
-                  .slideshow__btn{{block.id}}{
-                    background-color:{{block.settings.bg_button}};
-                    color:{{block.settings.color_button}};
-                  }
-                  .slideshow__btn{{block.id}}:before{
-                    background-color:{{block.settings.bg_button_hover}};
-                  }
-                  .slideshow__btn{{block.id}}:hover{
-                    color:{{block.settings.color_button_hover}};
-                  }
-                  .slideshow__btn{{block.id}}:hover:before{
-                    background-color:{{block.settings.bg_button_hover}};
-                  }
-                </style>
-                <a href="{{ block.settings.button_link }}" class="btn btn-theme gradient-theme slideshow__btn slideshow__btn--mobile slideshow__btn{{block.id}}">
-                  {{ block.settings.button_label | escape }}
-                </a>
-                {%- endif -%}
-              </div>
-            </div>
-            {%- endif -%}
-            {%- endfor -%}
-          </div>
+    
           {%- endif -%}
           {%- if section.blocks.size == 0 -%}
           <div class="placeholder-noblocks">

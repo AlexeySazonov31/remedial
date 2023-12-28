@@ -370,10 +370,7 @@
       border-color:{{section.settings.color_dot_active}};
       background:{{section.settings.color_dot_active}};
     }
-    h1{
-        display: none !important;
-    }
-    
+
     @media (max-width:991px) {
       .slideshow .slick-arrow {
         display: none!important;
@@ -494,7 +491,7 @@
         </div>
       </div>
       <div class="slideshow__text-wrap slideshow__text-wrap--mobile bg-white" >
-        {%- for block in section.blocks -%}
+      
         {%- assign show_text = false -%}
         {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
         {%- assign show_text = true -%}
@@ -545,7 +542,7 @@
           </div>
         </div>
         {%- endif -%}
-        {%- endfor -%}
+
       </div>
       {%- endif -%}
       {%- if section.blocks.size == 0 -%}

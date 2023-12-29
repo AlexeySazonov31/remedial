@@ -41,7 +41,7 @@
         {%- if template contains 'index' -%}
         <p>{{ my_variable | strip_html | truncatewords: 50 }}</p>
         {%- else -%}
-        <p>{{ article.published_at | strip_html | truncatewords: 100 }}</p>
+        <p>{{ article.comments | strip_html | truncatewords: 100 }}</p>
         {%- endif -%}
       {%- endif -%}
     </div>

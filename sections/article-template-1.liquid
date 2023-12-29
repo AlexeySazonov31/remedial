@@ -1,4 +1,7 @@
 <!-- article-content.liquid -->
+
+
+
 {%- assign new_comment = false -%}
 {%- if comment and comment.created_at -%}
   {%- assign new_comment = true -%}
@@ -68,6 +71,10 @@
       {%- endif -%}
       <div class="content-block">
         <div class="rte rte--indented-images mb-5" itemprop="articleBody">
+
+
+       
+
           {{ article.content }}
 
 

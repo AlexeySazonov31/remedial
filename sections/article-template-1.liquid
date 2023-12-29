@@ -31,7 +31,9 @@
 
 <div class="container pt-4">
 
-
+<div>
+ {%- include 'blog-grid-blank' -%}
+</div>
 
 
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">

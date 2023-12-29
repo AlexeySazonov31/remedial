@@ -3859,6 +3859,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "10392180304043610673": {
+        "type": "shopify:\/\/apps\/quick-redirect\/blocks\/app-embed-block\/a136deff-7bed-4812-8a4b-2246f781570e",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },

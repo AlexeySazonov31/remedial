@@ -29,7 +29,33 @@
 <div class="container pt-4">
 
 
+<ul class="menu">
+  {% for link in section.settings.menu.links %}
+    <li class="menu-link">
+      <a href="{{ link.url }}">{{ link.title }}</a>
 
+      {% if link.links.size > 0 %}
+        <ul class="menu dropdown-child">
+          {% for child_link in link.links %}
+            <li class="menu-link">
+              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+              {% if child_link.links.size > 0 %}
+                <ul class="menu dropdown-grandchild">
+                  {% for grandchild_link in child_link.links %}
+                    <li class="menu-link">
+                      <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
 
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">

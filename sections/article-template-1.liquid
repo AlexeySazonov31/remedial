@@ -28,13 +28,12 @@
 {%- endif -%}
 <div class="container pt-4">
 
-
 <ul class="menu">
   {% for link in section.settings.menu.links %}
     <li class="menu-link">
       <a href="{{ link.url }}">{{ link.title }}</a>
 
-      {% if link.links.size > 0 %}
+      
         <ul class="menu dropdown-child">
           {% for child_link in link.links %}
             <li class="menu-link">
@@ -52,7 +51,7 @@
             </li>
           {% endfor %}
         </ul>
-      {% endif %}
+     
     </li>
   {% endfor %}
 </ul>

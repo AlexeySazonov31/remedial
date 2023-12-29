@@ -36,9 +36,9 @@
       {{ article.excerpt }}
       {%- else -%}
         {%- if template contains 'index' -%}
-        <p>{{ article.content | strip_html | truncatewords: 50 }}</p>
+        <p>{{ article.text | strip_html | truncatewords: 50 }}</p>
         {%- else -%}
-        <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
+        <p>{{ article.text | strip_html | truncatewords: 100 }}</p>
         {%- endif -%}
       {%- endif -%}
     </div>

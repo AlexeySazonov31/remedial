@@ -1,7 +1,7 @@
 <!-- blog-grid-1.liquid -->
 
 
-{% assign my_variable = p %}
+
 <div class="blog__item blog__item--1 text-center">
     {%- if article.image -%}
     <div class="content-block__image mb-3">
@@ -39,9 +39,9 @@
       {{ article.excerpt }}
       {%- else -%}
         {%- if template contains 'index' -%}
-        <p>{{ my_variable | strip_html | truncatewords: 50 }}</p>
+        <p>{{ article.content | strip_html | truncatewords: 50 }}</p>
         {%- else -%}
-        <p>{{ my_variable | strip_html | truncatewords: 100 }}</p>
+        <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
         {%- endif -%}
       {%- endif -%}
     </div>

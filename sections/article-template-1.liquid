@@ -81,8 +81,8 @@
          <div class="show-product-list"> 
              {% for i in  (1..my_description_size) %}                   
                {%- assign name_product = my_description[i] | strip_html | strip -%}
-               {% paginate collections.all.products by 10 %}
-               {%- for products in collections.all.products -%}
+               {% paginate collection.products by 10 %}
+               {%- for product in collection.products -%}
                    {% if product.title == name_product %}
                       <div class="product-list-item">
                         {%- include 'product-card', product: product -%}

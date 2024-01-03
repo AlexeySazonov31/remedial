@@ -84,7 +84,7 @@
                {% paginate collections.products by 10 %}
                {%- for product in collections.products -%}
                    {% if product.title == name_product %}
-                      <div class="productlist-item">
+                      <div class="product-list-item">
                         {%- include 'product-card', product: product -%}
                      </div> 
                    {% endif %}

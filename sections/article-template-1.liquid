@@ -76,6 +76,7 @@
        
 
        {% assign my_description = article.content | split: '==prod=='  %}  
+        {%- assign collection = collections[section.settings.collection]  -%}
          {% assign  my_description_size = my_description.size | minus: 2 %}
           {{ my_description | first}}
          <div class="show-product-list"> 

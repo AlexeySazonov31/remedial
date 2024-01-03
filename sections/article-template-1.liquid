@@ -82,7 +82,7 @@ asdasd<!-- article-content.liquid -->
                {%- for product in collections.all.products -%}
                    {% if product.title == name_product %}
                       <div class="product_item">
-                       {% include 'product-list' %} 
+                       {% include 'product-card' %} 
                      </div> 
                    {% endif %}
                {%- endfor -%}
@@ -95,8 +95,7 @@ asdasd<!-- article-content.liquid -->
 
         </div>
 
-
- {% include 'product-list' %} 
+  {% include 'product-card' %} 
         <div class="border-top py-4">
           <div class="d-flex justify-content-between align-items-center">
             <ul class="list-unstyled list-blog-tags">

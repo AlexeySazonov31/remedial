@@ -72,7 +72,7 @@ asdasd<!-- article-content.liquid -->
       <div class="content-block">
         <div class="rte rte--indented-images mb-5" itemprop="articleBody">
 
-{% assign my_description = article.content | split: '=== split content ==='  %}  
+         {% assign my_description = article.content | split: '=== split content ==='  %}  
          {% assign  my_description_size = my_description.size | minus: 2 %}
           {{ my_description | first}}
          <div class="show-product-list"> 

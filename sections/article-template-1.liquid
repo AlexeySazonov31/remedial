@@ -84,7 +84,7 @@
                {%- for product in collections.all.products -%}
                    {% if product.title == name_product %}
                       <div class="product_item">
-                       {% include 'product-card-list' %} 
+                       {% include 'product-card' %} 
                      </div> 
                    {% endif %}
                {%- endfor -%}

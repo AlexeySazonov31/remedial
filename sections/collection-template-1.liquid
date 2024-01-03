@@ -34,20 +34,7 @@
              <div class="bundler-target-element" data-bndlr-ccid="689h"></div>
            {% else %}
         
-           <div id="js-product-ajax">
-             <!-- ONLY HAVE LIST OF PRODUCTS AND PAGINATION TO LOAD AJAX -->
-       
-             {%- if paginate.pages > 1 -%}
-               <div class="pagination js-pagination">
-                 {{
-                   paginate
-                   | default_pagination
-                   | replace: '&laquo; Previous', '&larr;'
-                   | replace: 'Next &raquo;', '&rarr;'
-                 }}
-               </div>
-             {%- endif -%}
-           </div>
+      
            {% endif %}
          </div>
        </div>

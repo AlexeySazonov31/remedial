@@ -82,7 +82,7 @@
          <div class="show-product-list"> 
              {% for i in  (1..my_description_size) %}                   
                {%- assign name_product = my_description[i] | strip_html | strip -%}
-               {% paginate collection.products by 10 %}
+               {% paginate collection.products by limit %}
                {%- for product in collection.products -%}
                    {% if product.title == name_product %}
                       <div class="product-list-item">

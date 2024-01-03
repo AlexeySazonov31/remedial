@@ -34,35 +34,7 @@
              <div class="bundler-target-element" data-bndlr-ccid="689h"></div>
            {% else %}
            <div class="category-heading">
-             <div class="row">
-               {%- if section.settings.enable_sidebar -%}
-                 <div class="col col-3 col-left d-lg-none">
-                   <span class="js-toggle-filter d-flex align-items-center px-3">
-                     {%- include 'icon-sliders' -%}
-                     <span class="ml-2">{{ 'collections.general.filter' | t }}</span>
-                   </span>
-                 </div>
-               {%- endif -%}
-               <div class="col-sm-6 col-mid">
-                 <div class="d-flex align-items-center h-100">
-                   <span
-                     class="js-btn-view btn-view-2 {% if productPerrow == '2' %}active{% endif %}"
-                     data-col="2"
-                   ></span>
-                   <span
-                     class="js-btn-view btn-view-3 {% if productPerrow == '3' %}active{% endif %}"
-                     data-col="3"
-                   ></span>
-                   <span
-                     class="js-btn-view btn-view-4 {% if productPerrow == '4' %}active{% endif %}"
-                     data-col="4"
-                   ></span>
-                 </div>
-               </div>
-               <div class="col col-right">
-                 {%- include 'collection-sortby' -%}
-               </div>
-             </div>
+      
            </div>
            <div id="js-product-ajax">
              <!-- ONLY HAVE LIST OF PRODUCTS AND PAGINATION TO LOAD AJAX -->

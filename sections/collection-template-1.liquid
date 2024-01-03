@@ -2,8 +2,7 @@
 
  
  
- {%- assign productPerpage = section.settings.collection_perpage -%}
- {%- assign productPerrow = section.settings.collection_perrow -%}
+
  
  {%- if productPerrow == '2' -%}
    {%- assign gridProduct = 'js-col col-sm-6 col-6' -%}
@@ -17,7 +16,7 @@
    {%- assign gridProduct = 'js-col col-sm-6 col-6 col-lg-2' -%}
  {%- endif -%}
  
- {%- paginate collection.products by productPerpage -%}
+
    <div class="{{section.settings.collection_width}}">
      <div class="row">
        {%- if section.settings.enable_sidebar -%}
@@ -41,5 +40,5 @@
      </div>
      {%- include 'coupon_code' -%}
    </div>
- {%- endpaginate -%}
+
  

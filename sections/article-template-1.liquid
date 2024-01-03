@@ -74,8 +74,25 @@
 
 
        
-
-          {{ article.content }}
+{% assign my_description = article.content | split: '=== split content ==='  %}  
+         {% assign  my_description_size = my_description.size | minus: 2 %}
+          {{ my_description | first}}
+         <div class="show-product-list"> 
+             {% for i in  (1..my_description_size) %}                   
+               {%- assign name_product = my_description[i] | strip_html | strip -%}
+               {% paginate collections.all.products by 100 %}
+               {%- for product in collections.all.products -%}
+                   {% if product.title == name_product %}
+                      <div class="product_item">
+                       {% include 'product-card-list' %} 
+                     </div> 
+                   {% endif %}
+               {%- endfor -%}
+               {% endpaginate %}
+             {% endfor %}
+         </div>
+           {{ my_description | last}}
+      
 
 
 

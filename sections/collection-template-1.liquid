@@ -21,13 +21,19 @@
    <div class="{{section.settings.collection_width}}">
      <div class="row">
        {%- if section.settings.enable_sidebar -%}
-         <div class="{{section.settings.sidebar_col}} col-12 js-sidebar">
-           <div class="sidebar collection-sidebar js-stick-parent">
-             {%- include 'sidebar' -%}
-           </div>
-         </div>
+      
        {%- endif -%}
- 
+       <div class="col ">
+         <div class="pl-lg-4 pl-md-4 pl-0">
+     
+           {% if collection.products_count == 0 %}
+             <div class="bundler-target-element" data-bndlr-ccid="689h"></div>
+           {% else %}
+        
+      
+           {% endif %}
+         </div>
+       </div>
      </div>
      {%- include 'coupon_code' -%}
    </div>

@@ -79,7 +79,7 @@ asdasd<!-- article-content.liquid -->
          <div class="show-product-list">           
            {% if article.tags.size > 0 %}             
                {% for tag in article.tags %}
-               {% paginate collections.all.products by === split content === %}
+               {% paginate collections.all.products by 1 %}
                {%- for product in collections.all.products -%}
                    {% if product.handle == tag %}
                       <div class="product_item">

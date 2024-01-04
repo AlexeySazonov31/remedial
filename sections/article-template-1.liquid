@@ -45,7 +45,7 @@
       {% if headingParts.size > 1 %}
         {% assign title = headingParts[0] | replace: '<p>', '' | replace: '</p>', '' %}
         {% assign id = title | handle %}
-        <li><a href="#{{ headings.id }}">{{ headings }}</a></li>
+        <li><a href="#{{ headings.id }}">{{ headings.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

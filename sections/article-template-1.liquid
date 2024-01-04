@@ -44,13 +44,23 @@
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
         {% assign titleWithTag = headingParts[0] %}
-        {% assign title = titleWithTag | split: '>' | last | strip_html %}
+        {% assign title = titleWithTag | split: '>'| strip_html %}
         {% assign id = title | handle %}
         <li><a href="#{{ id }}">{{ title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
 {% endif %}
+
+
+
+
+
+
+
+
+
+
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
     <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-8{% endif %}">
       <div class="content-block mb-4">

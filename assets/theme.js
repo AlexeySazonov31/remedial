@@ -5125,7 +5125,7 @@ theme.anchorScroll = (function(){
     var disableAnchor = $(this).hasClass('disabled-anchor');
     if (!disableAnchor){
       $('html, body').animate({
-        scrollTop: $("a[href^='#']").offset().top 
+        scrollTop: $($.attr(this, 'href')).offset().top 
       }, 500);
     }
   });

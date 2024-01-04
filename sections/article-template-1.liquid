@@ -317,6 +317,15 @@ $('h2[id]').each(function() {
   $('#toc').append(function() {
     return '<li><a href="#' + target + '">' + text + '</a></li>';
   });
+
+
+$('h3[id]').each(function() {
+  var target = this.id;
+  var text = $(this).text();
+  $('#toc').append(function() {
+    return '<li><a href="#' + target + '">' + text + '</a></li>';
+  });
+});
 });
 
 

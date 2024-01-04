@@ -45,7 +45,7 @@
         {% assign titleWithTag = headingParts[0] %}
         {% assign title = titleWithTag | split: '>' | last %}
         {% assign cleanedTitle = title | strip_html %}
-        {% assign id = cleanedTitle | handle %}
+        {% assign id = id | strip_html %}
         <li><a href="#{{ id }}">{{ cleanedTitle }}</a></li>
       {% endif %}
     {% endfor %}

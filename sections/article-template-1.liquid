@@ -41,21 +41,20 @@
   {% assign headings = article.content | split: '<h2>' %}
 
 
+{% if template == 'article' %}
+  {% assign contentArray = article.content | split: '<h2>' %}
   <ul class="anchor-menu">
-
-
-
-
-    {% for heading in headings %}
-      {% assign headingParts = heading | split: '</h2>' %}
-      {% if headingParts.size > 1 %}
-        {% assign title = headingParts[0] | replace: '<p>', '' | replace: '</p>', '' %}
-        {% assign id = title | handle %}
-        <li><a href="#{{ id }}">{{ article.content | split: '<h2>' }}</a></li>
+    {% for contentItem in contentArray %}
+      {% assign h2ContentArray = contentItem | split: '</h2>' %}
+      {% if h2ContentArray.size > 1 %}
+        {% assign title = h2ContentArray[0] %}
+        {% assign strippedTitle = title | strip_html %}
+        {% assign id = strippedTitle | handle %}
+        <li><a href="#{{ id }}">{{ strippedTitle }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
-
+{% endif %}
 
 {% endif %}
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">

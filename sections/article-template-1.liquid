@@ -38,10 +38,10 @@
 
 
 {% if template == 'article' %}
-  {% assign headings = article.content | split: '<h3>' %}
+  {% assign headings = article.content | split: '<h2>' %}
   <ul class="anchor-menu">
     {% for heading in headings %}
-      {% assign headingParts = heading | split: '</h3>' %}
+      {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
         {% assign title = headingParts[0] %}
         {% assign id = title | handle %}

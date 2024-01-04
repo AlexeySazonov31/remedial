@@ -116,12 +116,12 @@
 
 
 {% if template == 'article' %}
-  {% assign headings = content | split: '<h2>' %}
+  {% assign headings = content | split: '<h3>' %}
   <ul class="anchor-menu">
     {% for heading in headings %}
-      {% assign headingParts = heading | split: '</h2>' %}
+      {% assign headingParts = heading | split: '</h3>' %}
       {% if headingParts.size > 1 %}
-        {% assign title = headingParts[0] | remove: '<h2>' %}
+        {% assign title = headingParts[0] | remove: '<h3>' %}
         {% assign id = title | handle %}
         <li><a href="#{{ id }}">{{ title }}</a></li>
       {% endif %}

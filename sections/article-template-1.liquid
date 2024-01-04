@@ -30,6 +30,11 @@
   {%- assign number_of_comments = article.comments_count -%}
 {%- endif -%}
 
+
+
+
+
+<div class="container pt-4">
 {% if template == 'article' %}
   {% assign headings = content | split: '<h2>' %}
   <ul class="anchor-menu">
@@ -45,19 +50,6 @@
 {% endif %}
 
 
-
-
-<div class="container pt-4">
-
-
-
-<ul class="anchor-menu">
-  {% for block in section.blocks %}
-    {% if block.settings.anchor_title != blank %}
-      <li><a href="#{{ block.id }}">{{ block.settings.anchor_title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
 
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
     <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-8{% endif %}">

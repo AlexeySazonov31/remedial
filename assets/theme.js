@@ -5511,6 +5511,7 @@ theme.ajaxFilter = (function() {
     }
   }
 
+
   if ($(".template-collection")) {
     History.Adapter.bind(window, 'statechange', function() {
       var State = History.getState();

@@ -304,8 +304,8 @@
 $("h2, h3").each(function(index) {
    $(this).attr("id", index);
 });
-$("h3").each(function() {
-   $(this).addClass("sdasd");
+$("h3").each(function(var i = 0) {
+   $(this).addClass(i++);
 });
 $('h2[id], h3[id]').each(function() {
     var target = this.id;

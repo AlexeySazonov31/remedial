@@ -314,10 +314,19 @@ $("h2, h3").each(function(index) {
 $('h2[id], h3[id]').each(function() {
     var target = this.id;
     var text = $(this).text();
+
+  
     $('#toc').append(function() {
       return '<li><a href="#' + target + '">' + text + '</a></li>';
     });
+  
+    if() {
+      
+    }
   });
+
+
+    console.log( $("h3").attr(id)); 
   
 
 

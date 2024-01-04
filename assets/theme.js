@@ -1803,7 +1803,7 @@ theme.Product = (function() {
       topMenuHeight = $('.site-header').outerHeight();
       if(this.settings.sectionId === 'product-template-8'){
         $([document.documentElement, document.body]).animate({
-          scrollTop: $imageToShow.offset().top-topMenuHeight
+          scrollTop: $imageToShow.offset().top
         }, 500);
       }
     },
@@ -5126,7 +5126,7 @@ theme.anchorScroll = (function(){
     if (!disableAnchor){
       $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-      }, 100000);
+      }, 500);
     }
   });
 })()

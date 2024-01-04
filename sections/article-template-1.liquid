@@ -44,7 +44,7 @@
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
         {% assign title = headingParts[0] | replace: '<p>', '' | replace: '</p>', '' %}
-        {% assign id = title | handle %}
+        {% assign id = handle %}
         <li><a href="#{{ id }}">{{ article.content | split: '<h2>' }}</a></li>
       {% endif %}
     {% endfor %}

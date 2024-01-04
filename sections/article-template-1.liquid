@@ -43,9 +43,9 @@
     {% for heading in headings %}
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
-        {% assign title = headingParts[headingParts.size] | strip_html %}
+        {% assign title = headingParts[0] | strip_html %}
         {% assign id = title | handle %}
-        <li><a href="#{{ id }}">{{ title }}</a></li>
+        <li><a href="#{{ id }}">{{ headingParts.size }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

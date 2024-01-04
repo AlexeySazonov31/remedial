@@ -38,15 +38,14 @@
 
 
 {% if template == 'article' %}
-  {% assign contentArray = article.content | split: '<h2>' %}
+  {% assign headings = article.content | split: '<h2>' %}
   <ul class="anchor-menu">
-    {% for contentItem in contentArray %}
-      {% assign h2ContentArray = contentItem | split: '</h2>' %}
-      {% if h2ContentArray.size > 1 %}
-        {% assign title = h2ContentArray[0] %}
-        {% assign strippedTitle = title | strip_html %}
-        {% assign id = strippedTitle | handle %}
-        <li><a href="#{{ id }}">{{ strippedTitle }}</a></li>
+    {% for heading in headings %}
+      {% assign headingParts = heading | split: '</h2>' %}
+      {% if headingParts.size > 1 %}
+        {% assign title = headingParts[0] | strip_html %}
+        {% assign id = title | handle %}
+        <li><a href="#{{ id }}">{{ title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

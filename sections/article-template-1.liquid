@@ -43,9 +43,10 @@
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
         {% assign titleWithTag = headingParts[0] %}
-        {% assign title = titleWithTag | replace: '<p>', '' | replace: '</p>', '' | strip_html %}
-        {% assign id = title | handle %}
-        <li><a href="#{{ id }}">{{ title }}</a></li>
+        {% assign title = titleWithTag | split: '>' | last %}
+        {% assign cleanedTitle = title | strip_html %}
+        {% assign id = cleanedTitle | handle %}
+        <li><a href="#{{ id }}">{{ cleanedTitle }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

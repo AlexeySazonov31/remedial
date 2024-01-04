@@ -1803,7 +1803,7 @@ theme.Product = (function() {
       topMenuHeight = $('.site-header').outerHeight();
       if(this.settings.sectionId === 'product-template-8'){
         $([document.documentElement, document.body]).animate({
-          scrollTop: $imageToShow.offset().top
+          scrollTop: $imageToShow.offset().top-topMenuHeight
         }, 500);
       }
     },

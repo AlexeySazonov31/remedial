@@ -288,6 +288,29 @@
     {%- include 'blogSidebar' -%}
     {%- endif -%}
   </article>
+
+
+
+
+    <script>
+
+
+      function addAnchors() {
+  // Получить все заголовки в статье
+  const headers = document.querySelectorAll("h2");
+
+  // Добавить якоря для каждого заголовка
+  for (const header of headers) {
+    const anchor = document.createElement("a");
+    anchor.setAttribute("id", header.textContent);
+    anchor.setAttribute("href", "#");
+    document.body.appendChild(anchor);
+  }
+}
+
+// Запустить функцию при загрузке страницы
+window.onload = addAnchors;
+    </script>
 </div>
 
 {% schema %}

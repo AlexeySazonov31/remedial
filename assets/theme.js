@@ -5125,7 +5125,7 @@ theme.anchorScroll = (function(){
     var disableAnchor = $(this).hasClass('disabled-anchor');
     if (!disableAnchor){
       $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 300
+        scrollTop: $($.attr(this, 'href')).offset().top - 200
       }, 500);
     }
   });
@@ -5511,6 +5511,8 @@ theme.ajaxFilter = (function() {
     }
   }
 
+
+  
 
   if ($(".template-collection")) {
     History.Adapter.bind(window, 'statechange', function() {

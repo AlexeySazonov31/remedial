@@ -45,19 +45,13 @@
 
 
 
-{% assign contentArray = article.content | split: '<h2>' %}
-{% if contentArray.size > 1 %}
-  {% assign h2ContentArray = contentArray[1] | split: '</h2>' %}
-  {% if h2ContentArray.size > 1 %}
-    {{ h2ContentArray[0] | strip_html }}
-  {% endif %}
-{% endif %}
+
     {% for heading in headings %}
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
         {% assign title = headingParts[0] | replace: '<p>', '' | replace: '</p>', '' %}
         {% assign id = title | handle %}
-        <li><a href="#{{ id }}">{{ article.content | replace: '<h2>' }}</a></li>
+        <li><a href="#{{ id }}">{{ article.content | split: '<h2>' }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

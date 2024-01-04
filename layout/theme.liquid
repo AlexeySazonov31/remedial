@@ -112,6 +112,22 @@
     {% if template contains 'product' %}
       {% render 'jsonLd' %}
     {% endif %}
+
+
+
+{% if template == 'article' %}
+  {% assign headings = content | split: '<h2>' %}
+  <ul class="anchor-menu">
+    {% for heading in headings %}
+      {% assign headingParts = heading | split: '</h2>' %}
+      {% if headingParts.size > 1 %}
+        {% assign title = headingParts[0] | remove: '<h2>' %}
+        {% assign id = title | handle %}
+        <li><a href="#{{ id }}">{{ title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
     <script>var appElement = document.getElementById('ctn-younet-content');if (appElement) {appElement.style.display = 'block';}</script>
 
   </body>

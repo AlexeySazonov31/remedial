@@ -293,24 +293,14 @@
 
 
     <script>
+$('h1[id]').each(function() {
+  var target = this.id;
+  $('#toc').append(function() {
+    return '<li><a href="#' + target + '">' + target + '</a></li>';
+  });
+});
 
-
-      function addAnchors() {
-  // Получить все заголовки в статье
-  const headers = document.querySelectorAll("h2");
-
-  // Добавить якоря для каждого заголовка
-  for (const header of headers) {
-    const anchor = document.createElement("a");
-    anchor.setAttribute("id", header.textContent);
-    anchor.setAttribute("href", "#");
-    document.body.appendChild(anchor);
-  }
-}
-
-// Запустить функцию при загрузке страницы
-window.onload = addAnchors;
-    </script>
+</script>
 </div>
 
 {% schema %}

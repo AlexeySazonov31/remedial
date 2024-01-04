@@ -39,7 +39,19 @@
 
 {% if template == 'article' %}
   {% assign headings = article.content | split: '<h2>' %}
+
+
   <ul class="anchor-menu">
+
+
+
+{% assign contentArray = article.content | split: '<h2>' %}
+{% if contentArray.size > 1 %}
+  {% assign h2ContentArray = contentArray[1] | split: '</h2>' %}
+  {% if h2ContentArray.size > 1 %}
+    {{ h2ContentArray[0] | strip_html }}
+  {% endif %}
+{% endif %}
     {% for heading in headings %}
       {% assign headingParts = heading | split: '</h2>' %}
       {% if headingParts.size > 1 %}
@@ -49,6 +61,8 @@
       {% endif %}
     {% endfor %}
   </ul>
+
+
 {% endif %}
   <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
     <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-8{% endif %}">

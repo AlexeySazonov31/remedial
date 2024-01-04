@@ -282,7 +282,10 @@
 
 
     <script>
-$('h2[id]','h3[id]').each(function() {
+
+
+      var tage = document.querySelectorAll("h2");
+$(tage).each(function() {
   var target = this.id;
   $('#toc').append(function() {
     return '<li><a href="#' + target + '">' + target + '</a></li>';

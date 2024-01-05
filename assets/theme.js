@@ -2210,7 +2210,6 @@ theme.Slideshow = (function() {
 
     this.$slideshow.on('beforeChange', beforeChange.bind(this));
     this.$slideshow.on('init', slideshowA11ySetup.bind(this));
-    this.$slideshow.on('init', removeRoleAttributes.bind(this));
 
     // Add class to style mobile dots & show the correct text content for the
     // first slide on mobile when the slideshow initialises
@@ -2235,13 +2234,7 @@ theme.Slideshow = (function() {
     // adds a11y features.
     slideshowPostInitA11ySetup.bind(this)();
   }
-  function removeRoleAttributes() {
-      setTimeout(function(){
-         $('[data-section-type="slideshow-section"] div[role]').each(function(e){
-          $(this).removeAttr('role');
-        });
-      },100)
-  }
+
   function slideshowA11ySetup(event, obj) {
     var $slider = obj.$slider;
     var $list = obj.$list;
@@ -2516,15 +2509,15 @@ theme.Cart = (function() {
       );
     },
 
-    // _attributeToString: function(attr) {
-    //   if (typeof attr !== 'string') {
-    //     attr = String(attr);
-    //     if (attr === 'undefined') {
-    //       attr = '';
-    //     }
-    //   }
-    //   return $.trim(attr);
-    // },
+    _attributeToString: function(attr) {
+      if (typeof attr !== 'string') {
+        attr = String(attr);
+        if (attr === 'undefined') {
+          attr = '';
+        }
+      }
+      return $.trim(attr);
+    },
 
     _cookiesEnabled: function() {
       var cookieEnabled = navigator.cookieEnabled;
@@ -2656,16 +2649,8 @@ theme.Instagrams = (function() {
 
 // Slick carousel
 theme.slickCarousel = (function (){
-  function removeRoleAttributes() {
-      setTimeout(function(){
-         $('.services-slider [role]').each(function(e){
-          $(this).removeAttr('role').removeAttr('aria-selected').removeAttr('aria-controls').removeAttr('aria-hidden');
-        });
-      },100)
-  }
   function Carousels(container) {
     this.$container = $(container).on('init', this._a11y.bind(this));
-    this.$container = $(container).on('init', removeRoleAttributes);
     this.settings = {
       rows 				: this.$container.data('rows') || 1,
       slidesToShow 		: this.$container.data('slidestoshow') || 1,
@@ -4777,61 +4762,16 @@ theme.productSuggest = (function(){
 // Stickyheader
 theme.stickyHeader = (function(){
   var stickHeaderClass = '.site-header--sticky';
-  var topbarId = '#topbar';
-
-  function debounce(func, delay) {
-    var timer;
-    return function() {
-      clearTimeout(timer);
-      timer = setTimeout(function() {
-        func.apply(this, arguments);
-      }, delay);
-    };
-  }
-
-  function toggleStickyHeader() {
-    if (window.pageYOffset >= 20) {
-      $(stickHeaderClass).addClass('active');
-      $(topbarId).slideUp('fast'); // Smoothly hide #topbar
-    } else {
-      $(stickHeaderClass).removeClass('active');
-      $(topbarId).slideDown(); // Smoothly show #topbar
-    }
-  }
-
-  var debouncedToggle = debounce(toggleStickyHeader, 200);
-
-  if ($(stickHeaderClass).length !== 0) {
-    // Initial check and toggle for non-scroll situations
-    toggleStickyHeader();
-
-    // Scroll event with debounce
-    $(window).scroll(debouncedToggle);
-
-    // Mobile-specific (max-width: 768px) media query
-    var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
-    
-    // Function to handle changes in media query
-    var handleMobileMediaQuery = function (mediaQuery) {
-      if (mediaQuery.matches) {
-        // Apply sticky header for mobile
-        $(window).scroll(debouncedToggle);
+  if ($(stickHeaderClass).length !== 0){
+    $(window).scroll(function() {
+      if (window.pageYOffset >= 20) {
+        $(stickHeaderClass).addClass('active');
       } else {
-        // Remove sticky header for larger screens
         $(stickHeaderClass).removeClass('active');
-        $(topbarId).slideDown('fast');
-        $(window).off('scroll', debouncedToggle);
       }
-    };
-
-    // Call the function initially and add a listener for changes
-    handleMobileMediaQuery(mobileMediaQuery);
-    mobileMediaQuery.addListener(handleMobileMediaQuery);
+    });
   }
-})();
-
-
-
+})()
 
 theme.PhotoSwipe = (function(){
   var initPhotoSwipeFromDOM = function(gallerySelector) {
@@ -5125,7 +5065,7 @@ theme.anchorScroll = (function(){
     var disableAnchor = $(this).hasClass('disabled-anchor');
     if (!disableAnchor){
       $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 200
+        scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
     }
   });
@@ -5510,9 +5450,6 @@ theme.ajaxFilter = (function() {
       });
     }
   }
-
-
-  
 
   if ($(".template-collection")) {
     History.Adapter.bind(window, 'statechange', function() {

@@ -308,10 +308,60 @@ text-align: center;
 
 
 
-    <script>
+   <script>
+
+        $('#toc').append(function() {
+           return '<div class="toc__nav">Navigation</div>';
+         });
+     
 
 
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+     $("h2, h3").each(function(index) {
+        $(this).attr("id", index);
+     });
+     $("h3").each(function(i) {
+       var i = 1;
+        $(this).addClass(i++);
+     });
+     $('h2[id]').each(function() {
+         var target = this.id;
+         var text = $(this).text();  
+         $('#toc').append(function() {
+           return '<li><a href="#' + target + '">' + text + '</a></li>';
+         });
+       });
+     
+     
+     
+     $('article h3[id]').each(function() {
+         var target = this.id;
+         var text = $(this).text();  
+         $('#toc').append(function() {
+           return '<li><a href="#' + target + '">' + text + '</a></li>';
+         });
+       });
+     </script>
 </div>
 
 {% schema %}

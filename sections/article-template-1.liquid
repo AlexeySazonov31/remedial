@@ -74,12 +74,15 @@ text-align: center;
    
     {%- for product in related_products -%}
       {%- if product.available -%}
-      <a href="{{ product.url }}" title="{{ product.title }}" data-price="{{ product.price }}>
-        <img src="{{ product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ product.title }}" loading="lazy">
-        <p>{{ product.title }}</p>
-
-        
-      </a>
+     <a class="product-card__image js" href="{{ product.url }}" title="{{ product.title | escape }}" style="max-width: 680px;" data-image-id="{{ image.id }}">
+          {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="lazyload transition first-image"
+               data-src="{{ img_url }}"
+               src="{%- include 'srcBlank' -%}"
+               data-sizes="auto"
+               alt="{{ image.alt | escape }}">
+               {% include 'second-image'%}
+        </a>
       {%- endif -%}
     {%- endfor -%}
 

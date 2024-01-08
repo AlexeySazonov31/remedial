@@ -68,7 +68,9 @@ text-align: center;
 
 
 
-{%- if article.metafields.custom.related_products.value -%}
+<div class="qwe">
+
+  {%- if article.metafields.custom.related_products.value -%}
   {%- assign related_products = article.metafields.custom.related_products.value -%}
  
    <div class="row">
@@ -185,10 +187,14 @@ text-align: center;
           </div>
           {%- endif -%}
         </div>
-  
+
+     
     {%- endfor -%}
    </div>
-{%- endif -%}
+  {%- endif -%}
+</div>
+
+
 
 
 
@@ -460,6 +466,9 @@ text-align: center;
      $("h2, h3, h4").each(function(index) {
         $(this).attr("id", index);
      });
+
+
+
 
      $('h2[id], h3[id], h4[id]').each(function() {
          var target = this.id;

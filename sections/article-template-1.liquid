@@ -74,12 +74,16 @@ text-align: center;
     <h2>Related {{ paginate.items | pluralize: 'Product', 'Products' }}</h2>
     {%- for the_product in related_products -%}
       {%- if the_product.available -%}
-      <a href="{{ the_product.url }}" title="{{ the_product.title }}">
+
+
+
+<div class="product-card js-product-card product-card--style1 product-card--style4" href="{{ the_product.url }}" title="{{ the_product.title }}" data-price="{{ product.price }}">
+
         <img src="{{ the_product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ the_product.title }}" loading="lazy">
         <p>{{ the_product.title }}</p>
+</div>
 
-        
-      </a>
+  
       {%- endif -%}
     {%- endfor -%}
   {%- endpaginate -%}

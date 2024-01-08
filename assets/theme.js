@@ -5526,11 +5526,5 @@ theme.ajaxFilter = (function() {
 
 
 
-document.addEventListener("DOMContentLoaded", function(event) {
-      if(productInfo && productInfo.id === 123){
-        alert("Id matched");
-        $(".product-single__title").append("Added Content");
-      } 
-    });
 
 $(theme.init);

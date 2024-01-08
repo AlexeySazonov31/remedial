@@ -77,6 +77,7 @@ text-align: center;
       <div class="product-card__image-wr overflow-hidden" >
 
 
+        
         {%- assign image = product.featured_image -%}
           <a class="product-card__image js" href="{{ product.url }}" title="{{ product.title | escape }}" style="max-width: 680px;" data-image-id="{{ image.id }}">
           {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}

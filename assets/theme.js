@@ -5528,7 +5528,7 @@ theme.ajaxFilter = (function() {
 
 document.addEventListener("DOMContentLoaded", function(event) {
       if(productInfo && productInfo.id === 123){
-        console.log("Id matched");
+        alert("Id matched");
         $(".product-single__title").append("Added Content");
       } 
     });

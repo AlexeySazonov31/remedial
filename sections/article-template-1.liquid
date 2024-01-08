@@ -68,19 +68,7 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-  <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
-    <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-8{% endif %}">
-      <div class="content-block mb-4">
-
-
-
-        {%- if article.metafields.custom.related_products.value -%}
+{%- if article.metafields.custom.related_products.value -%}
   {%- assign related_products = article.metafields.custom.related_products.value -%}
  
    <div class="row customProductsBlock">
@@ -201,6 +189,14 @@ text-align: center;
     {%- endfor -%}
    </div>
 {%- endif -%}
+
+
+
+
+
+  <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
+    <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-8{% endif %}">
+      <div class="content-block mb-4">
         <p class="blog__meta text-primary2">
           {{ article.published_at | time_tag: format: 'month_day_year' }}
         </p>

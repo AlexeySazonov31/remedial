@@ -5119,17 +5119,17 @@ theme.HoverMenu = (function () {
 
 
 // Anchor scroll
-// theme.anchorScroll = (function(){
-//   $(document).on('click', 'a[href^="#"]', function (event) {
-//     event.preventDefault();
-//     var disableAnchor = $(this).hasClass('disabled-anchor');
-//     if (!disableAnchor){
-//       $('html, body').animate({
-//         scrollTop: $($.attr(this, 'href')).offset().top - 200
-//       }, 500);
-//     }
-//   });
-// })()
+theme.anchorScroll = (function(){
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    var disableAnchor = $(this).hasClass('disabled-anchor');
+    if (!disableAnchor){
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 200
+      }, 500);
+    }
+  });
+})()
 
 // Product-recently-viewed
 theme.productRecentlyViewed = (function(){

@@ -74,7 +74,7 @@ text-align: center;
    
     {%- for product in related_products -%}
       {%- if product.available -%}
-      <a href="{{ product.url }}" title="{{ product.title }}">
+      <a href="{{ product.url }}" title="{{ product.title }}" data-price="{{ product.price }}>
         <img src="{{ product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ product.title }}" loading="lazy">
         <p>{{ product.title }}</p>
 

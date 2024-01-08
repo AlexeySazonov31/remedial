@@ -77,6 +77,7 @@ text-align: center;
       <a href="{{ product.url }}" title="{{ product.title }}"  data-price="{{ product.price }}" >
         <img src="{{ product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ product.title }}" loading="lazy">
         <p>{{ product.title }}</p>
+        <p>{{ product.price }}</p>
 
         
       </a>

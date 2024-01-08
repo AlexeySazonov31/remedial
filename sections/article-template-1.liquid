@@ -74,7 +74,10 @@ text-align: center;
    
     {%- for product in related_products -%}
       {%- if product.available -%}
-      <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
+
+
+  <div id="js-col col-sm-6 col-6">
+   <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
         <div class="product-card__image-wr overflow-hidden">
           {%- assign image = product.featured_image -%}
           <a class="product-card__image js" href="{{ product.url }}" title="{{ product.title | escape }}" style="max-width: 680px;" data-image-id="{{ image.id }}">
@@ -181,6 +184,8 @@ text-align: center;
           {%- include 'swatch-grid-1' -%}
         </div>
       </div>
+</div>
+     
       {%- endif -%}
     {%- endfor -%}
 

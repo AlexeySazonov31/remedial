@@ -74,7 +74,7 @@ text-align: center;
    
     {%- for product in related_products -%}
       {%- if product.available -%}
-      <a href="{{ product.url }}" title="{{ product.title }}"  data-price="{{ product.price }}" >
+      <div class="product-card__image-wr overflow-hidden" >
 
 
         {%- assign image = product.featured_image -%}
@@ -86,14 +86,14 @@ text-align: center;
                data-sizes="auto"
                alt="{{ image.alt | escape }}">
                {% include 'second-image'%}
-        </a>
+          </a>
 
 
         <p>{{ product.title }}</p>
         <p>{{ product.price }}</p>
 
         
-      </a>
+      </div>
       {%- endif -%}
     {%- endfor -%}
 

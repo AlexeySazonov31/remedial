@@ -71,9 +71,9 @@ text-align: center;
 {%- if article.metafields.custom.related_products.value -%}
   {%- assign related_products = article.metafields.custom.related_products.value -%}
  
-   
+   <div class="row">
     {%- for product in related_products -%}
-      <div class="row">
+      
         <div class="js-col col-sm-6 col-6 col-lg-4">
           {%- if product.available -%}
           <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
@@ -185,9 +185,9 @@ text-align: center;
           </div>
           {%- endif -%}
         </div>
-      </div>
+  
     {%- endfor -%}
-
+   </div>
 {%- endif -%}
 
 

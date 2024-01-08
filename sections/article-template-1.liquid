@@ -75,7 +75,8 @@ text-align: center;
     {%- for product in related_products -%}
       {%- if product.available -%}
 
-<div class="row customProductsBlock">
+  <div class="js-col col-sm-6 col-6 col-lg-4">
+  <div class="row customProductsBlock">
   <div class="js-col col-sm-6 col-6">
    <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
         <div class="product-card__image-wr overflow-hidden">
@@ -187,6 +188,9 @@ text-align: center;
   </div>
 </div>
      
+</div>
+
+
       {%- endif -%}
     {%- endfor -%}
 

@@ -105,6 +105,14 @@
   </div>
 {%- endpaginate -%}
 
+
+
+{% unless product == empty %}
+  <script>
+    const productInfo = {{ product | json }};
+  </script>
+{% endunless %}
+
 {% schema %}
   {
     "name": "Collection Sidebar Left",

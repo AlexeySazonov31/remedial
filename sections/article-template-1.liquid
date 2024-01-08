@@ -69,28 +69,22 @@ text-align: center;
 
 
 {%- if article.metafields.custom.related_products.value -%}
-
   {%- assign related_products = article.metafields.custom.related_products.value -%}
+ 
+   
+    {%- for product in related_products -%}
+      {%- if product.available -%}
+      <a href="{{ product.url }}" title="{{ product.title }}">
+        <img src="{{ product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ product.title }}" loading="lazy">
+        <p>{{ product.title }}</p>
 
-
-    {%- for the_product in related_products -%}
-      {%- if the_product.available -%}
-
-
-
-<a class="product-card js-product-card product-card--style1 product-card--style4" href="{{ the_product.url }}" title="{{ the_product.title }}" data-price="{{ product.price }}">
-
-        <img class="lazyload transition first-image"  src="{{ the_product.featured_image | img_url: '300x300', crop: 'center', format: 'pjpg' }}" alt="{{ the_product.title }}" loading="lazy" >
-
-        <p>{{ the_product.title }}</p>
-        <p>{{ the_product.price }}</p>
-</a>
-
-  
+        
+      </a>
       {%- endif -%}
     {%- endfor -%}
- 
+
 {%- endif -%}
+
 
 
 

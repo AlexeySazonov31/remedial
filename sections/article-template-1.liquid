@@ -14,7 +14,7 @@
   
     border: 1px solid #bdbdbd;
     border-radius: 2px;
-text-align: center;
+
     padding: 10px 20px;
     border-radius: 10px;
     background: #d9d9d9;
@@ -29,8 +29,8 @@ text-align: center;
     color: #000;
   }
 
-  .pad-right {
-    padding-right: 20px;
+  .pad-left {
+    padding-left: 20px
   }
   
 </style>
@@ -369,7 +369,7 @@ text-align: center;
          var target = this.id;
          var text = $(this).text();  
          $('#toc').append(function() {
-           return '<li><a class="pad-right" href="#'  + target + '">' + text + '</a></li>';
+           return '<li><a class="pad-left" href="#'  + target + '">' + text + '</a></li>';
          });
        });
 

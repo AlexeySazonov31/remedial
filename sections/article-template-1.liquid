@@ -74,7 +74,7 @@ text-align: center;
     <h2>Related {{ paginate.items | pluralize: 'Product', 'Products' }}</h2>
     {%- for the_product in related_products -%}
       {%- if the_product.available -%}
-      <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
+    <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
       <div class="product-card__image-wr overflow-hidden">
         {%- assign image = product.featured_image -%}
         <a class="product-card__image js" href="{{ product.url }}" title="{{ product.title | escape }}" style="max-width: 680px;" data-image-id="{{ image.id }}">

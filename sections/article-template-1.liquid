@@ -347,14 +347,14 @@ text-align: center;
 
 
          
-     $("h2, h3, h4").each(function(index) {
+     $("h2, h3").each(function(index) {
         $(this).attr("id", index);
      });
 
 
 
 
-     $('h2[id], h3[id], h4[id]').each(function() {
+     $('h2[id], h3[id]').each(function() {
          var target = this.id;
          var text = $(this).text();  
          $('#toc').append(function() {

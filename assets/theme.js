@@ -5525,6 +5525,13 @@ theme.ajaxFilter = (function() {
 })();
 
 
+window.onload = function() { 
+    if (window.location.href.endsWith("/")) { 
+        window.location = window.location + "/"; 
+    } 
+}
+
+
 
 
 

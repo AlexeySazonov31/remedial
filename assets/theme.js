@@ -443,7 +443,7 @@ theme.Images = (function() {
   }
 
   function removeProtocol(path) {
-    return path.replace(/http(s)?:/, '/');
+    return path.replace(/http(s)?:/, '');
   }
 
   return {

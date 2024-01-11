@@ -5529,8 +5529,9 @@ function removeHttp(url) {
     return url.replace(/^https?:\/\//, '/');
   }
 
+  console.log(removeHttp('https://remedial.store/'));
 
-  
+
 
 
 

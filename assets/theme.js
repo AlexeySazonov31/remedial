@@ -5534,13 +5534,6 @@ window.onload = function() {
 }
 
 
-window.onload = function() { 
-
-alert("jopa");
-}
-
-
-
 
 
 

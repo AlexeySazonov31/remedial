@@ -5526,7 +5526,16 @@ theme.ajaxFilter = (function() {
 
 
 
-
+var lastChar = url.substr(-1); // Selects the last character
+if (lastChar != '/') {         // If the last character is not a slash
+   url = url + '/';            // Append a slash to it.
+}
+// The temporary variable name can be omitted, and directly embedded in the assertion:
+if (url.substr(-1) != '/') url += '/';
+// Since the goal is changing the url with a one-liner, the following solution can also be used:
+url = url.replace(/\/?$/, '/');
+// If the trailing slash exists, it is replaced with /.
+// If the trailing slash does not exist, a / is appended to the end (to be exact: The trailing anchor is replaced with /).
 
 
 

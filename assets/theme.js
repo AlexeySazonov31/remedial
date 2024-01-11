@@ -5536,9 +5536,5 @@ theme.ajaxFilter = (function() {
 $(theme.init);
 
 
-window.onload = function() { 
-    if (window.location.href.endsWith("/")) { 
-        window.location = window.location + "/"; 
-    } 
-}
+
 

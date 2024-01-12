@@ -1,11 +1,13 @@
 {%- if article.metafields.custom.related_products_down.value -%}
 {%- assign related_products_down = article.metafields.custom.related_products_down.value -%}
 
- <div class="row">
+ <div class="row  customProductsBlock">
   {%- for product in related_products_down -%}
     
-      <div class="js-col col-sm-6 col-6">
+    
         {%- if product.available -%}
+
+ <div class="js-col col-sm-6 col-6">
         <div class="product-card js-product-card product-card--style1 product-card--style4" data-price="{{ product.price }}">
           <div class="product-card__image-wr overflow-hidden">
             {%- assign image = product.featured_image -%}
@@ -113,8 +115,10 @@
             {%- include 'swatch-grid-1' -%}
           </div>
         </div>
+
+ </div>
         {%- endif -%}
-      </div>
+   
 
    
   {%- endfor -%}

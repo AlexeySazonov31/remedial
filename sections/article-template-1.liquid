@@ -28,7 +28,13 @@ text-align: center;
     font-size: 32px;
     color: #000;
   }
-  
+
+
+
+  .article-content img {
+    width: auto !important;
+    height: auto !important;
+  }
 </style>
 
 {%- assign new_comment = false -%}
@@ -68,19 +74,7 @@ text-align: center;
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-  <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
+ <article itemscope itemtype="http://schema.org/Article" class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %} {% unless section.settings.sidebar_enable %} justify-content-center{% endunless %}">
     <div  class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5{% else %} pr-lg-5{% endif %} {% else %}col-md-12{% endif %}">
       <div class="content-block mb-4">
         <p class="blog__meta text-primary2">

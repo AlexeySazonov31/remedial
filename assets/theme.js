@@ -5527,7 +5527,19 @@ theme.ajaxFilter = (function() {
 
 
 
+function добавитьСлэш(url) {
+    // Разбор URL с использованием объекта URL
+    let parsedUrl = new URL(url);
 
+    // Проверка, оканчивается ли путь URL слэшем
+    if (!parsedUrl.pathname.endsWith('/')) {
+        // Если нет, добавить слэш к пути
+        parsedUrl.pathname += '/';
+    }
+
+    // Возврат модифицированного URL
+    return parsedUrl.toString();
+}
 
 
 

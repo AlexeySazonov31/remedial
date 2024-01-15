@@ -5526,23 +5526,16 @@ theme.ajaxFilter = (function() {
 
 
 
-
-function addSlash(url) {
-    // Разбор URL с использованием объекта URL
-    let parsedUrl = new URL(url);
-
-    // Проверка, оканчивается ли путь URL слэшем
-    if (!parsedUrl.pathname.endsWith('/')) {
-        // Если нет, добавить слэш к пути
-        parsedUrl.pathname += '/';
+function cr(url) {
+    // Проверка, оканчивается ли URL на слэш
+    if (!url.endsWith('/')) {
+        // Добавление слэша в конец URL
+        url += '/';
     }
 
-    // Возврат модифицированного URL
-    return parsedUrl.toString();
+    // Возвращение модифицированного URL
+    return url;
 }
-
- addSlash(url);
-
 
 
 

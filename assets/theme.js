@@ -5526,6 +5526,19 @@ theme.ajaxFilter = (function() {
 
 
 
+// Function to add a slash at the end of a Shopify URL
+function addSlashToUrl(inputUrl) {
+    // Check if the URL ends with a slash
+    const modifiedUrl = inputUrl.endsWith('/') ? inputUrl : inputUrl + '/';
+    
+    return modifiedUrl;
+}
+
+// Example Usage
+const inputShopifyUrl = "https://remedial.store/";
+const modifiedShopifyUrl = addSlashToUrl(inputShopifyUrl);
+console.log("Modified Shopify URL:", modifiedShopifyUrl);
+
 
 
 

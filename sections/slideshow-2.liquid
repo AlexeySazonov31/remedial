@@ -467,6 +467,10 @@
             min-height: 180px;
             justify-content: space-between;
         }
+
+        .container-nopad {
+            padding: 0 !important;
+        }
             
         @media (max-width:991px) {
           .slideshow .slick-next {
@@ -527,7 +531,7 @@
         
                 <div class="slideshow__text-wrap slideshow__text-wrap--desktop">
                   <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
-                    <div class="container-fluid">
+                    <div class="container-fluid container-nopad">
                       {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
                   <ul class="list-unstyled slideshow__textwrap"  data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
                         {%- unless block.settings.slide_toptitle == blank -%}

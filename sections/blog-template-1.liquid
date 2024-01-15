@@ -24,6 +24,18 @@
     .blog__title-link{
       font-size: 30px;
       margin-bottom: 30px;
+
+      width: 100%;
+      height: 100px;
+      line-height: 20px;
+      word-break: break-all;
+   
+      display: -webkit-box;
+ 
+      box-orient: vertical;
+ 
+      line-clamp: 2;
+      overflow: hidden;
     }
     {%- if settings.bloggrid  == 'blog-3'%}
       .blog__item.blog__item--3 .content-block__image,.blog__item.blog__item--3 .blog__content{

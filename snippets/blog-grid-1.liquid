@@ -15,7 +15,7 @@
           {{ article | img_url: '1024x1024' | img_tag: article.title | escape }}
         </noscript>
         <div class="article__photo-container">
-          <div class="article__photo-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+          <div class="article__photo-wrapper article-grid-photo" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
             {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="lazyload"
                  src="{%- include 'srcBlank' -%}"

@@ -2,6 +2,10 @@
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
+
+    
+
+
     {% if content_for_header contains 'tapita-seo-script-tags' %}
       {% include 'tapita-seo-schema' %}
     {% endif %}
@@ -59,8 +63,16 @@
         style="display:none"
         src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
     ></noscript>
+---
+original_url: "https://example.com/path/to/page"
+---
+
+
     <!-- End Meta Pixel Code -->
 
+
+{%- assign modified_url = page.original_url | append: '/' -%}
+{{ modified_url }}
     <!-- AdSense -->
     <script
       defer
@@ -114,9 +126,6 @@
     {% endif %}
 
 
-
-{%- assign modified_url = original_url | append: '/' -%}
-{{ modified_url }}
 
 
 

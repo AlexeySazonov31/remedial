@@ -45,8 +45,7 @@
         {%- else -%}
             {%- if template contains 'index' -%}
             <p>{{ article.content | strip_html | truncatewords: 20 }}</p>
-            {%- else -%}
-            <p>{{ article.content | strip_html | truncatewords: 20 }}</p>
+        
             {%- endif -%}
         {%- endif -%}
         </div>

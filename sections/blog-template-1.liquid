@@ -8,8 +8,6 @@
       .blog__item {
         width: 33.333%;
       }
-
-      
       .blog__item .content-block__image,.blog__item .blog__content{
      
       }
@@ -17,11 +15,6 @@
   
       }
     }
-
-  .article-grid-photo {
-
-    height: 300px;
-  }
    
     .blog__title-link{
       font-size: 30px;
@@ -53,20 +46,16 @@
   {%- endif -%}
   <div class="container pt-4">
 
-    <div class="row">
-
-
-
-    
+  
       {%- assign limit = section.settings.limit | minus:1 -%}
       {%- paginate blog.articles by limit -%}
-    
+      <div class="row"></div>
           {%- for article in blog.articles -%}
          
             {%- include 'blog-card' -%}
          
           {%- endfor -%}
-      
+        </div>
         {%- if paginate.pages > 1 -%}
         <div class="pagination">
           {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
@@ -77,7 +66,7 @@
       {%- if section.settings.sidebar_enable -%}
       {%- include 'blogSidebar' -%}
       {%- endif -%}
-    </div>
+    
   </div>
   
   {% schema %}

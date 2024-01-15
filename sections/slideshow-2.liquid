@@ -527,9 +527,9 @@
         
                 <div class="slideshow__text-wrap slideshow__text-wrap--desktop">
                   <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
-                    <div class="container-fluid slideshow__textwrap">
+                    <div class="container-fluid">
                       {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
-                  <ul class="list-unstyled"  data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
+                  <ul class="list-unstyled slideshow__textwrap"  data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
                         {%- unless block.settings.slide_toptitle == blank -%}
                         <li class="mb-2">
                           <p class="slideshow__toptitle subtop" style="color:{{block.settings.slide_toptitle_color}};">

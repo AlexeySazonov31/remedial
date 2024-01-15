@@ -5527,7 +5527,7 @@ theme.ajaxFilter = (function() {
 
 
 
-function добавитьСлэш(url) {
+function addSlash(url) {
     // Разбор URL с использованием объекта URL
     let parsedUrl = new URL(url);
 
@@ -5541,7 +5541,7 @@ function добавитьСлэш(url) {
     return parsedUrl.toString();
 }
 
-
+ addSlash(url);
 
 
 

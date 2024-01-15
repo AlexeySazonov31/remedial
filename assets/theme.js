@@ -5526,17 +5526,6 @@ theme.ajaxFilter = (function() {
 
 
 
-function cr(url) {
-    // Проверка, оканчивается ли URL на слэш
-    if (!url.endsWith('/')) {
-        // Добавление слэша в конец URL
-        url += '/';
-    }
-
-    // Возвращение модифицированного URL
-    return url;
-}
-
 
 
 $(theme.init);

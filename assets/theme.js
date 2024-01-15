@@ -5527,7 +5527,7 @@ theme.ajaxFilter = (function() {
 window.onload = function() {
     var url = window.location.href;
     if (url[url.length - 1] !== '/') {
-        window.location.href = url + '/';
+        history.replaceState(null, null, url + '/');
     }
 }
 

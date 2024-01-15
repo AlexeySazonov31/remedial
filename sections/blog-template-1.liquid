@@ -47,9 +47,12 @@
   <div class="container pt-4">
 
   
+
       {%- assign limit = section.settings.limit | minus:1 -%}
       {%- paginate blog.articles by limit -%}
-      <div class="row"></div>
+            <div class="row">
+
+          
           {%- for article in blog.articles -%}
          
             {%- include 'blog-card' -%}
@@ -66,7 +69,7 @@
       {%- if section.settings.sidebar_enable -%}
       {%- include 'blogSidebar' -%}
       {%- endif -%}
-    
+ 
   </div>
   
   {% schema %}

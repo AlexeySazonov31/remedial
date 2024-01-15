@@ -5524,12 +5524,7 @@ theme.ajaxFilter = (function() {
   
 })();
 
-window.onload = function() {
-    var url = window.location.href;
-    if (url[url.length - 1] !== '/') {
-        history.replaceState(null, null, url + '/');
-    }
-}
+
 
 
 

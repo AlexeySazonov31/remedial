@@ -77,11 +77,6 @@
       {%- assign limit = section.settings.limit | minus:1 -%}
       {%- paginate blog.articles by limit -%}
         <div class="row">
-            <div class="width_plus">
-
-
-
-           
 
           
           {%- for article in blog.articles -%}
@@ -89,8 +84,6 @@
             {%- include 'blog-card' -%}
          
           {%- endfor -%}
-
-          </div>
         </div>
         {%- if paginate.pages > 1 -%}
         <div class="pagination">

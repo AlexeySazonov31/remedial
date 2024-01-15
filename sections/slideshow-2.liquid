@@ -460,6 +460,13 @@
           border-color:{{section.settings.color_dot_active}};
           background:{{section.settings.color_dot_active}};
         }
+
+        .slideshow__textwrap {
+            display: flex;
+            flex-direction: column;
+            min-height: 180px;
+            justify-content: space-between;
+        }
             
         @media (max-width:991px) {
           .slideshow .slick-next {
@@ -520,7 +527,7 @@
         
                 <div class="slideshow__text-wrap slideshow__text-wrap--desktop">
                   <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
-                    <div class="container-fluid">
+                    <div class="container-fluid slideshow__textwrap">
                       {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
                   <ul class="list-unstyled"  data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
                         {%- unless block.settings.slide_toptitle == blank -%}

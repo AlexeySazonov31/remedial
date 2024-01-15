@@ -63,16 +63,19 @@
         style="display:none"
         src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
     ></noscript>
----
-original_url: "https://remedial.store/collections/all"
----
 
 
     <!-- End Meta Pixel Code -->
 
+---
+layout: default
+---
 
-{%- assign modified_url = page.original_url | append: '/' -%}
+{% assign original_url = page.url | prepend: site.url %}
+
+{%- assign modified_url = original_url | append: '/' -%}
 {{ modified_url }}
+
     <!-- AdSense -->
     <script
       defer

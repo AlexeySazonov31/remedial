@@ -439,7 +439,13 @@
                       </p>
                     </li>
                     {%- endunless -%}
-          
+                    {%- unless block.settings.slide_title == blank -%}
+                    <li>
+                      <h2 class="h1 mega-title slideshow__title font-family-1" style="color:{{block.settings.slide_title_color}}">
+                        {{ block.settings.slide_title }}
+                      </h2>
+                    </li>
+                    {%- endunless -%}
                     {%- unless block.settings.subheading == blank -%}
                     <li class="mt-lg-4 mb-lg-5">
                       <span class="mega-subtitle slideshow__subtitle  d-lg-block fz-2" style="color:{{block.settings.subheading_color}}">
@@ -502,11 +508,7 @@
               {{ block.settings.slide_toptitle }}
             </p>
             {%- endunless -%}
-            {%- unless block.settings.slide_title == blank -%}
-            <h2 class="h1 mega-title slideshow__title slideshow__title--mobile font-family-2 mb-4"  style="color:{{block.settings.slide_title_color}}">
-              {{ block.settings.slide_title }}
-            </h2>
-            {%- endunless -%}
+   
             {%- unless block.settings.subheading == blank -%}
             <span class="mega-subtitle slideshow__subtitle slideshow__subtitle--mobile mb-3" style="color:{{block.settings.subheading_color}}">
               {{ block.settings.subheading }} 

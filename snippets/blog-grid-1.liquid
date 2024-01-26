@@ -59,9 +59,12 @@
         {% assign name_parts = full_name | split: " " %}
         {% assign first_name = name_parts[0] %}
         {{ first_name }}
- 
-
-        <p>Автор:  {{ first_name }}</p>
+      {% if article.author %}
+      <div class="author-info">
+        <img src="{{ first_name | append: '.jpg' | file_img_url }}" alt="{{ first_name }}">
+        <p>Автор: {{ first_name }}</p>
+      </div>
+    {% endif %}
       </div>
     {% endif %}
 

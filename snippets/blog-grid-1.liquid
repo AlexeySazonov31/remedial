@@ -63,8 +63,8 @@
        
 
 
-        <img src="{{ article.author | append: '.jpg' | file_img_url }}" alt="{{ article.author }}">
-
+        <img src="{{ full_name | append: '.jpg' | file_img_url }}" alt="{{ full_name }}">
+        <p>Автор: {{ full_name }}</p>
       </div>
     {% endif %}
 

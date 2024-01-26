@@ -50,6 +50,12 @@
             {%- endif -%}
         {%- endif -%}
         </div>
+
+
+
+        {% if article.author %}
+          <p>Автор: {{ article.author }}</p>
+        {% endif %}
         <a class="btn btn-theme gradient-theme {%- if template contains 'index' -%} mb-0{%- else -%}mb-5{%- endif -%}" href="{{ article.url }}">{{ 'blogs.article.read_more' | t }}</a>  
     </div>
 </div>

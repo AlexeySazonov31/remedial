@@ -58,7 +58,7 @@
        {% assign full_name = article.author %}
         {% assign name_parts = full_name | split: " " %}
         {% assign first_name = name_parts[0] %}
-        {{ first_name }}
+    
       {% if article.author %}
       <div class="author-info">
         <img src="{{ first_name | append: '.jpg' | file_img_url }}" alt="{{ first_name }}">

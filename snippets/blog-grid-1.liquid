@@ -56,15 +56,15 @@
      {% if article.author %}
       <div class="author-info">
         {% assign first_name = article.author.first_name %}
-{% assign last_name = article.author.last_name %}
-{% assign full_name = first_name | append: '-' | append: last_name %}
+        {% assign last_name = article.author.last_name %}
+        {% assign full_name = first_name | append: '-' | append: last_name %}
 
 
        
 
 
-        <img src="{{ full_name | append: '.jpg' | file_img_url }}" alt="{{ full_name }}">
-        <p>Автор: {{ full_name }}</p>
+        <img src="{{ first_name | append: '.jpg' | file_img_url }}" alt="{{ full_name }}">
+        <p>Автор: {{ first_name }}</p>
       </div>
     {% endif %}
 

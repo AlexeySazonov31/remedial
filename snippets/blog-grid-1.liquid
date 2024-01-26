@@ -53,9 +53,12 @@
 
 
 
-        {% if article.author %}
-          <p>Published by: {{ article.author }}</p>
-        {% endif %}
+     {% if article.author %}
+      <div class="author-info">
+        <img src="{{ 'author-' | append: article.author | append: '.jpg' | asset_url }}" alt="{{ article.author }}">
+        <p>Автор: {{ article.author }}</p>
+      </div>
+    {% endif %}
 
 
         <a class="btn btn-theme gradient-theme {%- if template contains 'index' -%} mb-0{%- else -%}mb-5{%- endif -%}" href="{{ article.url }}">{{ 'blogs.article.read_more' | t }}</a>  

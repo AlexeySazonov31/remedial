@@ -55,7 +55,7 @@
 
      {% if article.author %}
       <div class="author-info">
-        <img src="{{ article.author | append: '.jpg' | file_img_url }}" alt="{{ article.author }}">
+        <img src="{{ article.author | split: "-" | append: '.jpg' | file_img_url }}" alt="{{ article.author }}">
         <p>Автор: {{ article.author }}</p>
       </div>
     {% endif %}

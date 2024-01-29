@@ -73,7 +73,7 @@
 
 
      {% if article.author %}
-      <div class="author-info">
+   
        {% assign full_name = article.author %}
         {% assign name_parts = full_name | split: " " %}
         {% assign first_name = name_parts[0] %}
@@ -84,7 +84,7 @@
         <p>{{ article.author }}</p>
       </div>
     {% endif %}
-      </div>
+     
     {% endif %}
 
 

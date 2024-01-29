@@ -71,7 +71,7 @@
       {% if article.author %}
       <div class="author-info">
         <img class="author-info__img"  src="{{ first_name | append: '.jpg' | asset_img_url }}" alt="{{ first_name }}">
-        <p> <strong>Published by:</strong> {{ article.author }}</p>
+        <p> Published by: {{ article.author }}</p>
       </div>
     {% endif %}
       </div>

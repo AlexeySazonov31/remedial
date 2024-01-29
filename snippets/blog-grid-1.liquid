@@ -1,6 +1,14 @@
 <!-- blog-grid-1.liquid -->
 
 
+<style>
+
+  .author-info__img {
+    width: 20px;
+    height: 20px;
+  }
+</style>
+
 
 <div class="blog__item blog__item--1 text-center">
 
@@ -61,7 +69,7 @@
     
       {% if article.author %}
       <div class="author-info">
-        <img src="{{ first_name | append: '.jpg' | asset_img_url }}" alt="{{ first_name }}">
+        <img class="author-info__img"  src="{{ first_name | append: '.jpg' | asset_img_url }}" alt="{{ first_name }}">
         <p>Автор: {{ article.author }}</p>
       </div>
     {% endif %}

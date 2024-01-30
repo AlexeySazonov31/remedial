@@ -3,92 +3,92 @@
 
 <style>
 
-  .author-info__img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-.author-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    .author-info__img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
   
-}
-.author-info p {
-  margin-left: 10px;
-}
-</style>
-
-
-<div class="blog__item blog__item--1 text-center">
-
-    <div class="">
-
-
-  
-    {%- if article.image -%}
-    <div class="content-block__image mb-3">
-      <a href="{{ article.url }}">
-        <noscript>
-          {{ article | img_url: '1024x1024' | img_tag: article.title | escape }}
-        </noscript>
-        <div class="article__photo-container article-grid-photo">
-          <div class="article__photo-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
-            {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="lazyload"
-                 src="{%- include 'srcBlank' -%}"
-                 data-src="{{ img_url }}"
-                 data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                 data-aspectratio="{{ article.image.aspect_ratio }}"
-                 data-sizes="auto"
-                 alt="{{ article.title | escape }}">
-          </div>
-        </div>
-      </a>
-    </div> 
-    {%- endif -%}
-    <div class="blog__content">
-        <p class="blog__meta mb-2 font-family-2 text-theme">
-        {% comment %}{%- if article.tags.size > 0 -%}
-        {%- for tag in article.tags -%}
-        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="link-body-color">{{ tag }}</a>{% if forloop.last %} - {% else %}, {% endif %}
-        {%- endfor -%}
-        {%- endif -%}{% endcomment %}
-        {{ article.published_at | time_tag: format: 'month_day_year' }}
-        </p>
-            <h4 class="blog__title-link {% if template contains 'index' %} mb-2 {% else %} mb-3 {% endif %}"><a href="{{ article.url }}">{{ article.title }}</a></h4>
-        <div class="rte rte--indented-images {% if template contains 'index' %} mb-4 {% else %} mb-5 {% endif %}">
-        {%- if article.excerpt.size > 0 -%}
-        {{ article.excerpt }}
-        {%- else -%}
-            {%- if template contains 'index' -%}
-            <p>{{ article.content | strip_html | truncatewords: 20 }}</p>
-            {%- else -%}
-            <p>{{ article.content | strip_html | truncatewords: 40 }}</p>
-            {%- endif -%}
-        {%- endif -%}
-        </div>
-
-
-
-     {% if article.author %}
-   
-       {% assign full_name = article.author %}
-        {% assign name_parts = full_name | split: " " %}
-        {% assign first_name = name_parts[0] %}
+  .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     
-      {% if article.author %}
-      <div class="author-info">
-        <img class="author-info__img"  src="{{ first_name | append: '.jpg' | asset_img_url }}" alt="{{ first_name }}">
-        <p>{{ article.author }}</p>
-      </div>
-    {% endif %}
+  }
+  .author-info p {
+    margin-left: 10px;
+  }
+  </style>
+  
+  
+  <div class="blog__item blog__item--1 text-center">
+  
+      <div class="">
+  
+  
+    
+      {%- if article.image -%}
+      <div class="content-block__image mb-3">
+        <a href="{{ article.url }}">
+          <noscript>
+            {{ article | img_url: '1024x1024' | img_tag: article.title | escape }}
+          </noscript>
+          <div class="article__photo-container article-grid-photo">
+            <div class="article__photo-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+              {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload"
+                   src="{%- include 'srcBlank' -%}"
+                   data-src="{{ img_url }}"
+                   data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ article.image.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ article.title | escape }}">
+            </div>
+          </div>
+        </a>
+      </div> 
+      {%- endif -%}
+      <div class="blog__content">
+          <p class="blog__meta mb-2 font-family-2 text-theme">
+          {% comment %}{%- if article.tags.size > 0 -%}
+          {%- for tag in article.tags -%}
+          <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="link-body-color">{{ tag }}</a>{% if forloop.last %} - {% else %}, {% endif %}
+          {%- endfor -%}
+          {%- endif -%}{% endcomment %}
+          {{ article.published_at | time_tag: format: 'month_day_year' }}
+          </p>
+              <h4 class="blog__title-link {% if template contains 'index' %} mb-2 {% else %} mb-3 {% endif %}"><a href="{{ article.url }}">{{ article.title }}</a></h4>
+          <div class="rte blog-texte rte--indented-images {% if template contains 'index' %} mb-4 {% else %} mb-5 {% endif %}">
+          {%- if article.excerpt.size > 0 -%}
+          {{ article.excerpt }}
+          {%- else -%}
+              {%- if template contains 'index' -%}
+              <p>{{ article.content | strip_html | truncatewords: 20 }}</p>
+              {%- else -%}
+              <p>{{ article.content | strip_html | truncatewords: 40 }}</p>
+              {%- endif -%}
+          {%- endif -%}
+          </div>
+  
+  
+  
+       {% if article.author %}
      
-    {% endif %}
-
-
-        <a class="btn btn-theme gradient-theme {%- if template contains 'index' -%} mb-0{%- else -%}mb-5{%- endif -%}" href="{{ article.url }}">{{ 'blogs.article.read_more' | t }}</a>  
-    </div>
-</div>
+         {% assign full_name = article.author %}
+          {% assign name_parts = full_name | split: " " %}
+          {% assign first_name = name_parts[0] %}
+      
+        {% if article.author %}
+        <div class="author-info">
+          <img class="author-info__img"  src="{{ first_name | append: '.jpg' | asset_img_url }}" alt="{{ first_name }}">
+          <p>{{ article.author }}</p>
+        </div>
+      {% endif %}
+       
+      {% endif %}
+  
+  
+          <a class="btn btn-theme gradient-theme {%- if template contains 'index' -%} mb-0{%- else -%}mb-5{%- endif -%}" href="{{ article.url }}">{{ 'blogs.article.read_more' | t }}</a>  
+      </div>
   </div>
+    </div>

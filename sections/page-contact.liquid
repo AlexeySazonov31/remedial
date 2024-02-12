@@ -4,7 +4,14 @@
 
 
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcxtG8pAAAAAIeRcqGP8yi8e5yuJhgkQNYurhPI"></script>
-  <!-- Your code -->
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LcxtG8pAAAAAIeRcqGP8yi8e5yuJhgkQNYurhPI', {action: 'LOGIN'});
+    });
+  }
+</script>
 
   
 

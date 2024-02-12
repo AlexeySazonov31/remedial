@@ -1,7 +1,17 @@
 <!-- customers/register.liquid -->
 
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lczm28pAAAAACTnSubzRx2BdDuoNye-ozwfnVy8"></script>
 
-
+   <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script>
 
 <div class="page-width">
   <div class="grid">

@@ -23,6 +23,13 @@
             <label for="CreatePassword" class="label--hidden">{{ 'customer.register.password' | t }}</label>
             <input class="form-control" type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
           </div>
+
+
+
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
           <p>
             <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn-theme gradien-theme mt-4">
           </p>

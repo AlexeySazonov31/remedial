@@ -2,14 +2,17 @@
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
     <!-- Added by TAPITA SEO SCHEMA -->
-
- <script >
-
-
-
-
-
+  
+      <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lczm28pAAAAACTnSubzRx2BdDuoNye-ozwfnVy8"></script>
+       <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lczm28pAAAAACTnSubzRx2BdDuoNye-ozwfnVy8', {action: 'LOGIN'});
+    });
+  }
 </script>
+
 
 
     {% if content_for_header contains 'tapita-seo-script-tags' %}

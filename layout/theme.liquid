@@ -4,6 +4,13 @@
     <!-- Added by TAPITA SEO SCHEMA -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+
+<script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
+
     {% if content_for_header contains 'tapita-seo-script-tags' %}
       {% include 'tapita-seo-schema' %}
     {% endif %}

@@ -3,17 +3,12 @@
 </style>
 
 
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfj_W8pAAAAAFLJUgp39__hK-R0YRxP4F5SGYu2"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  
 
 
-  <script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6Lfj_W8pAAAAAFLJUgp39__hK-R0YRxP4F5SGYu2', {action: 'contact-us'});
-    });
-  }
-</script>
+  <div class="g-recaptcha" data-sitekey="6LcxtG8pAAAAAIeRcqGP8yi8e5yuJhgkQNYurhPI"></div>
 
 
 

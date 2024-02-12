@@ -6,12 +6,14 @@
   <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfj_W8pAAAAAFLJUgp39__hK-R0YRxP4F5SGYu2"></script>
 
   <script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('6Lfj_W8pAAAAAFLJUgp39__hK-R0YRxP4F5SGYu2', {action: 'contact-us'}).then(function(token) {
-       
-      });
-  });
-  </script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lfj_W8pAAAAAFLJUgp39__hK-R0YRxP4F5SGYu2', {action: 'contact-us'});
+    });
+  }
+</script>
+
 
 
 

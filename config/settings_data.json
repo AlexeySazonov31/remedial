@@ -3865,6 +3865,12 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "2433038045295417455": {
+        "type": "shopify:\/\/apps\/emailcheckr-stop-fake-signups\/blocks\/app-embed\/46b1f7df-6458-43e7-9a6a-e0628c135766",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },

@@ -82,6 +82,10 @@
                   >
                 </div>
                 <p>
+
+
+              <div class="g-recaptcha" data-sitekey="6Ld5r3opAAAAAD-PFONflSdhkOxaTVZeum1UNyws" id="captcha" data-callback="enableBtn" data-expired-callback="recaptchaExp"></div>
+
                   <input
                     type="submit"
                     class="btn btn-theme gradient-theme"
@@ -99,3 +103,14 @@
     </div>
   </div>
 </div>
+
+
+
+<script type="text/javascript">   
+  function enableBtn(){
+    document.getElementById("submit-btn").disabled = false;
+  } 
+  function recaptchaExp(){
+    document.getElementById("submit-btn").disabled = true;
+  }
+</script>

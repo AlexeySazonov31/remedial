@@ -51,13 +51,13 @@
 
 
 <script>
-var form = document.getElementById('create_customer');
-var submitButton = form.querySelector('input[type="submit"]');
-submitButton.disabled = true;
-
 grecaptcha.ready(function() {
-    // Выполните reCAPTCHA
     grecaptcha.execute('6Ld5r3opAAAAAD-PFONflSdhkOxaTVZeum1UNyws', {action: 'submit'}).then(function(token) {
+        // Если reCAPTCHA успешно выполнена, включите кнопку отправки
+        submitButton.disabled = false;
+    }).catch(function(error) {
+        // Если произошла ошибка, выведите ее в консоль и возможно включите кнопку отправки
+        console.error('Произошла ошибка при выполнении reCAPTCHA:', error);
         submitButton.disabled = false;
     });
 });

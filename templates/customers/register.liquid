@@ -3,26 +3,6 @@
 
 
 
-<script>
-
-
-
-  // Получите вашу форму и кнопку отправки
-var form = document.getElementById('create_customer');
-var submitButton = form.querySelector('input[type="submit"]');
-
-// Отключите кнопку отправки по умолчанию
-submitButton.disabled = true;
-
-// Когда reCAPTCHA будет загружена и готова
-grecaptcha.ready(function() {
-    // Выполните reCAPTCHA
-    grecaptcha.execute('6Ld5r3opAAAAAD-PFONflSdhkOxaTVZeum1UNyws', {action: 'submit'}).then(function(token) {
-        // Если reCAPTCHA успешно выполнена, включите кнопку отправки
-        submitButton.disabled = false;
-    });
-});
-</script>
 
 
 
@@ -67,3 +47,18 @@ grecaptcha.ready(function() {
     </div>
   </div>
 </div>
+
+
+
+<script>
+var form = document.getElementById('create_customer');
+var submitButton = form.querySelector('input[type="submit"]');
+submitButton.disabled = true;
+
+grecaptcha.ready(function() {
+    // Выполните reCAPTCHA
+    grecaptcha.execute('6Ld5r3opAAAAAD-PFONflSdhkOxaTVZeum1UNyws', {action: 'submit'}).then(function(token) {
+        submitButton.disabled = false;
+    });
+});
+</script>

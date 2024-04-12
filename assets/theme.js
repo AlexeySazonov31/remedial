@@ -3485,13 +3485,7 @@ theme.ajaxSearch = (function() {
     });
   });
 
-  //escape when click somethings
-  $(document).click(function(event) {
-    var target = event.target;
-    if (!$(target).is($inputSearch) && !$(target).parents().is($inputSearch)) {
-      $($resultsList).slideUp(300);
-    }
-  });
+
 })();
 
 // Quickview https://github.com/kellyvaughn/quickview-for-shopify/blob/master/quickview.js.liquid

@@ -1,5 +1,8 @@
 
 
+jQuery.noConflict();
+
+
 
 window.theme = window.theme || {};
 window.slate = window.slate || {};
@@ -9,7 +12,7 @@ theme.Sections = function Sections() {
   this.constructors = {};
   this.instances = [];
 
-  $(document)
+  jQuery(document)
     .on('shopify:section:load', this._onSectionLoad.bind(this))
     .on('shopify:section:unload', this._onSectionUnload.bind(this))
     .on('shopify:section:select', this._onSelect.bind(this))

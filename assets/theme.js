@@ -3486,7 +3486,7 @@ theme.ajaxSearch = (function() {
   });
 
 
-})();
+
 
 // Quickview https://github.com/kellyvaughn/quickview-for-shopify/blob/master/quickview.js.liquid
 theme.quickview = (function() {

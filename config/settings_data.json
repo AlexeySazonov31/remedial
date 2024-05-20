@@ -3805,12 +3805,6 @@
       "162870190508b20d30"
     ],
     "blocks": {
-      "15557474716127144420": {
-        "type": "shopify:\/\/apps\/kaching-bundle-quantity-deals\/blocks\/app-embed-block\/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -3868,6 +3862,12 @@
       },
       "2433038045295417455": {
         "type": "shopify:\/\/apps\/emailcheckr-stop-fake-signups\/blocks\/app-embed\/46b1f7df-6458-43e7-9a6a-e0628c135766",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "15557474716127144420": {
+        "type": "shopify:\/\/apps\/kaching-bundles\/blocks\/app-embed-block\/6c637362-a106-4a32-94ac-94dcfd68cdb8",
         "disabled": false,
         "settings": {
         }

@@ -334,12 +334,12 @@
                 </span>
               </button> -->
             </div>
-            {% if section.settings.enable_payment_button %}
+            <!-- {% if section.settings.enable_payment_button %}
               <div class="product-form__buynow">
               {{ form | payment_button }}
               {% if current_variant.available == false %}<style>.shopify-payment-button{display:none}</style>{% endif %}
               </div>
-            {% endif %}
+            {% endif %} -->
             </div>
           {%- if section.settings.waitlist -%}
           <div class="js-contact-soldout {% if current_variant.available %}hide{% endif %}">

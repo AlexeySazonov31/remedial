@@ -318,7 +318,7 @@
               <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input product-form__quantity">
             </div>
             <div class="product-form__item product-form__item--submit {% unless section.settings.enable_payment_button %} btn-disablebuynow {% endunless %}">
-              <button type="submit"
+              <!-- <button type="submit"
                       name="add"
                       id="AddToCart-{{ section.id }}"
                       class="btn btn--full btn-theme product-form__cart-submit {% if section.settings.enable_payment_button %}product-form__cart-submit--outline{% endif %}{% unless current_variant.available %} btn--sold-out{% endunless %}"
@@ -330,7 +330,7 @@
                   {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
                 </span>
-              </button>
+              </button> -->
             </div>
             {% if section.settings.enable_payment_button %}
               <div class="product-form__buynow">

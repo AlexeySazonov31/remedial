@@ -54,18 +54,30 @@
     {% if product.tags contains 'pre-order' %}
     {% else %}
       <div class="product-card__overlay d-flex justify-content-center flex-row product-card__overlaybottom">
-        <!--
-          <span data-tooltip="false" data-placement="left" class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-btn-quickview" title="{{ 'products.product.quickview_text' | t }}" data-toggle="modal" data-target="#jsQuickview" data-handle="{{product.handle}}" data-pavailable="{% if product.available %}true{% else %}false{% endif %}">
-
-            <span>{{ 'products.product.quickview_text' | t }}  &nbsp;</span>
-            {%- include 'icon-quickview' -%}
-          </span>
-          <span data-tooltip="false" data-placement="left" class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-grid-cart {% unless product.available %} disabled{% endunless%}" title="{{ 'products.product.add_to_cart' | t }}" data-id="{{product.selected_or_first_available_variant.id}}">
-            <span>{{ 'products.product.add_to_cart' | t }}</span>
-            <div class="product-card__loading spinner-{{settings.loading}}" role="status"></div>
-            {%- include 'icon-cart-bold' -%}
-            </span>
-        -->
+        <span
+          data-tooltip="false"
+          data-placement="left"
+          class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-btn-quickview"
+          title="{{ 'products.product.quickview_text' | t }}"
+          data-toggle="modal"
+          data-target="#jsQuickview"
+          data-handle="{{product.handle}}"
+          data-pavailable="{% if product.available %}true{% else %}false{% endif %}"
+        >
+          <span>{{ 'products.product.quickview_text' | t }} &nbsp;</span>
+          {%- include 'icon-quickview' -%}
+        </span>
+        <span
+          data-tooltip="false"
+          data-placement="left"
+          class="btn btn-theme gradient-theme-vertical product-card__overlay-btn js-grid-cart {% unless product.available %} disabled{% endunless%}"
+          title="{{ 'products.product.add_to_cart' | t }}"
+          data-id="{{product.selected_or_first_available_variant.id}}"
+        >
+          <span>{{ 'products.product.add_to_cart' | t }}</span>
+          <div class="product-card__loading spinner-{{settings.loading}}" role="status"></div>
+          {%- include 'icon-cart-bold' -%}
+        </span>
       </div>
     {% endif %}
 

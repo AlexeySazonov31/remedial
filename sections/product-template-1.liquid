@@ -1284,6 +1284,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita molesti
 </script> -->
 
 <script>
+  document.querySelector('.custom-buttonUSA').addEventListener('click', function(event) {
+    event.preventDefault(); // Останавливаем стандартное поведение
+    event.stopPropagation(); // Останавливаем всплытие события
+    redirectToAmazon('{{ product.metafields.custom.url }}');
+  });
+
+  document.querySelector('.custom-buttonCanada').addEventListener('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    redirectToAmazon('{{ product.metafields.custom.urlCanada }}');
+  });
+
   function redirectToAmazon(url) {
     window.location.href = url;
   }

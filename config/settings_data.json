@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "header": "header-4",
@@ -635,7 +644,7 @@
         ],
         "settings": {
           "enable_hurrify": true,
-          "stock_enable": true,
+          "stock_enable": false,
           "enable_payment_button": true,
           "social_sharing_products": false,
           "next_prev_enable": false,
@@ -648,8 +657,8 @@
           "sizeguide_enable": false,
           "sizeguide_title": "Size guide",
           "sizeguide_page": "sizeguide",
-          "fake_view_enable": true,
-          "fake_view_min": 12,
+          "fake_view_enable": false,
+          "fake_view_min": 10,
           "fake_view_max": 30,
           "fake_view_duration": 4,
           "fake_view_text_prefix": "Currently there are",

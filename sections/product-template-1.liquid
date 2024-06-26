@@ -320,7 +320,7 @@
           </ul>
         </div>
         
-        {% if product.metafields.info.affiliate_link != blank %}{% comment %}AFFILIATE PRODUCT{% endcomment %}
+        <!-- {% if product.metafields.info.affiliate_link != blank %}{% comment %}AFFILIATE PRODUCT{% endcomment %}
           <a href="{{product.metafields.info.affiliate_link}}" class="my-3 btn btn-theme btn--full product-form__cart-submit {% if section.settings.enable_payment_button %}product-form__cart-submit--outline{% endif %}">
             {{product.metafields.info.affiliate_button}}
           </a>
@@ -355,7 +355,7 @@
               </div>
             </div>
           </span>
-          {%- endif -%}
+          {%- endif -%} -->
             <div>
   {% if product.metafields.custom.url %}
     <button class="custom-buttonUSA" onclick="redirectToAmazon('{{ product.metafields.custom.url }}')">Buy now on Amazon</button>

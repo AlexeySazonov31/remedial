@@ -1280,19 +1280,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita molesti
 </script> -->
 
 <script>
-  document.querySelector('.custom-buttonUSA').addEventListener('click', function(event) {
-    event.preventDefault(); // Останавливаем стандартное поведение
-    event.stopPropagation(); // Останавливаем всплытие события
-    redirectToAmazon('{{ product.metafields.custom.url }}');
-  });
+        function redirectToAmazon(url) {
+            window.location.href = url;
+        }
 
-  document.querySelector('.custom-buttonCanada').addEventListener('click', function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    redirectToAmazon('{{ product.metafields.custom.urlcanada }}');
-  });
+        document.addEventListener('DOMContentLoaded', function() {
+            var usaButton = document.getElementById('usaButton');
+            var canadaButton = document.getElementById('canadaButton');
 
-  function redirectToAmazon(url) {
-    window.location.href = url;
-  }
-</script>
+            var usaUrl = '{{ product.metafields.custom.url }}';
+            var canadaUrl = '{{ product.metafields.custom.urlcanada }}';
+
+            if (!usaUrl) {
+                usaButton.style.display = 'none';
+            }
+
+            if (!canadaUrl) {
+                canadaButton.style.display = 'none';
+            }
+        });
+    </script>

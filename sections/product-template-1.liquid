@@ -356,7 +356,7 @@
             </div>
           </span>
           {%- endif -%} -->
-            <form target="_blank">
+            <div>
   {% if product.metafields.custom.url %}
     <button class="custom-buttonUSA" onclick="redirectToAmazon('{{ product.metafields.custom.url }}')">Buy now on Amazon</button>
   {% endif %}
@@ -1299,6 +1299,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita molesti
   });
 
   function redirectToAmazon(url) {
-    window.location.href = url;
+    window.open(url, '_blank'); // Открываем URL в новой вкладке
   }
 </script>

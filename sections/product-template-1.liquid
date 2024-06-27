@@ -1301,6 +1301,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita molesti
     event.stopPropagation();
     redirectToAmazon('{{ product.metafields.custom.urlcanada }}');
   });
+   document.querySelector('.custom-buttonAU').addEventListener('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    redirectToAmazon('{{ product.metafields.custom.urlau }}');
+  });
 
   function redirectToAmazon(url) {
     window.open(url, '_blank'); // Открываем URL в новой вкладке

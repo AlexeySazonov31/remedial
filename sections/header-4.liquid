@@ -1617,36 +1617,55 @@
             {%- endunless -%}
           -->
           <!-- header-4 | search -->
-          <!--
-            <div class="site-header__search-wrap">
-              <div class="overlay" onclick="toggleClassSearch()"></div>
-              <form id="form-search-header" action="/search" method="get" class="site-header__search js-ajaxsearch" role="search">
-                <div class="container py-5">
-                  <div class="row">
-                    <div class="col-12">
-
-                      <input type="hidden" name="type" value="product">
-                      <div class="d-flex align-items-center mb-2">
-                        <label for="SiteNavSearch" class="label-search mr-auto mb-0 text-uppercase text-muted">{{ 'general.search.titleplace' | t }}</label>
-                        <a href="#" onclick="toggleClassSearch()">{%- include 'icon-close' -%}</a>
-                      </div>
-
-                      <div class="d-flex align-items-center pb-lg-2 border-bottom">
-                        <input onfocus="this.value=''" type="search" name="q" id="SiteNavSearch" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}" autocomplete="off" class="site-header__search-input mr-auto">
-                        <button type="submit" class="text-link site-header__link site-header__search-submit">
-                          {%- include 'icon-search' -%}
-                        </button>
-                      </div>
-                      <div class="search-results"></div>
+          <div class="site-header__search-wrap">
+            <div class="overlay" onclick="toggleClassSearch()"></div>
+            <form
+              id="form-search-header"
+              action="/search"
+              method="get"
+              class="site-header__search js-ajaxsearch"
+              role="search"
+            >
+              <div class="container py-5">
+                <div class="row">
+                  <div class="col-12">
+                    <input type="hidden" name="type" value="product">
+                    <div class="d-flex align-items-center mb-2">
+                      <label for="SiteNavSearch" class="label-search mr-auto mb-0 text-uppercase text-muted">
+                        {{- 'general.search.titleplace' | t -}}
+                      </label>
+                      <a href="#" onclick="toggleClassSearch()">{%- include 'icon-close' -%}</a>
                     </div>
+
+                    <div class="d-flex align-items-center pb-lg-2 border-bottom">
+                      <input
+                        onfocus="this.value=''"
+                        type="search"
+                        name="q"
+                        id="SiteNavSearch"
+                        placeholder="{{ 'general.search.placeholder' | t }}"
+                        aria-label="{{ 'general.search.placeholder' | t }}"
+                        autocomplete="off"
+                        class="site-header__search-input mr-auto"
+                      >
+                      <button type="submit" class="text-link site-header__link site-header__search-submit">
+                        {%- include 'icon-search' -%}
+                      </button>
+                    </div>
+                    <div class="search-results"></div>
                   </div>
                 </div>
-              </form>
-              <button onclick="toggleClassSearch()" title="Search" class="text-link site-header__link site-header__search-pop">
-                {%- include 'icon-search' -%}
-              </button>
-            </div>
-          -->
+              </div>
+            </form>
+            <button
+              onclick="toggleClassSearch()"
+              title="Search"
+              class="text-link site-header__link site-header__search-pop"
+            >
+              {%- include 'icon-search' -%}
+            </button>
+          </div>
+
           <!-- header-4 | cart -->
           <!--
             {%- include 'block-cart' -%}

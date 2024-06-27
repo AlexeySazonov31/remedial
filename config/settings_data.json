@@ -1486,7 +1486,7 @@
           "enable_white": false,
           "enable_sticky": true,
           "enable_dropdownfull": true,
-          "enabletopbar": true,
+          "enabletopbar": false,
           "enable_login": true,
           "enable_social": true,
           "enablemoney": false,

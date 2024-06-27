@@ -358,11 +358,11 @@
           {%- endif -%} -->
             <div>
   {% if product.metafields.custom.url %}
-    <button class="custom-buttonUSA" onclick="redirectToAmazon('{{ product.metafields.custom.url }}')">Buy now on Amazon</button>
+    <button class="custom-buttonUSA" onclick="redirectToAmazon('{{ product.metafields.custom.url }}')">Buy now on Amazon USA</button>
   {% endif %}
   
   {% if product.metafields.custom.urlcanada %}
-    <button class="custom-buttonCanada" onclick="redirectToAmazon('{{ product.metafields.custom.urlcanada }}')">Buy now in Canada</button>
+    <button class="custom-buttonCanada" onclick="redirectToAmazon('{{ product.metafields.custom.urlcanada }}')">Buy now on Amazon Canada</button>
   {% endif %}
 </div>
 

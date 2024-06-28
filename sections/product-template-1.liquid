@@ -492,8 +492,8 @@
         {% include 'free-shipping' %}
         {% include 'shipping-time' %}
         {% if settings.enable_countdown_page %}
-        {% include 'product-countdown' %}
-        {% endif %}
+        <!-- {% include 'product-countdown' %}
+        {% endif %} -->
         {% if section.settings.positiontab == "right" %}
           {% if section.settings.enable_tabvertical %}
             {%- include 'product-information-vertical' -%}

@@ -412,13 +412,13 @@
                       id="AddToCart-{{ section.id }}"
                       class="btn btn--full btn-theme product-form__cart-submit {% if section.settings.enable_payment_button %}product-form__cart-submit--outline{% endif %}{% unless current_variant.available %} btn--sold-out{% endunless %}"
                       {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-                <span id="AddToCartText-{{ section.id }}">
+                <!-- <span id="AddToCartText-{{ section.id }}">
                   {% unless current_variant.available %}
                   {{ 'products.product.sold_out' | t }}
                   {% else %}
                   {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
-                </span>
+                </span> -->
               </button> -->
             </div>
             <!-- {% if section.settings.enable_payment_button %}
@@ -467,7 +467,7 @@
         {% endif %}
 
 
-        <div class="row text-left pt-2">
+        <!-- <div class="row text-left pt-2">
           <div class="product-single__information col text-uppercase">
             {% if section.settings.product_vendor_enable %}
             <p class="product-single__vendor"><small class="text-body">{{'products.product.vendor' | t }}: </small><small>{{ product.vendor }}</small></p>
@@ -487,7 +487,7 @@
             <img class="lazyload img-fluid w-100" data-src="{{ settings.safe_checkout_detail | img_url: '600x' }}"/>
           </div>
           {% endif %}
-        </div>
+        </div> -->
         {% include 'fake-viewer' %}
         {% include 'free-shipping' %}
         {% include 'shipping-time' %}

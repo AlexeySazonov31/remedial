@@ -513,7 +513,7 @@
 <div class="bundler-target-element" data-bndlr-ccid="687k"></div>
 </div> -->
 
-    <!-- <div class="container px-0">
+    <div class="container px-0">
         {%- include 'sticky-cart' -%}
         <div class="row justify-content-md-center">
 
@@ -527,9 +527,9 @@
 
           </div>
       </div>
-    </div> -->
+    </div>
   {% endif %} -->
-    <!-- <div class="row">
+    <div class="row">
       {% for block in section.blocks %}
         {% if block.type == 'html' %}
           {%- include 'html-product' -%}
@@ -542,7 +542,7 @@
         {%- include 'service-pro' -%}
       {% endif %}
       {% endfor %}
-    </div> -->
+    </div>
   {%- include 'cross-sell' -%}
   {%- include 'upsell' -%}
   {%- include 'next-prev-product' -%}
@@ -550,9 +550,10 @@
 
   </script>
 </div>
-<!-- {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
 
-<div class="article-container" style="display:none">-->
+<div class="article-container" style="display:none">
+
 <h2 class="article-headline article-font-size-36">
 ADDITIONAL INFORMATION
 </h2>

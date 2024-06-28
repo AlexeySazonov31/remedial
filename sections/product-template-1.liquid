@@ -532,8 +532,8 @@
       {% for block in section.blocks %}
         {% if block.type == 'html' %}
           {%- include 'html-product' -%}
-        <!-- {% elsif block.type == 'video' %}
-          {%- include 'video-product'-%} -->
+        {% elsif block.type == 'video' %}
+          {%- include 'video-product'-%}
         {% elsif block.type == 'related-product' %}
           {%- include 'related-products' -%}
           

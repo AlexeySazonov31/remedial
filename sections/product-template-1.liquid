@@ -482,25 +482,25 @@
             <p class="product-single__availability "><small class="text-body">{{'products.product.available' | t }}: </small><small>{% if current_variant.available %}{{ 'products.product.available' | t }}{% else %}{{'products.product.sold_out' | t }}{% endif %}</small></p>
             {% endif %}
           </div>
-          {% if settings.safe_checkout_detail != blank %}
+          <!-- {% if settings.safe_checkout_detail != blank %}
           <div class="safe-checkout-detail col">
             <img class="lazyload img-fluid w-100" data-src="{{ settings.safe_checkout_detail | img_url: '600x' }}"/>
           </div>
-          {% endif %}
+          {% endif %} -->
         </div>
-        {% include 'fake-viewer' %}
+        <!-- {% include 'fake-viewer' %}
         {% include 'free-shipping' %}
         {% include 'shipping-time' %}
         {% if settings.enable_countdown_page %}
-        <!-- {% include 'product-countdown' %}
-        {% endif %} -->
+        {% include 'product-countdown' %}
+        {% endif %}
         {% if section.settings.positiontab == "right" %}
           {% if section.settings.enable_tabvertical %}
             {%- include 'product-information-vertical' -%}
           {% else %}
           {%- include 'product-information' -%}
           {% endif %}
-        {% endif%}
+        {% endif%} -->
       </div>
     </div>
             

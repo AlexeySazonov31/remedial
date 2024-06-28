@@ -307,7 +307,7 @@
     </div>
     <div class="col-12 col-md-6 order-1">
       <div class="product-single__info-wrapper">
-        <!-- <div class="product-single__meta small--text-center">
+        <div class="product-single__meta small--text-center">
           <h1 itemprop="name" class="product-single__title">{{ product.title }}<sup><span id="ProductSaleTag-{{ section.id }}" class="{% unless product.compare_at_price > product.price %}hide{% endunless %}">
             <span class="product-tag gradient-theme">
               {{ 'products.product.on_sale' | t }}
@@ -344,7 +344,7 @@
             <li>{%- include 'productStock' -%}</li>
             {%- endif -%}
           </ul>
-        </div> -->
+        </div>
         
         <!-- {% if product.metafields.info.affiliate_link != blank %}{% comment %}AFFILIATE PRODUCT{% endcomment %}
           <a href="{{product.metafields.info.affiliate_link}}" class="my-3 btn btn-theme btn--full product-form__cart-submit {% if section.settings.enable_payment_button %}product-form__cart-submit--outline{% endif %}">

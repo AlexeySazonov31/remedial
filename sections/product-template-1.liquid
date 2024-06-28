@@ -435,7 +435,7 @@
           {%- endif -%}
           <div class="gr-btnjs py-4 mt-4 border-top">
             <div class="d-flex align-items-center">
-              <div>
+               <div>
                 {% if settings.enable_compare %}
                 <span class="btn js-btn-compare mr-4" data-tooltip="true" title="{{ 'products.product.compare_text' | t }}" data-handle="{{product.handle}}">
                   {%- include 'icon-exchange' -%}
@@ -446,7 +446,7 @@
                 {% if settings.enable_wishlsit %}
                 <span data-tooltip="true" class="js-btn-wishlist mr-4" title="{{ 'products.product.wishlist_text' | t }}" data-handle="{{product.handle}}">
                   {%- include 'icon-heart' -%}
-                  <div class="wishlist-text">{{ 'products.product.wishlist_text' | t }}</<span>
+                  <span class="wishlist-text">{{ 'products.product.wishlist_text' | t }}</<span>
                 </span>
                 {% endif %}
               </div>

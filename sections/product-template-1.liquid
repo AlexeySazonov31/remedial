@@ -396,13 +396,13 @@
   {% endif %}
 </div>
 
-          <div class="product-form__quantity-submit pt-4">
-            <!-- <div class="product-form__item product-form__item--quantity">
+          <!-- <div class="product-form__quantity-submit pt-4">
+            <div class="product-form__item product-form__item--quantity">
               <label class="hide" for="Quantity">{{ 'products.product.quantity' | t }}</label>
               <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input product-form__quantity">
-            </div> -->
+            </div>
             
-            <!-- <div class="product-form__item product-form__item--submit {% unless section.settings.enable_payment_button %} btn-disablebuynow {% endunless %}">
+            <div class="product-form__item product-form__item--submit {% unless section.settings.enable_payment_button %} btn-disablebuynow {% endunless %}">
               <div>
                 
               
@@ -420,14 +420,14 @@
                   {% endunless %}
                 </span>
               </button>
-            </div> -->
-            <!-- {% if section.settings.enable_payment_button %}
+            </div>
+            {% if section.settings.enable_payment_button %}
               <div class="product-form__buynow">
               {{ form | payment_button }}
               {% if current_variant.available == false %}<style>.shopify-payment-button{display:none}</style>{% endif %}
               </div>
-            {% endif %} -->
-            </div>
+            {% endif %}
+            </div> -->
           {%- if section.settings.waitlist -%}
           <div class="js-contact-soldout {% if current_variant.available %}hide{% endif %}">
             <span class="btn btn-waitlist btn-theme" data-toggle="modal" data-target="#jsSoldout" title="{{ 'products.product.soldout_messenger' | t }}">{{'products.product.waitlist' | t}}</span>

@@ -412,13 +412,13 @@
                       id="AddToCart-{{ section.id }}"
                       class="btn btn--full btn-theme product-form__cart-submit {% if section.settings.enable_payment_button %}product-form__cart-submit--outline{% endif %}{% unless current_variant.available %} btn--sold-out{% endunless %}"
                       {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-                <!-- <span id="AddToCartText-{{ section.id }}">
+                <span id="AddToCartText-{{ section.id }}">
                   {% unless current_variant.available %}
                   {{ 'products.product.sold_out' | t }}
                   {% else %}
                   {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
-                </span> -->
+                </span>
               </button> -->
             </div>
             <!-- {% if section.settings.enable_payment_button %}

@@ -1,7 +1,6 @@
 <style>
   .gmap-iframe .gmap_canvas,.gmap-iframe .mapouter,.gmap-iframe iframe{width:100%!important}@media (max-width:767px){.gmap-iframe .gmap_canvas,.gmap-iframe .mapouter,.gmap-iframe iframe{height:350px!important}}.contact-page__info li{padding:5px 0;border-bottom:1px solid var(--g-border-color);}.contact-page__info li:last-child{border:none}.contact-page__info .icon, .contact-page__info [class^=icon-]{width:17px;margin-right:10px}.rtl .contact-page__info .icon{margin-left:10px;margin-right:0}
 </style>
-<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 <!-- page-contact.liquid -->
 <div class="container">
   {%- if section.settings.title_page != blank -%}
@@ -21,7 +20,7 @@
     <div class="row">
       <div class="col-md-8 pr-md-5">
         <div class="contact-form form-vertical py-5 pr-md-5">
-          {%- form 'contact' data-shopify-captcha: "true" -%}
+          {%- form 'contact', data-shopify-captcha: 'true' -%}
             {%- if form.posted_successfully? -%}
               <p class="form-success">
                 {{ 'contact.form.post_success' | t }}

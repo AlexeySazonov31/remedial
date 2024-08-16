@@ -21,12 +21,13 @@
     <div class="row">
       <div class="col-md-8 pr-md-5">
         <div class="contact-form form-vertical py-5 pr-md-5">
-          {%- form 'contact' -%}
+          {%- form 'contact' data-shopify-captcha: "true" -%}
             {%- if form.posted_successfully? -%}
               <p class="form-success">
                 {{ 'contact.form.post_success' | t }}
               </p>
             {%- endif -%}
+
             {{ form.errors | default_errors }}
             <div class="form-group">
               <label for="ContactFormName" class="label--hidden">{{ 'contact.form.name' | t }}</label>
@@ -75,7 +76,10 @@
               >{% if form.body %}{{ form.body }}{% endif %}</textarea>
             </div>
             <!-- <div class="g-recaptcha" data-sitekey="6LewVHApAAAAAGRtf4IsZU7yYtYUtzYmsVk2sy-_"></div> -->
-            <div class="g-recaptcha" data-sitekey="6Lc35ScqAAAAABcPSmpp0K76TxEpKyjmP-V24JZH" data-action="LOGIN"></div>
+            <!--
+              <div class="g-recaptcha" data-sitekey="6Lc35ScqAAAAABcPSmpp0K76TxEpKyjmP-V24JZH" data-action="LOGIN"></div>
+            -->
+
             <input type="submit" class="btn btn-theme d-inline-block w-auto mt-4" value="{{ 'contact.form.send' | t }}">
           {%- endform -%}
         </div>

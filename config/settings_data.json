@@ -3863,12 +3863,6 @@
         "settings": {
         }
       },
-      "14230651041339252739": {
-        "type": "shopify:\/\/apps\/sc-easy-redirects\/blocks\/app_404\/be3f8dbd-5d43-46b4-ba43-2d65046054c2",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "2433038045295417455": {
         "type": "shopify:\/\/apps\/emailcheckr-stop-fake-signups\/blocks\/app-embed\/46b1f7df-6458-43e7-9a6a-e0628c135766",
         "disabled": false,
@@ -3877,6 +3871,12 @@
       },
       "15557474716127144420": {
         "type": "shopify:\/\/apps\/kaching-bundles\/blocks\/app-embed-block\/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "pagefly-page-builder": {
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {
         }

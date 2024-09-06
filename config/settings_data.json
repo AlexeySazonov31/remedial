@@ -3806,6 +3806,19 @@
           "setwidth": "container",
           "padding": true
         }
+      },
+      "referral": {
+        "type": "referral",
+        "settings": {
+          "heading": "Программа реферальных ссылок",
+          "heading_font_size": 69,
+          "heading_color": "#000000",
+          "heading_alignment": "center",
+          "description": "Пригласите друзей и получите бонусы!",
+          "description_font_size": 48,
+          "description_color": "#000000",
+          "description_alignment": "left"
+        }
       }
     },
     "content_for_index": [

@@ -9,10 +9,28 @@
       "default": "Программа реферальных ссылок"
     },
     {
+      "type": "range",
+      "id": "heading_width",
+      "label": "Ширина заголовка (%)",
+      "default": 100,
+      "min": 10,
+      "max": 100,
+      "step": 5
+    },
+    {
       "type": "textarea",
       "id": "description",
       "label": "Описание",
       "default": "Пригласите друзей и получите бонусы!"
+    },
+    {
+      "type": "range",
+      "id": "description_width",
+      "label": "Ширина описания (%)",
+      "default": 100,
+      "min": 10,
+      "max": 100,
+      "step": 5
     }
   ]
 }
@@ -20,7 +38,7 @@
 
 <section>
   <div class="referral-section">
-    <h2>{{ section.settings.heading }}</h2>
-    <p>{{ section.settings.description }}</p>
+    <h2 style="width: {{ section.settings.heading_width }}%;">{{ section.settings.heading }}</h2>
+    <p style="width: {{ section.settings.description_width }}%;">{{ section.settings.description }}</p>
   </div>
 </section>

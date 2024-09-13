@@ -1,11 +1,254 @@
-{% schema %}
-{
-  "name": "Referral Section",
-  "settings": [
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background-color: #f2f9fb;
+    width: 100%;
+  }
+  .wrapperCont {
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .containerText {
+    width: 504px;
+  }
+  .containerTextWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
 
-  ]
-}
-{% endschema %}
+  .containerText > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 90px;
+    color: #0e0e0e;
+    padding-bottom: 30px;
+  }
+  .containerText > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36.4px;
+    color: #0e0e0e;
+    text-align: justify;
+  }
+  .containerText ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32.4px;
+    color: #0e0e0e;
+  }
+  .containerText ul {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .containerWorks {
+    max-width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .WorkStep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .WorkStepSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerWorks h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #0e0e0e;
+  }
+  .first {
+    font-size: 44px;
+    font-weight: 700;
+    color: #3785a0;
+  }
+  .second {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0e0e0e;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .third {
+    font-size: 22px;
+    font-weight: 400;
+    color: #0e0e0e;
+    text-align: center;
+  }
+  .containerPartner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerPartnerBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .blockPartner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9e9ff;
+    border-radius: 20px;
+    padding: 0 34px 0px 40px;
+    width: 100%;
+    height: 355px;
+  }
+  .blockPartner > p {
+    text-align: center;
+  }
+  .firstPartner {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0e0e0e;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .secondPartner {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0e0e0e;
+  }
+  .containerPartner > h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #0e0e0e;
+    width: 974px;
+    text-align: center;
+  }
+  .containerPartner h2 span {
+    color: #3785a0;
+  }
+  .containerPartner > p {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0e0e0e;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .containerText > ul {
+    list-style: none;
+  }
+  .socialLink > p {
+    color: #0e0e0e;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+    width: 100%;
+  }
+  .containerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    height: 175px;
+  }
+  .containerLinkWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkclass {
+    width: 138px;
+    height: 175px;
+  }
+  .wrapperLinks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .linkclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d969ba;
+    border-radius: 20px;
+  }
+  .linkclass > p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+  }
+  .wrapperLinks {
+    min-height: 195px;
+  }
+  .linkss {
+    display: flex;
+  }
+  .linksociaInst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d969ba;
+    flex-direction: column;
+    width: 138px;
+    height: 175px;
+    border-radius: 20px;
+    gap: 10px;
+  }
+  .inst {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+  }
+  .likssocial {
+    display: flex;
+    height: 195px;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+  }
+  .linkdown {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
+  .Message {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+</style>
 
 <section class="wrapper">
   <div class="container">
@@ -112,3 +355,12 @@
     </div>
   </div>
 </section>
+
+{% schema %}
+{
+  "name": "Referral Section",
+  "settings": [
+
+  ]
+}
+{% endschema %}

@@ -193,7 +193,7 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/remedialpax_\/",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCZ796bTB2x9JKzru2zykv9A",
+    "social_youtube_link": "https:\/\/www.youtube.com\/@remedialpax",
     "social_vimeo_link": "",
     "share_facebook": true,
     "share_twitter": true,
@@ -3810,14 +3810,6 @@
       "referral": {
         "type": "referral",
         "settings": {
-          "heading": "Программа реферальных ссылок",
-          "heading_font_size": 69,
-          "heading_color": "#000000",
-          "heading_alignment": "center",
-          "description": "Пригласите друзей и получите бонусы!",
-          "description_font_size": 48,
-          "description_color": "#000000",
-          "description_alignment": "left"
         }
       }
     },

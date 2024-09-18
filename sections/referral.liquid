@@ -1,363 +1,6 @@
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-  }
-  .container1 {
-    background-color: #f2f9fb;
-    display: flex;
-    flex-direction: row;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 !important;
-  }
-  .wrapperCont {
-   display: flex;
-    flex-direction: row;
-    width:100%;
-  }
-  .containerText {
-    width: 504px;
-  }
-  .containerTextWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .containerText {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-  }
-
-  .containerText > h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 74px;
-    line-height: 90px;
-    color: #0e0e0e;
-    padding-bottom: 30px;
-  }
-  .containerText > p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 36.4px;
-    color: #0e0e0e;
-    text-align: justify;
-  }
-  .containerText> ul li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 32.4px;
-    color: #0e0e0e;
-  }
-  .containerText> ul {
-    padding-bottom: 50px;
-    padding-top: 30px;
-  }
-  .containerText img{
-    width:279px;
-    height:71px;
-  }
-  .containerWorks {
-    max-width: 1440px;
-    padding-top: 100px;
-    padding-bottom: 120px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-  .WorkStep {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .WorkStepSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .containerWorks h2 {
-    font-size: 44px;
-    font-weight: 700;
-    color: #0e0e0e;
-  }
-  .first {
-    font-size: 44px;
-    font-weight: 700;
-    color: #3785a0;
-  }
-  .second {
-    font-size: 24px;
-    font-weight: 700;
-    color: #0e0e0e;
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
-  .third {
-    font-size: 22px;
-    font-weight: 400;
-    color: #0e0e0e;
-    text-align: center;
-  }
-  .containerPartner {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .containerPartnerBlocks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .blockPartner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #a9e9ff;
-    border-radius: 20px;
-    padding: 0 34px 0px 40px;
-    width: 100%;
-    height: 355px;
-  }
-  .blockPartner > p {
-    text-align: center;
-  }
-  .firstPartner {
-    font-size: 22px;
-    font-weight: 600;
-    color: #0e0e0e;
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
-  .secondPartner {
-    font-size: 20px;
-    font-weight: 400;
-    color: #0e0e0e;
-  }
-  .containerPartner > h2 {
-    font-size: 44px;
-    font-weight: 700;
-    color: #0e0e0e;
-    width: 974px;
-    text-align: center;
-  }
-  .containerPartner> h2> span {
-    color: #3785a0;
-  }
-  .containerPartner > p {
-    font-size: 28px;
-    font-weight: 500;
-    color: #0e0e0e;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-  .containerText > ul {
-    list-style: none;
-  }
-  .socialLink > p {
-    color: #0e0e0e;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 140%;
-    width: 100%;
-  }
-  .containerLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 138px;
-    height: 175px;
-  }
-  .containerLinkWrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .linkclass {
-    width: 138px;
-    height: 175px;
-  }
-  .wrapperLinks {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .linkclass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #d969ba;
-    border-radius: 20px;
-  }
-  .linkclass > p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 130%;
-    text-align: center;
-  }
-  .wrapperLinks {
-    min-height: 195px;
-  }
-  .linkss {
-    display: flex;
-  }
-  .linksociaInst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d969ba;
-    flex-direction: column;
-    width: 138px;
-    height: 175px;
-    border-radius: 20px;
-    gap: 10px;
-  }
-  .inst {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 130%;
-    text-align: center;
-    color: #fff;
-  }
-  .likssocial {
-    display: flex;
-    height: 195px;
-    justify-content: center;
-    padding-left: 30px;
-    gap: 20px;
-  }
-  .linkdown {
-    display: flex;
-    align-items: flex-end;
-    gap: 24px;
-  }
-  .Message {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 140%;
-  }
-  .imgcontainer{
-      width:100%;
-  }
-  .main-content{
-    padding-bottom: 0px !important;
-        padding-top: 0px !important;
-  }
-</style>
+<style></style>
 
 <section class="wrapper">
-  <div class="container1">
-    <div class="wrapperCont">
-      <div class="containerTextWrapper">
-        <div class="containerText">
-          <h1>Try Skin Care & Earn Money</h1>
-          <p>Join Our Influencer Partner Program And Earn Money For Reviewing Our Products.</p>
-
-          <ul>
-            <li>&#8226; 40% commission from each sale</li>
-            <li>&#8226; $2,000+ monthly earnings</li>
-            <li>&#8226; work with a beloved American brand</li>
-          </ul>
-          <img
-            src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319460.png?v=1726230209"
-            height="100%"
-            width="100%"
-            alt=""
-          >
-        </div>
-      </div>
-      <div class="imgcontainer">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319459.png?v=1726230213"
-          height="711px"
-          width="950px"
-          alt=""
-        >
-      </div>
-    </div>
-  </div>
-  <div class="containerWorks">
-    <h2>How it works</h2>
-    <div class="WorkStep">
-      <div class="WorkStepSection">
-        <p class="first">01</p>
-        <p class="second">Contact Us</p>
-        <p class="third">Message us and get details from a personal manager</p>
-      </div>
-      <div class="WorkStepSection">
-        <p class="first">02</p>
-        <p class="second">Get a Link</p>
-        <p class="third">Get a unique affiliate link</p>
-      </div>
-      <div class="WorkStepSection">
-        <p class="first">03</p>
-        <p class="second">Create Content</p>
-        <p class="third">Talk about our product on Instagram, TikTok, YouTube, etc.</p>
-      </div>
-      <div class="WorkStepSection">
-        <p class="first">04</p>
-        <p class="second">Earn Money</p>
-        <p class="third">Get a 40% commission from each sale made using your link</p>
-      </div>
-    </div>
-  </div>
-  <div class="containerPartner">
-    <h2><span>Let's Partner Up:</span> Perfect for Those with an Engaged Community</h2>
-    <p>3 Reasons Why Influencers Love Working With Us</p>
-    <div class="containerPartnerBlocks">
-      <div class="blockPartner">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame_427319542_3bad5b9c-9327-4e75-85ee-2ebd8ab414ca.png?v=1726232544"
-          height="auto"
-          width="auto"
-          alt=""
-        >
-        <p class="firstPartner">Beloved Products:</p>
-        <p class="secondPartner">Our skin care products use powerful formulations and natural ingredients</p>
-      </div>
-      <div class="blockPartner">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/11074175_1.png?v=1726232132"
-          height="auto"
-          width="auto"
-          alt=""
-        >
-        <p class="firstPartner">Total Transparency Policy:</p>
-        <p class="secondPartner">
-          We give full access to all the information about your earnings, engagement rate, clicks, etc.
-        </p>
-      </div>
-      <div class="blockPartner">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/bar_chart_1.png?v=1726232132"
-          height="auto"
-          width="auto"
-          alt=""
-        >
-        <p class="firstPartner">Growing Online Presence:</p>
-        <p class="secondPartner">Grow your community and gain new loyal followers with Remedial Pax</p>
-      </div>
-    </div>
-  </div>
   <div class="container">
     <div class="wrapperCont">
       <div class="containerTextWrapper">
@@ -370,51 +13,189 @@
             <li>&#8226; $2,000+ monthly earnings</li>
             <li>&#8226; work with a beloved American brand</li>
           </ul>
-          <div>
-            <p class="Message">Message us</p>
-            <div class="likssocial">
-              <div>
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Framearrow.png?v=1726233159"
-                  height="65px"
-                  width="61px"
-                  alt=""
-                >
-              </div>
-              <div class="linkdown">
-                <div class="linksociaInst">
-                  <img
-                    src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/instagram.png?v=1726233159"
-                    height="65px"
-                    width="61px"
-                    alt=""
-                  >
-                  <p class="inst">Instagram</p>
-                </div>
-                <div class="linksociaInst">
-                  <img
-                    src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/messenger.png?v=1726233160"
-                    height="65px"
-                    width="61px"
-                    alt=""
-                  >
-                  <p class="inst">Messenger</p>
+          <img
+            src="/Frame427319460.png"
+            height="auto"
+            width="auto"
+            alt=""
+          >
+        </div>
+      </div>
+      <div class="containerImg">
+        <!-- <img src="/Frame427319459.png" height="auto" width="100%" alt="" /> -->
+      </div>
+    </div>
+  </div>
+  <div class="containerWorks">
+    <h2>How it works</h2>
+    <div class="WorkStep">
+      <div class="WorkStepWrapperDiv">
+        <div class="WorkStepSection">
+          <p class="first">01</p>
+          <p class="second">Contact Us</p>
+          <p class="third">Message us and get details from a personal manager</p>
+        </div>
+        <div class="WorkStepSection">
+          <p class="first">02</p>
+          <p class="second">Get a Link</p>
+          <p class="third">Get a unique affiliate link</p>
+        </div>
+      </div>
+      <div class="WorkStepWrapperDiv">
+        <div class="WorkStepSection">
+          <p class="first">03</p>
+          <p class="second">Create Content</p>
+          <p class="third">Talk about our product on Instagram, TikTok, YouTube, etc.</p>
+        </div>
+        <div class="WorkStepSection">
+          <p class="first">04</p>
+          <p class="second">Earn Money</p>
+          <p class="third">Get a 40% commission from each sale made using your link</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerPartner">
+    <h2><span>Let's Partner Up:</span> Perfect for Those with an Engaged Community</h2>
+    <p>3 Reasons Why Influencers Love Working With Us</p>
+    <div class="containerPartnerBlocks">
+      <div class="blockPartner">
+        <img src="/Frame427319542.png" alt="">
+        <p class="firstPartner">Beloved Products:</p>
+        <p class="secondPartner">Our skin care products use powerful formulations and natural ingredients</p>
+      </div>
+      <div class="blockPartner">
+        <img src="/Frame 427319543.png" alt="">
+        <p class="firstPartner">Total Transparency Policy:</p>
+        <p class="secondPartner">
+          We give full access to all the information about your earnings, engagement rate, clicks, etc.
+        </p>
+      </div>
+      <div class="blockPartner">
+        <img src="/Frame 427319541.png" alt="">
+        <p class="firstPartner">Growing Online Presence:</p>
+        <p class="secondPartner">Grow your community and gain new loyal followers with Remedial Pax</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrapperFaq">
+    <div class="wrapperFaqItem1">
+      <img src="/Frame427319534.png" width="auto" height="auto" alt="">
+    </div>
+    <div class="wrapperFaqItem2">
+      <div>
+        <h2 class="titleFAQ">FAQ</h2>
+      </div>
+      <div>
+        <div class="faq">
+          <button class="accordion">
+            What's my part in the program?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Review our products, make videos, and share them on your socials. You get a 40% commission from each sale
+              made through your affiliate link.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            Where do I get my affiliate link?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Message us and follow the instructions of your assigned manager. They will provide you with a unique
+              affiliate link that will help you track sales and engagement.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            How much do your influencers make?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>Our influencers make, on average, $1,500–2,000 a month.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            How do I track my sales?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              You will get a unique affiliate link. Through that link, you will see when somebody has finalized a sale
+              on Amazon. You can find more details about your earnings from your assigned personal manager.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <!--
+    <div class="container">
+      <div class="wrapperCont">
+        <div class="containerTextWrapper">
+          <div class="containerText">
+            <h1>Try Skin Care & Earn Money</h1>
+            <p>
+              Join Our Influencer Partner Program And Earn Money For Reviewing
+              Our Products.
+            </p>
+
+            <ul>
+              <li>&#8226; 40% commission from each sale</li>
+              <li>&#8226; $2,000+ monthly earnings</li>
+              <li>&#8226; work with a beloved American brand</li>
+            </ul>
+            <div>
+              <p class="Message">Message us</p>
+              <div class="likssocial">
+                <div><img src="/Fram2.svg" alt="" /></div>
+                <div class="linkdown">
+                  <div class="linksociaInst">
+                    <img src="/instagram.svg" alt="" />
+                    <p class="inst">Instagram</p>
+                  </div>
+                  <div class="linksociaInst">
+                    <img src="/messenger.svg" alt="" />
+                    <p class="inst">Messenger</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319459.png?v=1726230213"
-          height="auto"
-          height="auto"
-          alt=""
-        >
+        <div class="">
+          <img src="/Frame427319459.png" height="auto" width="100%" alt="" />
+        </div>
       </div>
     </div>
-  </div>
+  -->
 </section>
 
 {% schema %}

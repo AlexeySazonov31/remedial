@@ -1,27 +1,34 @@
 <!doctype html>
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
- {%- render 'ecom_header' -%}
+    {%- render 'ecom_header' -%}
+
+    <!-- TikTok Pixel Code Start -->
+
+    <script>
+      !function (w, d, t) {
+        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+      var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+      ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+        ttq.load('CRMO7NBC77U6OCTLRG6G');
+        ttq.page();
+      }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+
     <!-- Added by TAPITA SEO SCHEMA -->
-
-
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-
-
-      
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N83LVGXS');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N83LVGXS');
+    </script>
+    <!-- End Google Tag Manager -->
 
     {% if content_for_header contains 'tapita-seo-script-tags' %}
       {% include 'tapita-seo-schema' %}
@@ -57,8 +64,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
     {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
     {% if page.handle contains 'quiz' %}
-    {{ 'quizCSS-remedial.css' | asset_url | stylesheet_tag }}
-    {{ 'quizresCSS-remedial.css' | asset_url | stylesheet_tag }}
+      {{ 'quizCSS-remedial.css' | asset_url | stylesheet_tag }}
+      {{ 'quizresCSS-remedial.css' | asset_url | stylesheet_tag }}
     {% endif %}
     <!-- Meta Pixel Code -->
     <script>
@@ -81,10 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         src="https://www.facebook.com/tr?id=1249020162630395&ev=PageView&noscript=1"
     ></noscript>
 
-
     <!-- End Meta Pixel Code -->
-
-
 
     <!-- AdSense -->
     <script
@@ -96,7 +100,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- SlideRule Script Start -->
     {% include 'sliderule-data' %}
     <!-- SlideRule Script End -->
-  {% include 'pagefly-app-header' %}</head>
+    {% include 'pagefly-app-header' %}
+  </head>
   <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}">
     {%- section 'announcement-bar' -%}
     {%- include 'loading' -%}
@@ -104,13 +109,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="page-container page-element is-moved-by-drawer">
       {%- include 'breadcrumb' -%}
       <main class="main-content" id="MainContent" role="main">
-
-
-          <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N83LVGXS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+          ><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N83LVGXS"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
         {%- if settings.enable_animationscroll -%}<div id="js-scroll">{% endif %}
         {%- if settings.enable_animationscroll -%}<div data-scroll-section>{% endif %}
@@ -136,22 +144,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {{ '/services/javascripts/currencies.js' | script_tag }}
     {%- endif -%}
     {% unless request.design_mode %}
-    {% render 'mrk-optamization' %}
+      {% render 'mrk-optamization' %}
     {% endunless %}
     {% if page.handle contains 'quiz' %}
-    {{ 'quizJS-remedial.js' | asset_url | script_tag }}
-    {{ 'quizresJS-remedial.js' | asset_url | script_tag }}
+      {{ 'quizJS-remedial.js' | asset_url | script_tag }}
+      {{ 'quizresJS-remedial.js' | asset_url | script_tag }}
     {% endif %}
     {% if template contains 'product' %}
       {% render 'jsonLd' %}
     {% endif %}
 
+    <script>
+      var appElement = document.getElementById('ctn-younet-content');if (appElement) {appElement.style.display = 'block';}
+    </script>
 
-
-
-
-
-    <script>var appElement = document.getElementById('ctn-younet-content');if (appElement) {appElement.style.display = 'block';}</script>
-
-  {%- render "ecom_footer"-%}</body>
+    {%- render 'ecom_footer' -%}
+  </body>
 </html>

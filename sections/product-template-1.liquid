@@ -323,7 +323,7 @@
             <br>
             <span style="font-size:20px; color:#207BCF; font-weight:600;">Prices vary by country. Choose your location.</span>
           </div>
-            <p>UPC: 198715284515</p>
+            
           {% endif %}
           <ul class="pb-3 product-single__meta-list list--inline{% if shop.taxes_included or shop.shipping_policy.body != blank %} product-single__price-container{% endif %}">
             <li>
@@ -342,7 +342,7 @@
               </s>
             </li>
             {% endif %}
-            
+            <p>UPC: 198715284515</p>
             {%- if section.settings.stock_enable -%}
             <li>{%- include 'productStock' -%}</li>
             {%- endif -%}

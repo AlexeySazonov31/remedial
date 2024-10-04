@@ -342,7 +342,10 @@
               </s>
             </li>
             {% endif %}
-            <p>UPC: 198715284515</p>
+            {% if product.metafields.custom.urlcanada %}
+     <p>UPC: 198715284515</p>
+  {% endif %}
+            
             {%- if section.settings.stock_enable -%}
             <li>{%- include 'productStock' -%}</li>
             {%- endif -%}

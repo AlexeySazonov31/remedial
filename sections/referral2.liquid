@@ -1,6 +1,932 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+  html {
+            scroll-behavior: smooth;
+        }
+  p {
+    margin: 0;
+  }
+  .main-content {
+    padding: 0px;
+  }
+  .container22 {
+    background-color: #f2f9fb;
+    width: 100%;
+  }
+  .wrapperCont {
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .containerText {
+    width: 504px;
+  }
+  .containerImg {
+    width: 100%;
+    height: 711px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319459.png?v=1726230213");
+  }
+  .ImgForFooter img{
+    transition: transform 0.3s ease;
+            cursor: pointer
+  }
+  .ImgForFooter img:hover {
+            transform: scale(1.1); /* Увеличение изображения на 20% */
+        }
+  .containerImg1 {
+    width: 100%;
+    height: 863px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame4427319459.png?v=1726671230");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .wrapperCont {
+    padding: 0 0 0 20px;
+  }
+  .containerTextWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .containerText > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 90px;
+    color: #0e0e0e;
+    padding-bottom: 30px;
+  }
+  .containerText > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36.4px;
+    color: #0e0e0e;
+    text-align: justify;
+  }
+  .linksociaInst1{
+    transition: transform 0.3s ease;
+            cursor: pointer;
+  }
+  .linksociaInst1:hover {
+            transform: scale(1.1); /* Увеличение изображения на 20% */
+        }
+  .containerText ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32.4px;
+    color: #0e0e0e;
+  }
+  .containerText ul {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .containerWorks {
+    max-width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .WorkStep {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .WorkStepSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerWorks h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #0e0e0e;
+  }
+  .first {
+    font-size: 44px;
+    font-weight: 700;
+    color: #3785a0;
+    margin: 0px;
+  }
+  .second {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0e0e0e;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: 0px;
+  }
+  .third {
+    font-size: 22px;
+    font-weight: 400;
+    color: #0e0e0e;
+    text-align: center;
+  }
+  .containerPartner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .containerPartnerBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .blockPartner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #a9e9ff;
+    border-radius: 20px;
+    padding: 30px 34px 0px 40px;
+    width: 100%;
+    height: 355px;
+  }
+  .blockPartner > p {
+    text-align: center;
+  }
+  .firstPartner {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0e0e0e;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .secondPartner {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0e0e0e;
+  }
+  .containerPartner > h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #0e0e0e;
+    max-width: 974px;
+    text-align: center;
+  }
+  .containerPartner h2 span {
+    color: #3785a0;
+  }
+  .containerPartner > p {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0e0e0e;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .containerText > ul {
+    list-style: none;
+  }
+  .socialLink > p {
+    color: #0e0e0e;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+    width: 100%;
+  }
+  .containerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    height: 175px;
+  }
+  .containerLinkWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkclass {
+    width: 138px;
+    height: 175px;
+  }
+  .wrapperLinks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .linkclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d969ba;
+    border-radius: 20px;
+  }
+  .linkclass > p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+  }
+  .wrapperLinks {
+    min-height: 195px;
+  }
+  .linkss {
+    display: flex;
+  }
+  .linksociaInst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d969ba;
+    flex-direction: column;
+    width: 138px;
+    height: 175px;
+    border-radius: 20px;
+    gap: 10px;
+  }
+  .inst {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+  }
+  .likssocial {
+    display: flex;
+    height: 195px;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+  }
+  .linkdown {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
+  .Message {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  .WorkStepWrapperDiv {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .wrapperFaq {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    gap: 60px;
+  }
+  .wrapperFaqItem1 {
+    width: 75%;
+
+    height: 448px;
+  }
+  .wrapperFaqItem2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .titleFAQ {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: auto;
+  }
+
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500px;
+    width: 100%;
+    padding: 0 30px 20px 0;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .accordion i {
+    font-size: 1.6rem;
+  }
+
+  .pannel {
+    padding: 0px 30px 30px 0;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .blockPartner {
+      padding: 30px 30px 0 30px;
+    }
+  }
+  @media only screen and (max-width: 1366px) {
+    .containerWorks > h2 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: center;
+      color: #0e0e0e;
+    }
+    .containerWorks {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+    .wrapperFaqItem1 {
+      height: 100%;
+    }
+    .containerWorks {
+      gap: 33px;
+    }
+    .first {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: center;
+    }
+    .second {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+      color: #0e0e0e;
+      padding: 15px 0;
+    }
+    .third {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #0e0e0e;
+    }
+    .containerPartner > h2 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: center;
+      max-width: 650px;
+    }
+    .containerPartner > p {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 31px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .blockPartner {
+      height: 350px;
+      padding: 20px 15px 20px 15px;
+    }
+    .titleFAQ {
+      font-size: 38px;
+    }
+    .wrapperFaq {
+      gap: 20px;
+    }
+    /* .wrapperFaqItem1 {
+          min-height: 380px;
+          width: 50%;
+        } */
+    .wrapperFaqItem1 img {
+      height: 380px;
+    }
+    .containerText > h1 {
+      font-size: 66px;
+      line-height: 80px;
+      padding-bottom: 27.5px;
+    }
+    .containerText > p {
+      font-size: 23px;
+      line-height: 140%;
+    }
+    .wrapperCont {
+      gap: 10px;
+    }
+    .containerText > ul > li {
+      font-size: 23px;
+      line-height: 28px;
+      padding-bottom: 20px;
+    }
+    .containerText > ul {
+      padding-top: 27px;
+      padding-bottom: 15px;
+    }
+    .containerImg {
+      height: 656px;
+    }
+    .containerImg1 {
+      height: 774px;
+    }
+    .containerImg {
+      background-size: cover;
+      background-position: center center;
+    }
+    .containerImg1 {
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .WorkStep {
+      flex-wrap: wrap;
+    }
+    .containerWorks {
+      gap: 30px;
+    }
+    .containerWorks {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .WorkStep {
+      padding: 0 15px;
+    }
+    .blockPartner {
+      padding: 15px;
+    }
+    .blockPartner > img {
+      width: 125px;
+    }
+    .firstPartner {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+    .secondPartner {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+    .blockPartner {
+      height: 315px;
+    }
+    .wrapperFaqItem1 img {
+      height: 290px;
+      width: 100%;
+    }
+    .wrapperFaqItem2 {
+      justify-content: flex-start;
+    }
+
+    .wrapperFaqItem1 {
+      display: flex;
+      justify-items: center;
+      height: 100%;
+    }
+    .accordion {
+      font-size: 20px;
+      gap: 20px;
+    }
+    .wrapperFaq {
+      padding: 60px 15px;
+    }
+    .containerTextWrapper {
+      width: 45%;
+    }
+    .wrapperCont {
+      gap: 20px;
+    }
+    .containerText > h1 {
+      font-size: 48px;
+      line-height: 52px;
+      padding-bottom: 23.5px;
+    }
+    .containerText > p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .containerText > ul > li {
+      font-size: 18px;
+      line-height: 22px;
+      padding-bottom: 18px;
+    }
+    .containerText > ul {
+      padding-top: 22px;
+      padding-bottom: 0px;
+    }
+    .containerText > img {
+      width: 200px;
+      cursor: pointer;
+    }
+    .containerImg {
+      height: 528px;
+      background-size: cover;
+      background-position: center center;
+    }
+    .containerImg1 {
+      height: 626px;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .WorkStepWrapperDiv {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+    .first {
+    }
+    .second {
+      padding: 10px 0;
+    }
+    .containerWorks {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .WorkStep {
+      gap: 30px;
+    }
+    .containerWorks > h2 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    .WorkStep {
+      padding: 0 10px;
+    }
+    .WorkStepSection {
+      width: 70%;
+    }
+    .containerPartnerBlocks {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .blockPartner {
+      height: 275px;
+    }
+    .containerPartner {
+      padding: 0 10px;
+    }
+    .containerPartner > h2 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    .containerPartner > p {
+      font-size: 22px;
+      line-height: 26px;
+      width: 85%;
+      padding: 15px 0;
+    }
+    .wrapperFaq {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .wrapperFaqItem1 img {
+      height: 100%;
+      width: 100%;
+    }
+    .wrapperFaqItem1 {
+      width: 100%;
+      min-height: 50%;
+    }
+    .accordion {
+      padding: 0 10px 30px 0;
+      gap: 20px;
+      font-size: 18px;
+    }
+    .titleFAQ {
+      font-size: 26px;
+    }
+    .wrapperFaqItem2 {
+      gap: 25px;
+    }
+    .pannel > p {
+      font-size: 18px;
+    }
+    .wrapperFaq {
+      padding: 50px 10px 50px 10px;
+    }
+    .wrapperCont {
+      flex-direction: column;
+      padding: 0px;
+    }
+    .containerTextWrapper {
+      width: 100%;
+      padding: 50px 10px 20px 10px;
+    }
+    .containerText > img {
+      width: 230px;
+    }
+    .containerImg {
+      height: 465px;
+      background-size: cover;
+      background-position: center center;
+    }
+    .containerImg1 {
+      height: 465px;
+      background-size: cover;
+      background-position: center center;
+    }
+    .Message {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .imgArrow {
+      height: 44px;
+      width: 41px;
+    }
+    .linksociaInst {
+      width: 100px;
+      height: 130px;
+    }
+    .linksociaInst > img {
+      height: 63px;
+      width: 63px;
+    }
+    .linksociaInst > p {
+      font-size: 16px;
+    }
+    .likssocial {
+      height: 140px;
+    }
+  }
+</style>
+
+<section class="wrapper">
+  <div class="container22">
+    <div class="wrapperCont">
+      <div class="containerTextWrapper">
+        <div class="containerText">
+          <h1>Try Skin Care & Earn Money</h1>
+          <p>Join Our Influencer Partner Program And Earn Money For Reviewing Our Products.</p>
+
+          <ul>
+            <li>&#8226; 40% commission from each sale</li>
+            <li>&#8226; $2,000+ monthly earnings</li>
+            <li>&#8226; work with a beloved American brand</li>
+          </ul>
+          <a class="ImgForFooter" href="#footer"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319460.png?v=1726230209"
+              height="auto"
+              width="auto"
+              alt="button"
+            >
+          </a>
+        </div>
+      </div>
+      <div class="containerImg">
+        <!-- <img src="/Frame427319459.png" height="auto" width="100%" alt="" /> -->
+      </div>
+    </div>
+  </div>
+  <div class="containerWorks">
+    <h2>How it works</h2>
+    <div class="WorkStep">
+      <div class="WorkStepWrapperDiv">
+        <div class="WorkStepSection">
+          <p class="first">01</p>
+          <p class="second">Contact Us</p>
+          <p class="third">Message us and get details from a personal manager</p>
+        </div>
+        <div class="WorkStepSection">
+          <p class="first">02</p>
+          <p class="second">Get a Link</p>
+          <p class="third">Get a unique affiliate link</p>
+        </div>
+      </div>
+      <div class="WorkStepWrapperDiv">
+        <div class="WorkStepSection">
+          <p class="first">03</p>
+          <p class="second">Create Content</p>
+          <p class="third">Talk about our product on Instagram, TikTok, YouTube, etc.</p>
+        </div>
+        <div class="WorkStepSection">
+          <p class="first">04</p>
+          <p class="second">Earn Money</p>
+          <p class="third">Get a 40% commission from each sale made using your link</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerPartner">
+    <h2><span>Let's Partner Up:</span> Perfect for Those with an Engaged Community</h2>
+    <p>3 Reasons Why Influencers Love Working With Us</p>
+    <div class="containerPartnerBlocks">
+      <div class="blockPartner">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame_427319542.png?v=1726232133"
+          width="auto"
+          height="auto"
+          alt=""
+        >
+        <p class="firstPartner">Beloved Products:</p>
+        <p class="secondPartner">Our skin care products use powerful formulations and natural ingredients</p>
+      </div>
+      <div class="blockPartner">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/11074175_1.png?v=1726232132"
+          width="auto"
+          height="auto"
+          alt=""
+        >
+        <p class="firstPartner">Total Transparency Policy:</p>
+        <p class="secondPartner">
+          We give full access to all the information about your earnings, engagement rate, clicks, etc.
+        </p>
+      </div>
+      <div class="blockPartner">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/bar_chart_1.png?v=1726232132"
+          width="auto"
+          height="auto"
+          alt=""
+        >
+        <p class="firstPartner">Growing Online Presence:</p>
+        <p class="secondPartner">Grow your community and gain new loyal followers with Remedial Pax</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrapperFaq">
+    <div class="wrapperFaqItem1">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Frame427319534.png?v=1726665721"
+        width="auto"
+        height="auto"
+        alt=""
+      >
+    </div>
+    <div class="wrapperFaqItem2">
+      <div>
+        <h2 class="titleFAQ">FAQ</h2>
+      </div>
+      <div>
+        <div class="faq">
+          <button class="accordion">
+            What's my part in the program?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Review our products, make videos, and share them on your socials. You get a 40% commission from each sale
+              made through your affiliate link.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            Where do I get my affiliate link?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Message us and follow the instructions of your assigned manager. They will provide you with a unique
+              affiliate link that will help you track sales and engagement.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            How much do your influencers make?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>Our influencers make, on average, $1,500–2,000 a month.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="accordion">
+            How do I track my sales?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              You will get a unique affiliate link. Through that link, you will see when somebody has finalized a sale
+              on Amazon. You can find more details about your earnings from your assigned personal manager.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <div class="container22">
+    <div class="wrapperCont">
+      <div class="containerTextWrapper">
+        <div class="containerText" id="footer">
+          <h1>Try Skin Care & Earn Money</h1>
+          <p>Join Our Influencer Partner Program And Earn Money For Reviewing Our Products.</p>
+
+          <ul>
+            <li>&#8226; 40% commission from each sale</li>
+            <li>&#8226; $2,000+ monthly earnings</li>
+            <li>&#8226; work with a beloved American brand</li>
+          </ul>
+          <div>
+            <p class="Message">Message us</p>
+            <div class="likssocial">
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/Framearrow.png?v=1726233159"
+                  height="67px"
+                  width="63px"
+                  alt=""
+                  class="imgArrow"
+                >
+              </div>
+
+              <div class="linkdown">
+                <a href="https://ig.me/m/linda_remedial" class="linksociaInst1">
+                  <div class="linksociaInst">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/instagram.png?v=1726233159"
+                      height="87px"
+                      width="87px"
+                      alt=""
+                    >
+                    <p class="inst">Instagram</p>
+                  </div>
+                </a>
+                <a href="http://m.me/remedialpaxproducts" class="linksociaInst1">
+                  <div class="linksociaInst">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0566/4322/3596/files/messenger.png?v=1726233160"
+                      height="87px"
+                      width="87px"
+                      alt=""
+                    >
+                    <p class="inst">Messenger</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containerImg1"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Referral Section",
+  "settings": [
+
+  ]
+}
 {% endschema %}

@@ -343,7 +343,7 @@
             </li>
             {% endif %}
             {% if product.metafields.custom.upc %}
-     <p>UPC: 198715284515</p>
+     <p>UPC: {{ product.metafields.custom.upc }}</p>
             {% endif %}
             
             {%- if section.settings.stock_enable -%}

@@ -577,6 +577,13 @@
               "width": "25%"
             }
           },
+          "menu_pJyxY8": {
+            "type": "menu",
+            "settings": {
+              "link_list": "shop",
+              "width": "25%"
+            }
+          },
           "ff93e06a-30be-40b3-a91d-eda48ab56fb9": {
             "type": "newsletter",
             "settings": {
@@ -590,7 +597,7 @@
             "type": "text",
             "settings": {
               "widthlogofooter": 130,
-              "title": "Curated by us",
+              "title": "Partnerships",
               "text": "Travoleno LLC<br>\n30 N Gould St Ste 23619<br>\nSheridan<br>\nWY\n82801",
               "width": "25%"
             }
@@ -599,6 +606,7 @@
         "block_order": [
           "1567410176792",
           "d41dc7e4-05bb-4898-8cfc-3d723e8b6a7f",
+          "menu_pJyxY8",
           "ff93e06a-30be-40b3-a91d-eda48ab56fb9",
           "e138d747-e263-4e27-8b99-1351466b5f9d"
         ],

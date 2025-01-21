@@ -17,7 +17,7 @@
     "collectionpage": "collection-1",
     "blogpage": "blog-1",
     "articlepage": "article-1",
-    "productgrid": "product-4",
+    "productgrid": "product-1",
     "sectionheading": "heading-1",
     "collectiongrid": "collection-1",
     "bloggrid": "blog-1",
@@ -259,7 +259,7 @@
     "upsell_accept": "Yes, let me select variants",
     "upsell_decline": "No, thanks",
     "upsell_time": 1.5,
-    "second_image": true,
+    "second_image": false,
     "enablevideo": false,
     "video_mute": false,
     "free_shipping_enable": false,
@@ -3197,7 +3197,7 @@
       "1595086648291": {
         "type": "featured-products",
         "settings": {
-          "animation": "fade",
+          "animation": "fade-up",
           "paddingsection": "120px 0px 90px 0px",
           "paddingmobile": "60px 0px 60px 0px",
           "marginsection": "0px 0px 0px 0px",

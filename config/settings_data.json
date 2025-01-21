@@ -2417,8 +2417,8 @@
               "slide_title_color": "#ffffff",
               "subheading": "by REMEDIAL PAX",
               "subheading_color": "#ffffff",
-              "button_label": "order now",
-              "button_link": "shopify://collections/best-sellers",
+              "button_label": "Take a quick quiz",
+              "button_link": "shopify://pages/quiz",
               "stylebtn": true,
               "bg_button": "#2d8ce3",
               "color_button": "#ffffff",
@@ -3815,6 +3815,10 @@
       },
       "referral": {
         "type": "referral",
+        "settings": {}
+      },
+      "page-quiz-remedial": {
+        "type": "page-quiz-remedial",
         "settings": {}
       }
     },

@@ -394,7 +394,7 @@ if (arrEndCreams.length >= 1) {
         contentForRecomendation +=
           "<div class='productContainer-ResQz'>" +
           el.content +
-          "<div class='productContainerRight-ResQz'>" +
+          "<div class=''>" +
           el.rightContent +
           "</div></div>";
       }

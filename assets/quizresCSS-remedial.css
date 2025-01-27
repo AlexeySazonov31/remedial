@@ -729,6 +729,7 @@
   }
   .productRightText1 {
     line-height: 38px;
+      text-align:center;
   }
   .productRightLineMb {
     display: block;

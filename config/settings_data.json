@@ -3198,8 +3198,8 @@
         "type": "featured-products",
         "settings": {
           "animation": "fade-up",
-          "paddingsection": "120px 0px 90px 0px",
-          "paddingmobile": "60px 0px 60px 0px",
+          "paddingsection": "40px 0px 90px 0px",
+          "paddingmobile": "20px 0px 60px 0px",
           "marginsection": "0px 0px 0px 0px",
           "marginmobile": "0px 0px 0px 0px",
           "bgsection": "#ffffff",

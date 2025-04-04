@@ -3829,7 +3829,7 @@
           "html_Mjz8GU": {
             "type": "html",
             "settings": {
-              "code": "<style>\n\n</style>\n<a style=\"width:100%\" class=\"btn-theme \" href=\"https://remedial.store/pages/quiz\">Take a quize</a>",
+              "code": "<style>\n\n</style>\n<a style=\"width:100%\" class=\"btn gradient-theme slideshow__btn1583425647500  btn-theme \" href=\"https://remedial.store/pages/quiz\">Take a quize</a>",
               "width": "50%",
               "align": "center",
               "justify_content": "center"

@@ -47,7 +47,7 @@
         <div class="grid__item-inner grid__item-inner--{{ block.type }}">
           {%- case block.type -%}
           {%- when 'html' -%}
-            <div data-aos="{{section.settings.animation}}" data-aos-duration="500">
+            <div data-aos="{{section.settings.animation}}" data-aos-duration="500" style="display: flex; justify-content: {{ block.settings.justify_content }};">
               {{ block.settings.code }}
             </div>
           
@@ -91,7 +91,7 @@
                 <div class="video-wrapper">
                   <button class="video-section__player-close">
                     <span class="visually-hidden">{{ 'video.close' | t }}</span>
-                    {%- include 'icon-close' -%}
+                    {%-include 'icon-close' -%}
                   </button>
                   <div class="video-section__player"></div>
                 </div>
@@ -403,7 +403,38 @@
             }
           ]
         },
-        
+        {
+          "type": "select",
+          "id": "justify_content",
+          "label": "Justify Content",
+          "default": "start",
+          "options": [
+            {
+              "value": "start",
+              "label": "Start"
+            },
+            {
+              "value": "end",
+              "label": "End"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "space-between",
+              "label": "Space Between"
+            },
+            {
+              "value": "space-around",
+              "label": "Space Around"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space Evenly"
+            }
+          ]
+        }
       ]
     },
 	{

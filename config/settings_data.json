@@ -3789,7 +3789,8 @@
             "settings": {
               "code": "",
               "width": "100%",
-              "align": "auto"
+              "align": "auto",
+              "justify_content": "start"
             }
           }
         },
@@ -3829,7 +3830,8 @@
             "settings": {
               "code": "<a href=\"\">sdfsdsdfsdfsdfsddsfsdfsdfsdfsdfsddsfsdfsdfs</a>",
               "width": "50%",
-              "align": "center"
+              "align": "center",
+              "justify_content": "center"
             }
           }
         },
@@ -3845,7 +3847,7 @@
           "zindex": "0",
           "bgsection": "#fefefe",
           "rangebg": 0,
-          "bgbefore": "transparent",
+          "bgbefore": "rgba(0,0,0,0)",
           "title_top": "",
           "title": "",
           "des": "",

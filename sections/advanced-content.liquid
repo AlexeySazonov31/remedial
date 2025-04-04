@@ -19,7 +19,7 @@
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
     {%- include 'section-heading' -%}
-    <div class="row {% unless section.settings.padding %} m-0{% endunless %}">
+    <div class="row {% unless section.settings.padding %} m-0{% endunless %}" style="display: flex; justify-content: {{ section.settings.row_justify_content }};">
       {%- for block in section.blocks -%}
       {%- case block.settings.width -%}
       {%- when 'auto' -%}
@@ -91,7 +91,7 @@
                 <div class="video-wrapper">
                   <button class="video-section__player-close">
                     <span class="visually-hidden">{{ 'video.close' | t }}</span>
-                    {%-include 'icon-close' -%}
+                    {% include 'icon-close' %}
                   </button>
                   <div class="video-section__player"></div>
                 </div>
@@ -322,6 +322,38 @@
       "id": "padding",
       "label": "Enable Padding",
       "default": true
+    },
+    {
+      "type": "select",
+      "id": "row_justify_content",
+      "label": "Row Justify Content",
+      "default": "start",
+      "options": [
+        {
+          "value": "start",
+          "label": "Start"
+        },
+        {
+          "value": "end",
+          "label": "End"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "space-between",
+          "label": "Space Between"
+        },
+        {
+          "value": "space-around",
+          "label": "Space Around"
+        },
+        {
+          "value": "space-evenly",
+          "label": "Space Evenly"
+        }
+      ]
     }
   ],
   "blocks": [

@@ -18,7 +18,7 @@
     "blogpage": "blog-1",
     "articlepage": "article-1",
     "productgrid": "product-1",
-    "sectionheading": "heading-0",
+    "sectionheading": "heading-1",
     "collectiongrid": "collection-1",
     "bloggrid": "blog-1",
     "loading": "grow",
@@ -3829,7 +3829,7 @@
           "html_Mjz8GU": {
             "type": "html",
             "settings": {
-              "code": "<style>\n\n</style>\n<a style=\"width:100%\" class=\"btn gradient-theme slideshow__btn slideshow__btn1583425647500  btn-theme \" href=\"https://remedial.store/pages/quiz\">Take a quize</a>",
+              "code": "<style>\n\n</style>\n<a style=\"width:100%\" class=\"\" href=\"https://remedial.store/pages/quiz\">Take a quize</a>",
               "width": "50%",
               "align": "center",
               "justify_content": "center"

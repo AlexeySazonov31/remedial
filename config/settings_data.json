@@ -3811,7 +3811,8 @@
           "title": "",
           "des": "<div class=\"main-page-our-partners\">\n  <img class=\"vogue-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/VOGUE.svg?v=1664977226\" alt=\"vogue\">\n  <img class=\"cnn-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/cnn-seeklogo.com_1.svg?v=1664977537\" alt=\"cnn\">\n  <img class=\"bazaar-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/BAZAAR.svg?v=1664977537\" alt=\"bazaar\">\n  <img class=\"vanityfair-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/VANITYFAIR.svg?v=1664977537\" alt=\"vanityfair\">\n  <img class=\"gq-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/GQ.svg?v=1664977537\" alt=\"gq\">\n  <img class=\"glamour-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/GLAMOUR.svg?v=1664977537\" alt=\"glamour\">\n  <img class=\"cosmopolitan-img\" src=\"https://cdn.shopify.com/s/files/1/0566/4322/3596/files/COSMOPOLITAN.svg?v=1664977537\" alt=\"cosmopolitan\">\n</div>",
           "setwidth": "container",
-          "padding": true
+          "padding": true,
+          "row_justify_content": "start"
         }
       },
       "referral": {
@@ -3840,8 +3841,8 @@
         ],
         "settings": {
           "animation": "fade-down",
-          "paddingsection": "0px 0px 0px 0px",
-          "paddingmobile": "60px 0px 60px 0px",
+          "paddingsection": "40px 0px 40px 0px",
+          "paddingmobile": "20px 0px 20px 0px",
           "marginsection": "0px 0px 0px 0px",
           "marginmobile": "0px 0px 0px 0px",
           "zindex": "0",
@@ -3852,7 +3853,8 @@
           "title": "",
           "des": "",
           "setwidth": "container",
-          "padding": true
+          "padding": true,
+          "row_justify_content": "center"
         }
       }
     },

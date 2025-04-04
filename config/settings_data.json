@@ -3800,7 +3800,7 @@
         "settings": {
           "animation": "",
           "paddingsection": "0px 0px 0px 0px",
-          "paddingmobile": "60px 0px 60px 0px",
+          "paddingmobile": "60px 0px 20px 0px",
           "marginsection": "0px 0px 0px 0px",
           "marginmobile": "0px 0px 0px 0px",
           "zindex": "0",

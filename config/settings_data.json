@@ -2411,7 +2411,7 @@
               "alignment": "left center",
               "text_alignment": "left center",
               "bgwrap": "#eff5f9",
-              "slide_toptitle": "premium ingredients<br>tested on ourselves",
+              "slide_toptitle": "Premium ingredients<br>crafted with care",
               "slide_toptitle_color": "#ffffff",
               "slide_title": "FOR ALL BEAUTY NEEDS",
               "slide_title_color": "#ffffff",
@@ -3204,8 +3204,8 @@
           "marginmobile": "0px 0px 0px 0px",
           "bgsection": "#ffffff",
           "setwidth": "container",
-          "title_top": "BEST FOR YOU",
-          "title": "Trending now",
+          "title_top": "",
+          "title": "OUR PRODUCTS",
           "des": "",
           "collection": "best-sellers",
           "rows": 3
@@ -3849,7 +3849,7 @@
           "bgsection": "#fefefe",
           "rangebg": 0,
           "bgbefore": "rgba(0,0,0,0)",
-          "title_top": "",
+          "title_top": "Not sure what to choose? Take our quiz and find your match",
           "title": "",
           "des": "",
           "setwidth": "container",
@@ -3859,9 +3859,9 @@
       }
     },
     "content_for_index": [
-      "0e9c522c-c812-4d6a-bee9-a6bd73c4e856",
       "advanced_content_xm6XxC",
       "1595086648291",
+      "0e9c522c-c812-4d6a-bee9-a6bd73c4e856",
       "162870190508b20d30"
     ],
     "blocks": {
